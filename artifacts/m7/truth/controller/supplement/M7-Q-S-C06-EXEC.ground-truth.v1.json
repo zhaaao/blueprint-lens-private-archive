@@ -1,0 +1,51 @@
+{
+  "criterion": {
+    "description": "Rule-selected execution criterion: the node with the longest backward supported-execution chain.",
+    "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph",
+    "node_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::84290cad-4610-ded7-8c13-9fa6518c66ef"
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:UserConstructionScript: excluded because slicing is graph-local to EventGraph",
+    "No forward context is selected after the criterion (forward_context_hops=0)",
+    "9 of 16 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 0,
+      "edges": 6,
+      "execution_edges": 6,
+      "nodes": 7
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::341690c4-4cd5-f8b4-e3f6-f980b9cd76dd::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::89ce2eea-46be-a9ca-99b6-d8bee03c43f4::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::89ce2eea-46be-a9ca-99b6-d8bee03c43f4::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::b30a219f-4890-23b2-970e-d9a77d1f571b::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::a2ee63e3-4ad8-08a6-08cb-66a9c3fb2c8b::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::de10be2c-4ae1-5105-7610-8db41c64cdf6::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::b30a219f-4890-23b2-970e-d9a77d1f571b::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::a2ee63e3-4ad8-08a6-08cb-66a9c3fb2c8b::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::b925ae7b-41dc-197e-482f-0a8ce95d42f2::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::341690c4-4cd5-f8b4-e3f6-f980b9cd76dd::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::de10be2c-4ae1-5105-7610-8db41c64cdf6::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::84290cad-4610-ded7-8c13-9fa6518c66ef::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::341690c4-4cd5-f8b4-e3f6-f980b9cd76dd",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::84290cad-4610-ded7-8c13-9fa6518c66ef",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::89ce2eea-46be-a9ca-99b6-d8bee03c43f4",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::a2ee63e3-4ad8-08a6-08cb-66a9c3fb2c8b",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::b30a219f-4890-23b2-970e-d9a77d1f571b",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::b925ae7b-41dc-197e-482f-0a8ce95d42f2",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::de10be2c-4ae1-5105-7610-8db41c64cdf6"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, rule-selected supplement. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "execution_context",
+  "source_fixture": "6a735b729235ab8b19c55422026f47b04694dd214a06d07f9b2194862372a2ea.blueprint-lens-v1.json",
+  "source_sha256": "64E99BF58190AFED770FA1E1474672FB0492BEADB06FFA0FCE7504C52981F35A"
+}

@@ -1,0 +1,357 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m7-corpus-v1.schema.json",
+  "title": "Blueprint Lens M7 Corpus Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "band_definitions",
+    "regression_assets",
+    "candidate_graphs"
+  ],
+  "properties": {
+    "schema_name": {
+      "const": "blueprint-lens-m7-corpus"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "band_definitions": {
+      "$ref": "#/$defs/band_definitions"
+    },
+    "regression_assets": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/regression_asset"
+      }
+    },
+    "candidate_graphs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/candidate_graph"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "object_path": {
+      "type": "string",
+      "pattern": "^/Game/[A-Za-z0-9_./]+\\.[A-Za-z0-9_]+$"
+    },
+    "non_empty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "regression_asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "object_path"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "object_path": {
+          "$ref": "#/$defs/object_path"
+        }
+      }
+    },
+    "band": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "band",
+        "min_nodes",
+        "max_nodes"
+      ],
+      "properties": {
+        "band": {
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ]
+        },
+        "min_nodes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_nodes": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "band_definitions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "binding",
+        "binding_note",
+        "bands"
+      ],
+      "properties": {
+        "binding": {
+          "enum": [
+            "provisional_pending_task_2",
+            "bound"
+          ]
+        },
+        "binding_note": {
+          "$ref": "#/$defs/non_empty"
+        },
+        "bands": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/band"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "origin",
+            "detail",
+            "recorded_on"
+          ],
+          "properties": {
+            "origin": {
+              "const": "authored_in_project"
+            },
+            "detail": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "recorded_on": {
+              "$ref": "#/$defs/iso_date"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "origin",
+            "detail",
+            "recorded_on",
+            "source_reference"
+          ],
+          "properties": {
+            "origin": {
+              "enum": [
+                "third_party_sample",
+                "engine_sample"
+              ]
+            },
+            "detail": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "recorded_on": {
+              "$ref": "#/$defs/iso_date"
+            },
+            "source_reference": {
+              "$ref": "#/$defs/non_empty"
+            }
+          }
+        }
+      ]
+    },
+    "node_family": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "class_path",
+        "count"
+      ],
+      "properties": {
+        "class_path": {
+          "type": "string",
+          "pattern": "^/Script/BlueprintGraph\\.[A-Za-z0-9_]+$"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "measured": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_count",
+        "edge_count",
+        "execution_edge_count",
+        "data_edge_count",
+        "node_families"
+      ],
+      "properties": {
+        "node_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "edge_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "execution_edge_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "data_edge_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "node_families": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/node_family"
+          }
+        }
+      }
+    },
+    "dimension": {
+      "enum": [
+        "source_traceability_and_progressive_disclosure",
+        "branching_and_incomparable_outcomes",
+        "data_provenance_fan_in_fan_out",
+        "sequence_async_completion_and_synchronization",
+        "call_and_context",
+        "opaque_unsupported_and_query_budget_boundaries",
+        "cycles_and_multiple_sccs",
+        "small_medium_large_scale"
+      ]
+    },
+    "risk_dimension": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dimension": {
+          "$ref": "#/$defs/dimension"
+        },
+        "verification": {
+          "enum": [
+            "structural",
+            "declared_unverified"
+          ]
+        },
+        "unchecked_reason": {
+          "$ref": "#/$defs/non_empty"
+        }
+      },
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "dimension",
+            "verification"
+          ],
+          "properties": {
+            "dimension": {
+              "$ref": "#/$defs/dimension"
+            },
+            "verification": {
+              "enum": [
+                "structural"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "dimension",
+            "verification",
+            "unchecked_reason"
+          ],
+          "properties": {
+            "dimension": {
+              "$ref": "#/$defs/dimension"
+            },
+            "verification": {
+              "enum": [
+                "declared_unverified"
+              ]
+            },
+            "unchecked_reason": {
+              "$ref": "#/$defs/non_empty"
+            }
+          }
+        }
+      ]
+    },
+    "candidate_graph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "object_path",
+        "graph_id",
+        "band",
+        "licence",
+        "provenance",
+        "measured",
+        "risk_dimensions"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "object_path": {
+          "$ref": "#/$defs/object_path"
+        },
+        "graph_id": {
+          "$ref": "#/$defs/id"
+        },
+        "band": {
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ]
+        },
+        "licence": {
+          "$ref": "#/$defs/non_empty"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "measured": {
+          "$ref": "#/$defs/measured"
+        },
+        "risk_dimensions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/risk_dimension"
+          }
+        }
+      }
+    },
+    "iso_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "schema_name": "blueprint-lens-examiner-visual-manifest",
+  "schema_version": "1.0.0",
+  "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+  "asset_sha256": "B8F2F7F55B21C6F3B34473675BB2FDCD7D1F412F16877198152C1ECD86F68303",
+  "claim_boundary": "PNG records the painted frame; tree records text/tags only. No comprehension, capacity, performance, runtime, or product-default claim follows from this manifest.",
+  "frames": [
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-01",
+      "criterion_label": "Set ComposedExecutionComplete",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/composed-execution-default-collapsed.png",
+      "png_sha256": "2F8061AA7C82D4F47D65231F05BE85AA8890C88825E00D503322B5CE9B496FBB",
+      "scroll_offset": 0,
+      "state": "default-collapsed",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/composed-execution-default-collapsed.tree.txt",
+      "tree_sha256": "1A05BA0C3C10BFED409D5912BF6F7618B6A6D825B4635DBF2B21E84A7C54943B",
+      "viewport": {
+        "height": 440,
+        "width": 829,
+        "x": 656,
+        "y": 342
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-01",
+      "criterion_label": "Set ComposedExecutionComplete",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/composed-execution.png",
+      "png_sha256": "8203A199F836C74EF866FBE990CD60844BD5170DE029A2D54925BE4F4257AD3B",
+      "scroll_offset": 1000,
+      "state": "expanded-nested-guard",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/composed-execution.tree.txt",
+      "tree_sha256": "D998B13B97DF9FD2DEF0069B1CB8267159FB1C1A4F647795C2C274FDA246CF27",
+      "viewport": {
+        "height": 440,
+        "width": 829,
+        "x": 656,
+        "y": 342
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-02",
+      "criterion_label": "Set DataWithProducersAnswer",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/data-with-producers.png",
+      "png_sha256": "E4313FF490D4EB15C598BD62E2BE96BE039D28501E591DC62219719F89857C47",
+      "scroll_offset": 0,
+      "state": "expanded-producer-identities",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/data-with-producers.tree.txt",
+      "tree_sha256": "EB8A58BDC237B0AB7AF9D05644544C79D0B6B06F38AFC16685DB13CE523D5EBF",
+      "viewport": {
+        "height": 890,
+        "width": 830,
+        "x": 662,
+        "y": 347
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-03",
+      "criterion_label": "Set DataWithoutProducerAnswer",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/data-without-producer.png",
+      "png_sha256": "B0B626DCE372F6BC793B5408F3100265503294CEE10274E5F9570303841830F0",
+      "scroll_offset": 0,
+      "state": "explicit-no-producer",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/data-without-producer.tree.txt",
+      "tree_sha256": "ECA12EFC55139F951E57FEDD90572C3578F15EADB6C3B37A9C7D28125BE95B04",
+      "viewport": {
+        "height": 892,
+        "width": 831,
+        "x": 662,
+        "y": 347
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-04",
+      "criterion_label": "Set PureBodyAnswer",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/lc5-pure-body.png",
+      "png_sha256": "0112D8ACA01AF0F43C54F16CE72BAF54F905969ACB4994A9E4219EE8B26A68A2",
+      "scroll_offset": 0,
+      "state": "expanded-accepted-typed-portal",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/lc5-pure-body.tree.txt",
+      "tree_sha256": "3A371618C42D1BCE5B5DE3D85EF686827E9D067C3206288B8C79076ADCEFCEC4",
+      "viewport": {
+        "height": 896,
+        "width": 834,
+        "x": 664,
+        "y": 347
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-05",
+      "criterion_label": "Set ImpureBodyComplete",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/lc5-impure-body.png",
+      "png_sha256": "BF6BD625C5481DCA623FC880FAF99C74D7638341C4F8EAAA21BE5046D7FE2005",
+      "scroll_offset": 0,
+      "state": "expanded-accepted-typed-portal",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/lc5-impure-body.tree.txt",
+      "tree_sha256": "9B602371BA8CCF8084A83F794EC84ACEF256CF8EB5CC35CE46E3587028847766",
+      "viewport": {
+        "height": 898,
+        "width": 835,
+        "x": 666,
+        "y": 347
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-06",
+      "criterion_label": "Set BodyUnavailableComplete",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/lc5-body-unavailable.png",
+      "png_sha256": "BA10E27513BC3B2BEDE3D03909A9215DDB9D0D0F9C043F916B75D0B68D4BA72F",
+      "scroll_offset": 0,
+      "state": "visible-body-unavailable-refusal",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/lc5-body-unavailable.tree.txt",
+      "tree_sha256": "69C687F6C8F9EAB7CDA829BD6517BE8E450FD817132CCEC575AC5987B82DADBB",
+      "viewport": {
+        "height": 900,
+        "width": 837,
+        "x": 666,
+        "y": 347
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-07",
+      "criterion_label": "Set BoundaryComplete",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/lc6-uncertain.png",
+      "png_sha256": "C25D7ECD6DAE7CA5B0A8EA2CF2515FCE8BCC9DD0F847BAC01EB1307FA7610910",
+      "scroll_offset": 0,
+      "state": "expanded-truth-owner-tracks",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/lc6-uncertain.tree.txt",
+      "tree_sha256": "B7D0D01E5F84BF145BAC0CA4DC698FAA90E589D26B32E5CE7771316A94BA9CE3",
+      "viewport": {
+        "height": 902,
+        "width": 838,
+        "x": 668,
+        "y": 347
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-08",
+      "criterion_label": "Set ExitPresentComplete",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/lc7-exit-present-backbone.png",
+      "png_sha256": "CC9C3C73A9C37CBFC49EAAC03324803C18A7BFFC61F95D4A3333E1551FC8B956",
+      "scroll_offset": 500,
+      "state": "expanded-adaptive-backbone",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/lc7-exit-present-backbone.tree.txt",
+      "tree_sha256": "4D6A4F7B53843F8F48FF56174978452A121D6A865B20536B48AFFF01803CA40A",
+      "viewport": {
+        "height": 440,
+        "width": 829,
+        "x": 656,
+        "y": 342
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-08",
+      "criterion_label": "Set ExitPresentComplete",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/lc7-exit-present.png",
+      "png_sha256": "30CA7939E16A101565FFAA1190668EF6F5B36F522780E55AE89BD7CA7D71A3A3",
+      "scroll_offset": 260,
+      "state": "expanded-one-exit-retained",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/lc7-exit-present.tree.txt",
+      "tree_sha256": "882E1D96C74BDEE5FA37CD34048CC64328273EDB0170712FA63B69ECE88ED5FE",
+      "viewport": {
+        "height": 440,
+        "width": 829,
+        "x": 656,
+        "y": 342
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-09",
+      "criterion_label": "Set ExitOutsideComplete",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/lc7-exit-outside-backbone.png",
+      "png_sha256": "1CED3A841EBCE01C7BEF11FD4F6F3DCDE943AAE559D9798B4244090C1B925F8A",
+      "scroll_offset": 500,
+      "state": "expanded-adaptive-backbone",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/lc7-exit-outside-backbone.tree.txt",
+      "tree_sha256": "7C3DB55E61A3D5251411C3E5965E50FB92ADB952F8C966A4721397E3382CAFC9",
+      "viewport": {
+        "height": 440,
+        "width": 829,
+        "x": 656,
+        "y": 342
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-09",
+      "criterion_label": "Set ExitOutsideComplete",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:EventGraph",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/lc7-exit-outside.png",
+      "png_sha256": "BCAE68F47F26DEE7BA04911F4751ACED2ED332D1FD20CD095EFA1FC4A9479A61",
+      "scroll_offset": 260,
+      "state": "expanded-exit-outside-slice",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/lc7-exit-outside.tree.txt",
+      "tree_sha256": "971F6318AB9F11F2CEE935560CDA28D51BDA0868CF03CB58A1C1AE05035DD58A",
+      "viewport": {
+        "height": 440,
+        "width": 829,
+        "x": 656,
+        "y": 342
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-10",
+      "criterion_label": "Set DataWithMultipleSetsAnswer",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:DataWithMultipleSets",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/data-with-multiple-sets.png",
+      "png_sha256": "548CBAB4739E0BAC65201D0D109BF75CD65D7AB10531FA0B012EA491981D3370",
+      "scroll_offset": 0,
+      "state": "two-writes-default-collapsed",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/data-with-multiple-sets.tree.txt",
+      "tree_sha256": "A973021E6C0F37200EA0C39F98DC0C79BB09C7E2CDEABE61BF27FD7EE39050C6",
+      "viewport": {
+        "height": 440,
+        "width": 829,
+        "x": 656,
+        "y": 342
+      }
+    },
+    {
+      "asset_object_path": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo",
+      "case_id": "M10-DEMO-10",
+      "criterion_label": "Set DataWithMultipleSetsAnswer",
+      "graph_id": "/Game/LensCorpus/BP_M10_CompositionDemo.BP_M10_CompositionDemo:DataWithMultipleSets",
+      "png_path": "artifacts/m10/ue/m10-composition-demo/data-with-multiple-sets-expanded.png",
+      "png_sha256": "C8AF6E57A84AA4C5C9FCA6616C07DAF872FD3DF18AE0B2E24255B37BB828D06D",
+      "scroll_offset": 180,
+      "state": "two-writes-producer-expanded",
+      "tree_path": "artifacts/m10/ue/m10-composition-demo/data-with-multiple-sets-expanded.tree.txt",
+      "tree_sha256": "15501229679B68A02201C531DEF65A80543D64ABBDD19674726DCE9317151526",
+      "viewport": {
+        "height": 440,
+        "width": 829,
+        "x": 656,
+        "y": 342
+      }
+    }
+  ]
+}

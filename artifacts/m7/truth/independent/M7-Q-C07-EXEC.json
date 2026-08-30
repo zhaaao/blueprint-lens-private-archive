@@ -1,0 +1,40 @@
+{
+  "query_id": "M7-Q-C07-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::06b0187f-460a-e671-1c92-929e0d8457b9",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::08b1b7d1-4cfa-e2de-8089-b5832da5a751",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4f0babd6-4b21-68c6-e817-00bb773b9b47",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::cbd7b169-4f74-9746-29b8-539f9f4310f9",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::d1cf3d85-4bef-3d12-afee-379a21e7ad2c"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::06b0187f-460a-e671-1c92-929e0d8457b9::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::cbd7b169-4f74-9746-29b8-539f9f4310f9::pin::locator-input-Condition-0",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412::pin::locator-output-then-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::cbd7b169-4f74-9746-29b8-539f9f4310f9::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::08b1b7d1-4cfa-e2de-8089-b5832da5a751::pin::locator-output-then-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec::pin::locator-output-then-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::cbd7b169-4f74-9746-29b8-539f9f4310f9::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4f0babd6-4b21-68c6-e817-00bb773b9b47::pin::locator-output-LC7Counter-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::06b0187f-460a-e671-1c92-929e0d8457b9::pin::locator-input-A-0",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::cbd7b169-4f74-9746-29b8-539f9f4310f9::pin::locator-output-then-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::08b1b7d1-4cfa-e2de-8089-b5832da5a751::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::d1cf3d85-4bef-3d12-afee-379a21e7ad2c::pin::locator-output-then-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec::pin::locator-input-execute-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::06b0187f-460a-e671-1c92-929e0d8457b9",
+      "why": "data rule 2.6: opaque function call retained; function graph is not expanded"
+    }
+  ],
+  "reasoning": [
+    "Ambiguity reading: /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::06b0187f-460a-e671-1c92-929e0d8457b9 (integer < integer) reports is_pure=true but semantic_status=opaque; the named opaque-function case in data rule 2.6 takes precedence over supported-pure continuation.",
+    "Ambiguity reading: /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4f0babd6-4b21-68c6-e817-00bb773b9b47 (Get LC7Counter) lacks symbol.is_pure; it is treated as a supported graph-visible source/transparent reroute for data rule 2.7, with only its explicit incoming data edges followed; this rejects stopping solely because the optional purity flag is absent.",
+    "Execution rule 2.2: criterion /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::cbd7b169-4f74-9746-29b8-539f9f4310f9 (Branch) is included as the root.",
+    "Execution rule 2.4: 5 supported execution predecessors were included and reverse traversal continued through each; cycles were guarded by visited IDs.",
+    "Execution rule 2.6: Branch /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::cbd7b169-4f74-9746-29b8-539f9f4310f9 (Branch) contributes only its marked branch_condition pin /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::cbd7b169-4f74-9746-29b8-539f9f4310f9::pin::locator-input-Condition-0; non-condition data pins and unrelated output paths are not roots.",
+    "Execution rule 2.6: root pin /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::cbd7b169-4f74-9746-29b8-539f9f4310f9::pin::locator-input-Condition-0 receives producer /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::06b0187f-460a-e671-1c92-929e0d8457b9 (integer < integer).",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed.",
+    "Rule 2.6/2.7: /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::06b0187f-460a-e671-1c92-929e0d8457b9 (integer < integer) entered data traversal via data_root; status=opaque, so its applicable boundary rule was applied.",
+    "Rule 2.6: opaque call /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::06b0187f-460a-e671-1c92-929e0d8457b9 (integer < integer) retains explicit input producer /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4f0babd6-4b21-68c6-e817-00bb773b9b47 (Get LC7Counter) from pin /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::06b0187f-460a-e671-1c92-929e0d8457b9::pin::locator-input-A-0; reason=opaque_input_producer."
+  ],
+  "undetermined": []
+}

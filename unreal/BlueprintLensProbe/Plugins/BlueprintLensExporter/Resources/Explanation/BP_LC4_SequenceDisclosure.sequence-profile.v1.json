@@ -1,0 +1,142 @@
+{
+  "counts": {
+    "connected_output_count": 3,
+    "criterion_included_output_count": 2,
+    "declared_output_count": 4,
+    "indeterminate_output_count": 0,
+    "outside_criterion_connected_output_count": 1,
+    "unconnected_output_count": 1
+  },
+  "format": "blueprint-lens-sequence-profile",
+  "outputs": [
+    {
+      "connected_edge_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_0-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-input-execute-0"
+      ],
+      "connection_state": "connected",
+      "criterion_reason": "selected_execution_edge",
+      "criterion_relation": "included",
+      "ordinal": 0,
+      "reachable_edge_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_0-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-input-execute-0"
+      ],
+      "reachable_node_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8",
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf",
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13"
+      ],
+      "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_0-0",
+      "source_pin_name": "then_0",
+      "termination": {
+        "kind": "ordinary_reconvergence",
+        "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13"
+      }
+    },
+    {
+      "connected_edge_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_1-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-input-execute-0"
+      ],
+      "connection_state": "connected",
+      "criterion_reason": "selected_execution_edge",
+      "criterion_relation": "included",
+      "ordinal": 1,
+      "reachable_edge_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_1-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-input-execute-0"
+      ],
+      "reachable_node_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37",
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9",
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13"
+      ],
+      "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_1-0",
+      "source_pin_name": "then_1",
+      "termination": {
+        "kind": "ordinary_reconvergence",
+        "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13"
+      }
+    },
+    {
+      "connected_edge_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_2-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a::pin::locator-input-execute-0"
+      ],
+      "connection_state": "connected",
+      "criterion_reason": "no_selected_execution_edge",
+      "criterion_relation": "outside",
+      "ordinal": 2,
+      "reachable_edge_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_2-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a::pin::locator-input-execute-0"
+      ],
+      "reachable_node_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a"
+      ],
+      "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_2-0",
+      "source_pin_name": "then_2",
+      "termination": {
+        "kind": "terminal",
+        "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a"
+      }
+    },
+    {
+      "connected_edge_ids": [],
+      "connection_state": "unconnected",
+      "criterion_reason": "unconnected_output",
+      "criterion_relation": "outside",
+      "ordinal": 3,
+      "reachable_edge_ids": [],
+      "reachable_node_ids": [],
+      "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_3-0",
+      "source_pin_name": "then_3",
+      "termination": {
+        "kind": "unconnected",
+        "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f"
+      }
+    }
+  ],
+  "profile_id": "LC4_SEQUENCE_FANOUT_TO_BOUNDARY_V1",
+  "query_mode": "sequence_fanout_overview",
+  "reconvergences": [
+    {
+      "incoming_output_ordinals": [
+        0,
+        1
+      ],
+      "kind": "ordinary_multi_predecessor",
+      "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+      "shared_reachable_edge_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93::pin::locator-input-execute-0"
+      ],
+      "shared_reachable_node_ids": [
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+        "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93"
+      ],
+      "termination": {
+        "kind": "criterion",
+        "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93"
+      }
+    }
+  ],
+  "rules_version": "sequence_fanout_to_first_boundary_v1",
+  "schema_version": "1.0.0",
+  "source": {
+    "asset_file": "BP_LC4_SequenceDisclosure.uasset",
+    "asset_sha256": "AFAFB128BDD468633443A0E9A95DACFFF90DE7277B07C5C1C63BC5CE11DC944B",
+    "blueprint_asset_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure",
+    "compiler_audit_file": "BP_LC4_SequenceDisclosure.sequence-compiler-order.tsv",
+    "compiler_audit_sha256": "E670BF3A86981817BE815F0BA68B288A29090B2EB7F410C9A19AA9FDC5BABDCB",
+    "criterion_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93",
+    "graph_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph",
+    "ir_file": "BP_LC4_SequenceDisclosure.ir.v1.json",
+    "ir_sha256": "06C2E95C0D2F65C83C4E2BBC65CA7076D918C7CCAAC5B93A597FDA9DE89D3D6C",
+    "raw_file": "BP_LC4_SequenceDisclosure.raw-0.2.json",
+    "raw_sha256": "3D51B52FF5836413A478F215CA7A3480643B9F59D8D3AF56701FE0293F29E949",
+    "sequence_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+    "sequence_source_file": "BP_LC4_SequenceDisclosure.sequence-source.json",
+    "sequence_source_sha256": "B2DCD46D6A1AC3A3CE0C8CADE3A231A00EB06D4B30FE22EF0AABAF2DCB9C5D95",
+    "slice_file": "BP_LC4_SequenceDisclosure.execution.slice.v1.json",
+    "slice_sha256": "73FA3F2D5360C37C2EDB348E8AECD708B3E458F8051AED37D2AE07449797643A"
+  }
+}

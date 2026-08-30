@@ -1,0 +1,135 @@
+{
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m6-controlled-scenarios-v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "semantic_budget": {
+      "additionalProperties": false,
+      "properties": {
+        "max_selected_nodes": {"minimum": 1, "type": "integer"},
+        "max_selected_relations": {"minimum": 1, "type": "integer"}
+      },
+      "required": ["max_selected_nodes", "max_selected_relations"],
+      "type": "object"
+    },
+    "presentation_budget": {
+      "additionalProperties": false,
+      "properties": {
+        "max_visible_entities": {"minimum": 1, "type": "integer"},
+        "max_visible_relations": {"minimum": 1, "type": "integer"}
+      },
+      "required": ["max_visible_entities", "max_visible_relations"],
+      "type": "object"
+    },
+    "execution_criterion": {
+      "additionalProperties": false,
+      "properties": {
+        "criterion_node_id": {"minLength": 1, "type": "string"},
+        "direction": {"const": "backward"},
+        "graph_id": {"minLength": 1, "type": "string"},
+        "kind": {"const": "execution"}
+      },
+      "required": ["kind", "graph_id", "criterion_node_id", "direction"],
+      "type": "object"
+    },
+    "data_criterion": {
+      "additionalProperties": false,
+      "properties": {
+        "direction": {"const": "backward"},
+        "expected_member_name": {"minLength": 1, "type": "string"},
+        "graph_id": {"minLength": 1, "type": "string"},
+        "kind": {"const": "data"},
+        "member_guid": {
+          "pattern": "^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$",
+          "type": "string"
+        }
+      },
+      "required": ["kind", "graph_id", "member_guid", "expected_member_name", "direction"],
+      "type": "object"
+    },
+    "request": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_path": {
+          "pattern": "^/Game/(?:[A-Za-z0-9_]+/)*[A-Za-z0-9_]+\\.[A-Za-z0-9_]+$",
+          "type": "string"
+        },
+        "criterion": {
+          "oneOf": [
+            {"$ref": "#/$defs/execution_criterion"},
+            {"$ref": "#/$defs/data_criterion"}
+          ]
+        },
+        "graph_id": {"minLength": 1, "type": "string"},
+        "presentation_budget": {"$ref": "#/$defs/presentation_budget"},
+        "query_kind": {"enum": ["execution", "data"]},
+        "raw_version": {"const": "0.2"},
+        "renderer_id": {"const": "R1_GENERIC_FRAME_FLOW_V1"},
+        "schema_name": {"const": "blueprint-lens-m6-request"},
+        "schema_version": {"const": "1.0.0"},
+        "semantic_budget": {"$ref": "#/$defs/semantic_budget"},
+        "slice_rules_version": {"const": "1.0.0"},
+        "source_fingerprint": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "typed_ir_version": {"const": "1.0.0"}
+      },
+      "required": [
+        "schema_name",
+        "schema_version",
+        "asset_path",
+        "graph_id",
+        "source_fingerprint",
+        "query_kind",
+        "criterion",
+        "semantic_budget",
+        "presentation_budget",
+        "raw_version",
+        "typed_ir_version",
+        "slice_rules_version",
+        "renderer_id"
+      ],
+      "type": "object"
+    },
+    "binding": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {"minLength": 1, "pattern": "^[^\\\\/].*", "type": "string"},
+        "sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+      },
+      "required": ["path", "sha256"],
+      "type": "object"
+    },
+    "expected": {
+      "additionalProperties": false,
+      "properties": {
+        "node_count": {"minimum": 1, "type": "integer"},
+        "relation_count": {"minimum": 1, "type": "integer"}
+      },
+      "required": ["node_count", "relation_count"],
+      "type": "object"
+    },
+    "scenario": {
+      "additionalProperties": false,
+      "properties": {
+        "expected": {"$ref": "#/$defs/expected"},
+        "ground_truth": {"$ref": "#/$defs/binding"},
+        "request": {"$ref": "#/$defs/request"},
+        "scenario_id": {"enum": ["M6-E01", "M6-D01"]}
+      },
+      "required": ["scenario_id", "request", "ground_truth", "expected"],
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "scenarios": {
+      "items": {"$ref": "#/$defs/scenario"},
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "schema_name": {"const": "blueprint-lens-m6-controlled-scenarios"},
+    "schema_version": {"const": "1.0.0"}
+  },
+  "required": ["schema_name", "schema_version", "scenarios"],
+  "type": "object"
+}

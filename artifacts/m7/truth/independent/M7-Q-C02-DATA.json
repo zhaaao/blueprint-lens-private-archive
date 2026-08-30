@@ -1,0 +1,29 @@
+{
+  "query_id": "M7-Q-C02-DATA",
+  "slice_kind": "data",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::4091bcad-432a-3718-d733-3ab29eeb0c9f",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::54ee58ce-41ab-65cc-5a51-03a178ab1811",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::be88db39-4b56-2182-f0d8-e2a4c6726cea"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::4091bcad-432a-3718-d733-3ab29eeb0c9f::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::54ee58ce-41ab-65cc-5a51-03a178ab1811::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::be88db39-4b56-2182-f0d8-e2a4c6726cea::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8::pin::locator-input-execute-0"
+  ],
+  "boundary": [],
+  "reasoning": [
+    "Data rule 2.1/2.2: GUID 432200d7-4099-af3c-cee4-9c8fbd750f75 matched 0 Get node(s) and 1 Set node(s); the display name was not used for lookup.",
+    "Data rule 2.3: Set /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8 (Set IsAlive) uses its uniquely marked variable_set_value pin /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8::pin::locator-input-IsAlive-0 as an independent producer-closure root.",
+    "Data rule 2.3: root pin /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8::pin::locator-input-IsAlive-0 has no incoming data edge; no producer can be added.",
+    "Data rule 2.4: /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::4091bcad-432a-3718-d733-3ab29eeb0c9f (Set Ready) is not a Branch, so no broader control-dependence or earlier execution context is inferred.",
+    "Data rule 2.4: /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::54ee58ce-41ab-65cc-5a51-03a178ab1811 (Set Ready) is not a Branch, so no broader control-dependence or earlier execution context is inferred.",
+    "Data rule 2.4: /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::be88db39-4b56-2182-f0d8-e2a4c6726cea (Set Ready) is not a Branch, so no broader control-dependence or earlier execution context is inferred.",
+    "Data rule 2.4: Set /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8 (Set IsAlive) is directly controlled by /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::4091bcad-432a-3718-d733-3ab29eeb0c9f (Set Ready); only this immediate execution predecessor is added.",
+    "Data rule 2.4: Set /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8 (Set IsAlive) is directly controlled by /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::54ee58ce-41ab-65cc-5a51-03a178ab1811 (Set Ready); only this immediate execution predecessor is added.",
+    "Data rule 2.4: Set /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8 (Set IsAlive) is directly controlled by /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::be88db39-4b56-2182-f0d8-e2a4c6726cea (Set Ready); only this immediate execution predecessor is added.",
+    "Data rule 2.8: no downstream consumers were added merely because a member Get exists; only independently selected nodes contribute induced edges."
+  ],
+  "undetermined": []
+}

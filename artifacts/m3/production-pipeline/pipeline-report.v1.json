@@ -1,0 +1,243 @@
+{
+  "corpus_manifest_sha256": "276ce44f4df3e24ba1afee4ac0d9657fcbefa2e26e9e42affc95f7230576a7b1",
+  "normalized_runs_identical": true,
+  "runs": [
+    {
+      "assets": [
+        {
+          "edge_count": 13,
+          "graph_count": 2,
+          "node_count": 17,
+          "object_path": "/Game/LensCorpus/BP_LC1_LongChain.BP_LC1_LongChain",
+          "pin_count": 74,
+          "raw_relative_path": "run1/raw/5bebefa4aec82c95a10e88b13e18d2c8939618ff49e06fdb9e92d3d008901263.raw-0.2.json",
+          "raw_sha256": "df187ac5443fc9a982636c4e520de7a9c7369bae678406a698f7f5daf3ec3eba",
+          "typed_ir_relative_path": "run1/typed-ir/5bebefa4aec82c95a10e88b13e18d2c8939618ff49e06fdb9e92d3d008901263.blueprint-lens-v1.json",
+          "typed_ir_sha256": "2137fae1d155823e529402b102a613109d910807a034ab6826bd3edd6909ae12"
+        },
+        {
+          "edge_count": 10,
+          "graph_count": 2,
+          "node_count": 10,
+          "object_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards",
+          "pin_count": 35,
+          "raw_relative_path": "run1/raw/750a8bc86d98b397b419580312baa8a187e58de7e9f12eb5e461cd39be768e8e.raw-0.2.json",
+          "raw_sha256": "76aab76b7389d9be9d533fb11af84e33dd12c73d1a7519d81f7632250a958d3c",
+          "typed_ir_relative_path": "run1/typed-ir/750a8bc86d98b397b419580312baa8a187e58de7e9f12eb5e461cd39be768e8e.blueprint-lens-v1.json",
+          "typed_ir_sha256": "582a07de8191be3ec7aa8d0a0d458bb9e739e01b42e93d372f20e7b3229ef61c"
+        },
+        {
+          "edge_count": 6,
+          "graph_count": 2,
+          "node_count": 8,
+          "object_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+          "pin_count": 20,
+          "raw_relative_path": "run1/raw/13f86e0003e83ed8669789051c1108eee78f51aa32b0095100b68bca2382799f.raw-0.2.json",
+          "raw_sha256": "a6bc8d402e6121b79bce8cdbe9f204d452b4932449d4b955fa5d63315ab30c00",
+          "typed_ir_relative_path": "run1/typed-ir/13f86e0003e83ed8669789051c1108eee78f51aa32b0095100b68bca2382799f.blueprint-lens-v1.json",
+          "typed_ir_sha256": "1a0853abcb4b03ac5051de9158094ce2e38e654b2bd27dbb08dd0d646c2f9d45"
+        },
+        {
+          "edge_count": 11,
+          "graph_count": 2,
+          "node_count": 12,
+          "object_path": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier",
+          "pin_count": 67,
+          "raw_relative_path": "run1/raw/a6fea0235eb7390b0bd6f3d8ca4813dea7f0256e044a6d30eda4e112c10f8083.raw-0.2.json",
+          "raw_sha256": "b0ccadc833b404f3935873fdd32bf6a156de733e01645027f998af01169ca155",
+          "typed_ir_relative_path": "run1/typed-ir/a6fea0235eb7390b0bd6f3d8ca4813dea7f0256e044a6d30eda4e112c10f8083.blueprint-lens-v1.json",
+          "typed_ir_sha256": "17b56de55bd564965eeabf82345e4e2b501db9688007eac0e0151e633d8e645a"
+        },
+        {
+          "edge_count": 9,
+          "graph_count": 2,
+          "node_count": 10,
+          "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure",
+          "pin_count": 43,
+          "raw_relative_path": "run1/raw/f8c288dcc257ab43e3ad4e76092a15e9eec58fa20b2a2b912b670ab381922054.raw-0.2.json",
+          "raw_sha256": "3d51b52ff5836413a478f215ca7a3480643b9f59d8d3af56701fe0293f29e949",
+          "typed_ir_relative_path": "run1/typed-ir/f8c288dcc257ab43e3ad4e76092a15e9eec58fa20b2a2b912b670ab381922054.blueprint-lens-v1.json",
+          "typed_ir_sha256": "06c2e95c0d2f65c83c4e2bbc65ca7076d918c7ccaac5b93a597fda9de89d3d6c"
+        },
+        {
+          "edge_count": 12,
+          "graph_count": 2,
+          "node_count": 17,
+          "object_path": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix",
+          "pin_count": 74,
+          "raw_relative_path": "run1/raw/6a735b729235ab8b19c55422026f47b04694dd214a06d07f9b2194862372a2ea.raw-0.2.json",
+          "raw_sha256": "86614b0e5d51d84be55b09f5ca5a41c002a00ecbac1e1951960a93702428bd10",
+          "typed_ir_relative_path": "run1/typed-ir/6a735b729235ab8b19c55422026f47b04694dd214a06d07f9b2194862372a2ea.blueprint-lens-v1.json",
+          "typed_ir_sha256": "64e99bf58190afed770fa1e1474672fb0492beadb06ffa0fce7504c52981f35a"
+        },
+        {
+          "edge_count": 10,
+          "graph_count": 2,
+          "node_count": 11,
+          "object_path": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC",
+          "pin_count": 39,
+          "raw_relative_path": "run1/raw/f030e7a1fbbf23ff1acfb2ee1cdd4d970a4cdd6a8bbac34951abc97c8357217c.raw-0.2.json",
+          "raw_sha256": "645c7e67174a8752861ef1951fd4b885a9afda09a39d0f27b61cac079d76710a",
+          "typed_ir_relative_path": "run1/typed-ir/f030e7a1fbbf23ff1acfb2ee1cdd4d970a4cdd6a8bbac34951abc97c8357217c.blueprint-lens-v1.json",
+          "typed_ir_sha256": "498effe9831ade7ced981b6b78bdc1b35a430396ef1cf747b1780fdeb9ee205d"
+        },
+        {
+          "edge_count": 66,
+          "graph_count": 9,
+          "node_count": 64,
+          "object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+          "pin_count": 282,
+          "raw_relative_path": "run1/raw/8ca0b6a00f2943b8672a1308934442b81e1e88fb2cc366c0805668e872ba7661.raw-0.2.json",
+          "raw_sha256": "9601e9ef7a08d9cd9824416d9c1f63b24cee7ef460693c636247ba740aa7a619",
+          "typed_ir_relative_path": "run1/typed-ir/8ca0b6a00f2943b8672a1308934442b81e1e88fb2cc366c0805668e872ba7661.blueprint-lens-v1.json",
+          "typed_ir_sha256": "ae3081275ada00b7370f17695b111c13f86e29a0707ba3b722e48ac48ded9e8f"
+        },
+        {
+          "edge_count": 36,
+          "graph_count": 2,
+          "node_count": 34,
+          "object_path": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk",
+          "pin_count": 137,
+          "raw_relative_path": "run1/raw/af88808755640042329d2c05f0cd80b49ad186548244e8b33baad2c1ce1e5267.raw-0.2.json",
+          "raw_sha256": "6da74dd06af6928ba26b0a2aff468e5a3f6bbdae73313c40f407584fdfa92a27",
+          "typed_ir_relative_path": "run1/typed-ir/af88808755640042329d2c05f0cd80b49ad186548244e8b33baad2c1ce1e5267.blueprint-lens-v1.json",
+          "typed_ir_sha256": "8abeacfbb7061f44bbf2e60293ae1e62195a3fd62e140a6abcd14463878775eb"
+        },
+        {
+          "edge_count": 24,
+          "graph_count": 3,
+          "node_count": 28,
+          "object_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+          "pin_count": 122,
+          "raw_relative_path": "run1/raw/60fb3c769ebf10e0a24a0217d14cfd19c168b7e294ca7d9f9c26cb10b59e6386.raw-0.2.json",
+          "raw_sha256": "29c3e151c65079eec4d9777643dcbaf227f9659f1580e838b55051138cd5b209",
+          "typed_ir_relative_path": "run1/typed-ir/60fb3c769ebf10e0a24a0217d14cfd19c168b7e294ca7d9f9c26cb10b59e6386.blueprint-lens-v1.json",
+          "typed_ir_sha256": "0841255d9d523bda0ecae105a2ec2cba39f28fb2f4afe99dbed1cd8e2c4b5ccd"
+        }
+      ],
+      "batch_manifest_relative_path": "run1/batch-result.v1.json",
+      "batch_manifest_sha256": "25adf3d57b167ba14d0b36cd6adcb503a6fbe190de0da581242025b7c2874379",
+      "run_id": "run1"
+    },
+    {
+      "assets": [
+        {
+          "edge_count": 13,
+          "graph_count": 2,
+          "node_count": 17,
+          "object_path": "/Game/LensCorpus/BP_LC1_LongChain.BP_LC1_LongChain",
+          "pin_count": 74,
+          "raw_relative_path": "run2/raw/5bebefa4aec82c95a10e88b13e18d2c8939618ff49e06fdb9e92d3d008901263.raw-0.2.json",
+          "raw_sha256": "df187ac5443fc9a982636c4e520de7a9c7369bae678406a698f7f5daf3ec3eba",
+          "typed_ir_relative_path": "run2/typed-ir/5bebefa4aec82c95a10e88b13e18d2c8939618ff49e06fdb9e92d3d008901263.blueprint-lens-v1.json",
+          "typed_ir_sha256": "2137fae1d155823e529402b102a613109d910807a034ab6826bd3edd6909ae12"
+        },
+        {
+          "edge_count": 10,
+          "graph_count": 2,
+          "node_count": 10,
+          "object_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards",
+          "pin_count": 35,
+          "raw_relative_path": "run2/raw/750a8bc86d98b397b419580312baa8a187e58de7e9f12eb5e461cd39be768e8e.raw-0.2.json",
+          "raw_sha256": "76aab76b7389d9be9d533fb11af84e33dd12c73d1a7519d81f7632250a958d3c",
+          "typed_ir_relative_path": "run2/typed-ir/750a8bc86d98b397b419580312baa8a187e58de7e9f12eb5e461cd39be768e8e.blueprint-lens-v1.json",
+          "typed_ir_sha256": "582a07de8191be3ec7aa8d0a0d458bb9e739e01b42e93d372f20e7b3229ef61c"
+        },
+        {
+          "edge_count": 6,
+          "graph_count": 2,
+          "node_count": 8,
+          "object_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+          "pin_count": 20,
+          "raw_relative_path": "run2/raw/13f86e0003e83ed8669789051c1108eee78f51aa32b0095100b68bca2382799f.raw-0.2.json",
+          "raw_sha256": "a6bc8d402e6121b79bce8cdbe9f204d452b4932449d4b955fa5d63315ab30c00",
+          "typed_ir_relative_path": "run2/typed-ir/13f86e0003e83ed8669789051c1108eee78f51aa32b0095100b68bca2382799f.blueprint-lens-v1.json",
+          "typed_ir_sha256": "1a0853abcb4b03ac5051de9158094ce2e38e654b2bd27dbb08dd0d646c2f9d45"
+        },
+        {
+          "edge_count": 11,
+          "graph_count": 2,
+          "node_count": 12,
+          "object_path": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier",
+          "pin_count": 67,
+          "raw_relative_path": "run2/raw/a6fea0235eb7390b0bd6f3d8ca4813dea7f0256e044a6d30eda4e112c10f8083.raw-0.2.json",
+          "raw_sha256": "b0ccadc833b404f3935873fdd32bf6a156de733e01645027f998af01169ca155",
+          "typed_ir_relative_path": "run2/typed-ir/a6fea0235eb7390b0bd6f3d8ca4813dea7f0256e044a6d30eda4e112c10f8083.blueprint-lens-v1.json",
+          "typed_ir_sha256": "17b56de55bd564965eeabf82345e4e2b501db9688007eac0e0151e633d8e645a"
+        },
+        {
+          "edge_count": 9,
+          "graph_count": 2,
+          "node_count": 10,
+          "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure",
+          "pin_count": 43,
+          "raw_relative_path": "run2/raw/f8c288dcc257ab43e3ad4e76092a15e9eec58fa20b2a2b912b670ab381922054.raw-0.2.json",
+          "raw_sha256": "3d51b52ff5836413a478f215ca7a3480643b9f59d8d3af56701fe0293f29e949",
+          "typed_ir_relative_path": "run2/typed-ir/f8c288dcc257ab43e3ad4e76092a15e9eec58fa20b2a2b912b670ab381922054.blueprint-lens-v1.json",
+          "typed_ir_sha256": "06c2e95c0d2f65c83c4e2bbc65ca7076d918c7ccaac5b93a597fda9de89d3d6c"
+        },
+        {
+          "edge_count": 12,
+          "graph_count": 2,
+          "node_count": 17,
+          "object_path": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix",
+          "pin_count": 74,
+          "raw_relative_path": "run2/raw/6a735b729235ab8b19c55422026f47b04694dd214a06d07f9b2194862372a2ea.raw-0.2.json",
+          "raw_sha256": "86614b0e5d51d84be55b09f5ca5a41c002a00ecbac1e1951960a93702428bd10",
+          "typed_ir_relative_path": "run2/typed-ir/6a735b729235ab8b19c55422026f47b04694dd214a06d07f9b2194862372a2ea.blueprint-lens-v1.json",
+          "typed_ir_sha256": "64e99bf58190afed770fa1e1474672fb0492beadb06ffa0fce7504c52981f35a"
+        },
+        {
+          "edge_count": 10,
+          "graph_count": 2,
+          "node_count": 11,
+          "object_path": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC",
+          "pin_count": 39,
+          "raw_relative_path": "run2/raw/f030e7a1fbbf23ff1acfb2ee1cdd4d970a4cdd6a8bbac34951abc97c8357217c.raw-0.2.json",
+          "raw_sha256": "645c7e67174a8752861ef1951fd4b885a9afda09a39d0f27b61cac079d76710a",
+          "typed_ir_relative_path": "run2/typed-ir/f030e7a1fbbf23ff1acfb2ee1cdd4d970a4cdd6a8bbac34951abc97c8357217c.blueprint-lens-v1.json",
+          "typed_ir_sha256": "498effe9831ade7ced981b6b78bdc1b35a430396ef1cf747b1780fdeb9ee205d"
+        },
+        {
+          "edge_count": 66,
+          "graph_count": 9,
+          "node_count": 64,
+          "object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+          "pin_count": 282,
+          "raw_relative_path": "run2/raw/8ca0b6a00f2943b8672a1308934442b81e1e88fb2cc366c0805668e872ba7661.raw-0.2.json",
+          "raw_sha256": "9601e9ef7a08d9cd9824416d9c1f63b24cee7ef460693c636247ba740aa7a619",
+          "typed_ir_relative_path": "run2/typed-ir/8ca0b6a00f2943b8672a1308934442b81e1e88fb2cc366c0805668e872ba7661.blueprint-lens-v1.json",
+          "typed_ir_sha256": "ae3081275ada00b7370f17695b111c13f86e29a0707ba3b722e48ac48ded9e8f"
+        },
+        {
+          "edge_count": 36,
+          "graph_count": 2,
+          "node_count": 34,
+          "object_path": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk",
+          "pin_count": 137,
+          "raw_relative_path": "run2/raw/af88808755640042329d2c05f0cd80b49ad186548244e8b33baad2c1ce1e5267.raw-0.2.json",
+          "raw_sha256": "6da74dd06af6928ba26b0a2aff468e5a3f6bbdae73313c40f407584fdfa92a27",
+          "typed_ir_relative_path": "run2/typed-ir/af88808755640042329d2c05f0cd80b49ad186548244e8b33baad2c1ce1e5267.blueprint-lens-v1.json",
+          "typed_ir_sha256": "8abeacfbb7061f44bbf2e60293ae1e62195a3fd62e140a6abcd14463878775eb"
+        },
+        {
+          "edge_count": 24,
+          "graph_count": 3,
+          "node_count": 28,
+          "object_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+          "pin_count": 122,
+          "raw_relative_path": "run2/raw/60fb3c769ebf10e0a24a0217d14cfd19c168b7e294ca7d9f9c26cb10b59e6386.raw-0.2.json",
+          "raw_sha256": "29c3e151c65079eec4d9777643dcbaf227f9659f1580e838b55051138cd5b209",
+          "typed_ir_relative_path": "run2/typed-ir/60fb3c769ebf10e0a24a0217d14cfd19c168b7e294ca7d9f9c26cb10b59e6386.blueprint-lens-v1.json",
+          "typed_ir_sha256": "0841255d9d523bda0ecae105a2ec2cba39f28fb2f4afe99dbed1cd8e2c4b5ccd"
+        }
+      ],
+      "batch_manifest_relative_path": "run2/batch-result.v1.json",
+      "batch_manifest_sha256": "25adf3d57b167ba14d0b36cd6adcb503a6fbe190de0da581242025b7c2874379",
+      "run_id": "run2"
+    }
+  ],
+  "schema_name": "blueprint-lens-m3-production-pipeline-report",
+  "schema_version": "1.0.0",
+  "unique_asset_count": 10
+}

@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m6-ui-closure-evidence-v1.schema.json",
+  "title": "Blueprint Lens M6 UI Closure Evidence v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schema_version",
+    "panel_entry",
+    "review_rows",
+    "denominators",
+    "unreachable_states",
+    "retained_files",
+    "counts"
+  ],
+  "properties": {
+    "format": { "const": "blueprint-lens-m6-ui-closure-evidence" },
+    "schema_version": { "const": "1.0.0" },
+    "panel_entry": { "$ref": "#/$defs/panel_entry" },
+    "review_rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/review_row" }
+    },
+    "denominators": { "$ref": "#/$defs/denominators" },
+    "unreachable_states": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/unreachable_state" }
+    },
+    "retained_files": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/retained_file" }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["retained_files", "review_rows"],
+      "properties": {
+        "retained_files": { "type": "integer", "minimum": 1 },
+        "review_rows": { "type": "integer", "minimum": 1 }
+      }
+    }
+  },
+  "$defs": {
+    "nonempty_string": { "type": "string", "minLength": 1 },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "portable_path": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9._-]+(/[A-Za-z0-9._-]+)*$"
+    },
+    "state_id": {
+      "description": "The eight UI Closure design section 7.2 states.",
+      "enum": [
+        "tab_available_by_default",
+        "python_auto_detected",
+        "python_missing_or_invalid",
+        "execution_target_lock_unlock",
+        "data_member_list_with_unused_row",
+        "session_lifecycle_states",
+        "results_and_source_jump",
+        "width_without_clipping_or_overlap"
+      ]
+    },
+    "width": { "enum": [430, 480, 700] },
+    "verdict": { "enum": ["PASS", "ACCEPTED_DEVIATION", "OPEN_DEFECT"] },
+    "panel_entry": {
+      "description": "How the reviewed Editor was launched. The closure claim is a no-parameter workflow, so this must record the absence of M6 query parameters explicitly rather than by omission.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "launched_without_m6_parameters",
+        "review_seam_used",
+        "review_seam_scope"
+      ],
+      "properties": {
+        "launched_without_m6_parameters": { "const": true },
+        "review_seam_used": { "type": "boolean" },
+        "review_seam_scope": {
+          "description": "What the development review seam replaced. It may only stand in for a pointer action; it may never stand in for product logic.",
+          "type": "string"
+        }
+      }
+    },
+    "review_row": {
+      "description": "One observed state at one width. Every row carries the evidence that proves it; a bare verdict is not admissible.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "width",
+        "observed",
+        "evidence_path",
+        "evidence_pointer",
+        "verdict"
+      ],
+      "properties": {
+        "state": { "$ref": "#/$defs/state_id" },
+        "width": { "$ref": "#/$defs/width" },
+        "observed": {
+          "description": "What was re-observed from a fresh snapshot, in the reviewer's own words.",
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "evidence_path": {
+          "description": "Retained artefact showing this row.",
+          "$ref": "#/$defs/portable_path"
+        },
+        "evidence_pointer": {
+          "description": "The exact rendered text, widget reference or log line that proves the row, so a reader can check it against the artefact.",
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "verdict": { "$ref": "#/$defs/verdict" },
+        "deviation_reason": { "type": "string" }
+      }
+    },
+    "unreachable_state": {
+      "description": "A design section 7.2 state this review could not reach, with the reason. Recording it is required; omitting it would let an uncovered state read as covered.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "reason"],
+      "properties": {
+        "state": { "$ref": "#/$defs/state_id" },
+        "reason": { "$ref": "#/$defs/nonempty_string" }
+      }
+    },
+    "denominators": {
+      "description": "Every value here is recomputed from review_rows by the verifier. None is a constant, and a failing or deviating review must remain representable.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rows_total",
+        "rows_pass",
+        "rows_accepted_deviation",
+        "rows_open_defect",
+        "states_covered",
+        "states_total",
+        "widths_covered"
+      ],
+      "properties": {
+        "rows_total": { "type": "integer", "minimum": 1 },
+        "rows_pass": { "type": "integer", "minimum": 0 },
+        "rows_accepted_deviation": { "type": "integer", "minimum": 0 },
+        "rows_open_defect": { "type": "integer", "minimum": 0 },
+        "states_covered": { "type": "integer", "minimum": 0, "maximum": 8 },
+        "states_total": { "const": 8 },
+        "widths_covered": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/width" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "retained_file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "$ref": "#/$defs/portable_path" },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    }
+  }
+}

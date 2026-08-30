@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m10-lc1-explanation-adapter-v1.schema.json",
+  "title": "Blueprint Lens M10 LC1 Explanation adapter v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_name", "schema_version", "measured_on", "corpus", "rows", "summary", "limitations"],
+  "properties": {
+    "schema_name": {"const": "blueprint-lens-m10-lc1-explanation-adapter"},
+    "schema_version": {"const": "1.0.0"},
+    "measured_on": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "corpus": {"$ref": "#/$defs/corpus"},
+    "rows": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/row"}},
+    "summary": {"$ref": "#/$defs/summary"},
+    "limitations": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/limitation"}}
+  },
+  "$defs": {
+    "non_empty": {"type": "string", "minLength": 1},
+    "non_negative": {"type": "integer", "minimum": 0},
+    "positive": {"type": "integer", "minimum": 1},
+    "id_list": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/non_empty"}},
+    "unit_semantic_fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "semantic_status"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^unit\\..+$"},
+        "role": {"enum": ["criterion", "control", "predicate", "value", "consequence", "boundary"]},
+        "semantic_status": {"enum": ["supported", "opaque", "uncertain", "unsupported"]}
+      }
+    },
+    "carried_unit_id": {"type": "string", "pattern": "^unit\\.(control|criterion|boundary)\\..+$"},
+    "not_carried_unit_id": {"type": "string", "pattern": "^unit\\.(value|predicate)\\..+$"},
+    "carried_relation_id": {"type": "string", "pattern": "^relation\\.execution_predecessor\\..+$"},
+    "not_carried_relation_id": {"type": "string", "pattern": "^relation\\.(controls_execution|provides_value|predicate_for)\\..+$"},
+    "carried_unit_id_list": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/carried_unit_id"}},
+    "not_carried_unit_id_list": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/not_carried_unit_id"}},
+    "carried_relation_id_list": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/carried_relation_id"}},
+    "not_carried_relation_id_list": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/not_carried_relation_id"}},
+    "corpus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manifest_path", "manifest_sha256", "typed_ir_path", "graph_count", "manifest_graph_ids", "typed_ir_inventory", "population_identities", "fallback_definition"],
+      "properties": {
+        "manifest_path": {"$ref": "#/$defs/non_empty"},
+        "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "typed_ir_path": {"$ref": "#/$defs/non_empty"},
+        "graph_count": {"const": 10},
+        "manifest_graph_ids": {"$ref": "#/$defs/id_list"},
+        "typed_ir_inventory": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/typed_source"}},
+        "population_identities": {"$ref": "#/$defs/id_list"},
+        "fallback_definition": {"$ref": "#/$defs/non_empty"}
+      }
+    },
+    "typed_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"$ref": "#/$defs/non_empty"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "segment": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "member_unit_ids", "member_relation_ids", "incoming_relation_ids", "outgoing_relation_ids"],
+          "properties": {
+            "kind": {"type": "string", "enum": ["Entry", "StraightRun", "CriterionFocus"]},
+            "member_unit_ids": {"$ref": "#/$defs/id_list"},
+            "member_relation_ids": {"$ref": "#/$defs/id_list"},
+            "incoming_relation_ids": {"$ref": "#/$defs/id_list"},
+            "outgoing_relation_ids": {"$ref": "#/$defs/id_list"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "unit_id", "semantic_status", "title", "disclosure"],
+          "properties": {
+            "kind": {"const": "BoundaryCap"},
+            "unit_id": {"$ref": "#/$defs/non_empty"},
+            "semantic_status": {"$ref": "#/$defs/non_empty"},
+            "title": {"$ref": "#/$defs/non_empty"},
+            "disclosure": {"$ref": "#/$defs/non_empty"}
+          }
+        }
+      ]
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "outcome", "reason_code", "reason", "criterion_unit_id", "boundary_unit_ids", "boundary_unit_count",
+        "input_unit_semantics",
+        "input_unit_ids", "input_unit_count", "carried_unit_ids", "carried_unit_count",
+        "not_carried_unit_ids", "not_carried_unit_count", "input_relation_ids",
+        "input_relation_count", "carried_relation_ids", "carried_relation_count",
+        "not_carried_relation_ids", "not_carried_relation_count", "segments"
+      ],
+      "properties": {
+        "outcome": {"const": "accepted"},
+        "reason_code": {"const": "M10_LC1_ADAPTER_ACCEPTED"},
+        "reason": {"$ref": "#/$defs/non_empty"},
+        "criterion_unit_id": {"$ref": "#/$defs/non_empty"},
+        "boundary_unit_ids": {"$ref": "#/$defs/id_list"},
+        "boundary_unit_count": {"$ref": "#/$defs/non_negative"},
+        "input_unit_semantics": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/unit_semantic_fact"}
+        },
+        "input_unit_ids": {"$ref": "#/$defs/id_list"},
+        "input_unit_count": {"$ref": "#/$defs/non_negative"},
+        "carried_unit_ids": {"$ref": "#/$defs/carried_unit_id_list"},
+        "carried_unit_count": {"$ref": "#/$defs/non_negative"},
+        "not_carried_unit_ids": {"$ref": "#/$defs/not_carried_unit_id_list"},
+        "not_carried_unit_count": {"$ref": "#/$defs/non_negative"},
+        "input_relation_ids": {"$ref": "#/$defs/id_list"},
+        "input_relation_count": {"$ref": "#/$defs/non_negative"},
+        "carried_relation_ids": {"$ref": "#/$defs/carried_relation_id_list"},
+        "carried_relation_count": {"$ref": "#/$defs/non_negative"},
+        "not_carried_relation_ids": {"$ref": "#/$defs/not_carried_relation_id_list"},
+        "not_carried_relation_count": {"$ref": "#/$defs/non_negative"},
+        "segments": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/segment"}}
+      },
+      "oneOf": [
+        {"properties": {"boundary_unit_count": {"const": 0}, "boundary_unit_ids": {"maxItems": 0}}},
+        {"properties": {"boundary_unit_count": {"const": 1}, "boundary_unit_ids": {"minItems": 1, "maxItems": 1}}},
+        {"properties": {"boundary_unit_count": {"const": 2}, "boundary_unit_ids": {"minItems": 2, "maxItems": 2}}},
+        {"properties": {"boundary_unit_count": {"const": 3}, "boundary_unit_ids": {"minItems": 3, "maxItems": 3}}},
+        {"properties": {"boundary_unit_count": {"const": 4}, "boundary_unit_ids": {"minItems": 4, "maxItems": 4}}}
+      ]
+    },
+    "row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_graph_id", "source_criterion_node_id", "source_typed_ir_path", "source_typed_ir_sha256", "source_explanation_sha256", "refusal_causes", "result"],
+      "properties": {
+        "source_graph_id": {"$ref": "#/$defs/non_empty"},
+        "source_criterion_node_id": {"$ref": "#/$defs/non_empty"},
+        "source_typed_ir_path": {"$ref": "#/$defs/non_empty"},
+        "source_typed_ir_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_explanation_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "refusal_causes": {"type": "array", "maxItems": 0, "items": {"$ref": "#/$defs/non_empty"}},
+        "result": {"$ref": "#/$defs/result"}
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_count", "strict_control_only_count", "other_fallback_shape_count", "accepted_count", "refused_count", "refusal_classes", "independent_refusal_causes", "not_carried_unit_role_counts", "not_carried_relation_kind_counts"],
+      "properties": {
+        "candidate_count": {"$ref": "#/$defs/non_negative"},
+        "strict_control_only_count": {"$ref": "#/$defs/non_negative"},
+        "other_fallback_shape_count": {"$ref": "#/$defs/non_negative"},
+        "accepted_count": {"$ref": "#/$defs/non_negative"},
+        "refused_count": {"$ref": "#/$defs/non_negative"},
+        "refusal_classes": {"type": "object", "additionalProperties": {"$ref": "#/$defs/positive"}},
+        "independent_refusal_causes": {"type": "object", "additionalProperties": {"$ref": "#/$defs/positive"}},
+        "not_carried_unit_role_counts": {"type": "object", "additionalProperties": {"$ref": "#/$defs/non_negative"}},
+        "not_carried_relation_kind_counts": {"type": "object", "additionalProperties": {"$ref": "#/$defs/non_negative"}}
+      }
+    },
+    "limitation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "statement"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+        "statement": {"$ref": "#/$defs/non_empty"}
+      }
+    }
+  }
+}

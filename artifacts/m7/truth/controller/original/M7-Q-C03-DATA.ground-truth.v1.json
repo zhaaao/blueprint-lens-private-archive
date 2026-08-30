@@ -1,0 +1,50 @@
+{
+  "criterion": {
+    "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness",
+    "member_guid": "663548ed-41d5-a0bc-5de1-769686b34b74",
+    "member_name": "MaxCapacity",
+    "question": "Derive the data dependency slice for the MaxCapacity member and its contributing values."
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:UserConstructionScript: excluded because slicing is graph-local to ComputeReadiness",
+    "No downstream consumers of a member Get are selected (data rule 8)",
+    "1 of 6 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 5,
+      "edges": 6,
+      "execution_edges": 1,
+      "nodes": 5
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668::pin::locator-output-Base-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::d3143d38-4d09-19df-9cab-3bb1e9b932c7::pin::locator-input-A-0",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668::pin::locator-output-Bonus-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::d3143d38-4d09-19df-9cab-3bb1e9b932c7::pin::locator-input-B-0",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::a0382a0b-4a8b-abe6-6377-dcb90fc6ddce::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41::pin::locator-input-MaxCapacity-0",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::bb4508bb-4c61-ba3c-a9f4-5bb95eb09541::pin::locator-output-Armor-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::a0382a0b-4a8b-abe6-6377-dcb90fc6ddce::pin::locator-input-B-0",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::d3143d38-4d09-19df-9cab-3bb1e9b932c7::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::a0382a0b-4a8b-abe6-6377-dcb90fc6ddce::pin::locator-input-A-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::a0382a0b-4a8b-abe6-6377-dcb90fc6ddce",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::bb4508bb-4c61-ba3c-a9f4-5bb95eb09541",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::d3143d38-4d09-19df-9cab-3bb1e9b932c7"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, frozen eighteen. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "member_variable_data_dependency",
+  "source_fixture": "8ca0b6a00f2943b8672a1308934442b81e1e88fb2cc366c0805668e872ba7661.blueprint-lens-v1.json",
+  "source_sha256": "AE3081275ADA00B7370F17695B111C13F86E29A0707BA3B722E48AC48DED9E8F"
+}

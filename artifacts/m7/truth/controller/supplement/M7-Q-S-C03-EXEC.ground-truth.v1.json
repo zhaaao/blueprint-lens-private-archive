@@ -1,0 +1,43 @@
+{
+  "criterion": {
+    "description": "Rule-selected execution criterion: the node with the longest backward supported-execution chain.",
+    "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness",
+    "node_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::66938d40-45b4-c96c-9c02-06a66e7d55f4"
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:UserConstructionScript: excluded because slicing is graph-local to ComputeReadiness",
+    "No forward context is selected after the criterion (forward_context_hops=0)",
+    "3 of 6 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 0,
+      "edges": 2,
+      "execution_edges": 2,
+      "nodes": 3
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::66938d40-45b4-c96c-9c02-06a66e7d55f4::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::66938d40-45b4-c96c-9c02-06a66e7d55f4",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, rule-selected supplement. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "execution_context",
+  "source_fixture": "8ca0b6a00f2943b8672a1308934442b81e1e88fb2cc366c0805668e872ba7661.blueprint-lens-v1.json",
+  "source_sha256": "AE3081275ADA00B7370F17695B111C13F86E29A0707BA3B722E48AC48DED9E8F"
+}

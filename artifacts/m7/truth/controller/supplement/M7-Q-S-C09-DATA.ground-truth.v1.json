@@ -1,0 +1,42 @@
+{
+  "criterion": {
+    "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+    "member_guid": "01da55fc-4799-f46f-a81e-feb49be269a0",
+    "member_name": "M7Flag085",
+    "question": "Rule-selected data member: the member GUID with the most Set nodes."
+  },
+  "excluded_regions": [
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:UserConstructionScript: excluded because slicing is graph-local to EventGraph",
+    "No downstream consumers of a member Get are selected (data rule 8)",
+    "336 of 338 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 0,
+      "edges": 1,
+      "execution_edges": 1,
+      "nodes": 2
+    },
+    "edge_ids": [
+      "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::edge::/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::8086e254-4b71-2768-c6b2-84bcd6b5aab8::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::3f627b38-41ac-9f0c-a0b1-768dd998d0ef::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::3f627b38-41ac-9f0c-a0b1-768dd998d0ef",
+      "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::8086e254-4b71-2768-c6b2-84bcd6b5aab8"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, rule-selected supplement. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "member_variable_data_dependency",
+  "source_fixture": "0e00a99a51d384eda19095e556f214deebf797d1d8008371f071e872b6cb187b.blueprint-lens-v1.json",
+  "source_sha256": "8259E7BB889934E9AD97E64FF3D53D8BDA840D5131A2F689DA8C63B713CAF82E"
+}

@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m7-g7-evidence-v1.schema.json",
+  "title": "Blueprint Lens M7 G7 evidence packet v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "dataset",
+    "conditions",
+    "condition_counts",
+    "gate_disposition",
+    "claims",
+    "observed_failure_count",
+    "boundary"
+  ],
+  "properties": {
+    "schema_name": {"const": "blueprint-lens-m7-g7-evidence"},
+    "schema_version": {"const": "1.0.0"},
+    "dataset": {"$ref": "#/$defs/dataset"},
+    "conditions": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 7,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/condition"}
+    },
+    "condition_counts": {"$ref": "#/$defs/counts"},
+    "gate_disposition": {
+      "enum": ["G7_READY_FOR_OWNER_ACCEPTANCE", "G7_BLOCKED_PENDING_OWNER_DECISION"]
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/claim"}
+    },
+    "observed_failure_count": {"type": "integer", "minimum": 0},
+    "boundary": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "path": {"type": "string", "minLength": 1},
+    "pointer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"$ref": "#/$defs/path"},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["files", "file_count", "candidate_graph_count", "observed_max_node_count"],
+      "properties": {
+        "files": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/pointer"}
+        },
+        "file_count": {"type": "integer", "minimum": 1},
+        "candidate_graph_count": {"type": "integer", "minimum": 1},
+        "observed_max_node_count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "statement", "disposition", "basis", "derivation", "gap", "measured"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^G7-C[1-7]$"},
+        "statement": {"type": "string", "minLength": 1},
+        "disposition": {"enum": ["met", "met_with_recorded_gap", "met_vacuously", "not_met"]},
+        "basis": {"type": "array", "items": {"$ref": "#/$defs/pointer"}, "uniqueItems": true},
+        "derivation": {"type": "string", "minLength": 1},
+        "gap": {"oneOf": [{"const": null}, {"type": "string", "minLength": 1}]},
+        "measured": {
+          "oneOf": [
+            {"const": null},
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["numerator", "denominator"],
+              "properties": {
+                "numerator": {"type": "integer", "minimum": 0},
+                "denominator": {"type": "integer", "minimum": 0}
+              }
+            }
+          ]
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["met", "met_vacuously", "met_with_recorded_gap", "not_met"],
+      "properties": {
+        "met": {"type": "integer", "minimum": 0},
+        "met_vacuously": {"type": "integer", "minimum": 0},
+        "met_with_recorded_gap": {"type": "integer", "minimum": 0},
+        "not_met": {"type": "integer", "minimum": 0}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_id", "status", "basis", "boundaries"],
+      "properties": {
+        "claim_id": {"type": "string", "minLength": 1},
+        "status": {"enum": ["established_bounded", "not_established"]},
+        "basis": {"type": "array", "items": {"$ref": "#/$defs/pointer"}, "uniqueItems": true},
+        "boundaries": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+      }
+    }
+  }
+}

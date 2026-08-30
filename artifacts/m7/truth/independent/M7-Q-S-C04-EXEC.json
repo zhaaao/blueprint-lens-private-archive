@@ -1,0 +1,28 @@
+{
+  "query_id": "M7-Q-S-C04-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::2ef55eff-443a-869a-ab63-359ce19fd32f",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::b76d106f-4c35-5194-d976-43b73c9e4b53",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::2ef55eff-443a-869a-ab63-359ce19fd32f::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::b76d106f-4c35-5194-d976-43b73c9e4b53::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b::pin::locator-output-Accepted-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::2ef55eff-443a-869a-ab63-359ce19fd32f::pin::locator-input-IsServiceAccepted-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b::pin::locator-output-Accepted-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::b76d106f-4c35-5194-d976-43b73c9e4b53::pin::locator-input-Accepted-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::2ef55eff-443a-869a-ab63-359ce19fd32f::pin::locator-input-execute-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b",
+      "why": "execution rule 2.5/4: opaque predecessor retained as a visible boundary; traversal stops"
+    }
+  ],
+  "reasoning": [
+    "Execution rule 2.2: criterion /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::b76d106f-4c35-5194-d976-43b73c9e4b53 (Return Node) is included as the root.",
+    "Execution rule 2.4: 1 supported execution predecessors were included and reverse traversal continued through each; cycles were guarded by visited IDs.",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed.",
+    "Rule 2.5: /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b (CommitEncounter_0) is a opaque execution predecessor, so it is included but not traversed further."
+  ],
+  "undetermined": []
+}

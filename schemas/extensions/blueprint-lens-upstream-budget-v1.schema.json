@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/extensions/blueprint-lens-upstream-budget-v1.schema.json",
+  "title": "Blueprint Lens LC6 Upstream Budget v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "format_version", "profile_id", "truth_owner", "blueprint_asset_path", "graph_id", "asset_sha256", "raw_sha256", "scenario_id", "root_node_id", "criterion_node_id", "max_upstream_hops", "status", "reason", "complete_node_ids", "complete_edge_ids", "selected_node_ids", "selected_edge_ids", "hop_distances", "frontiers", "counts"],
+  "properties": {
+    "format": { "const": "blueprint-lens-lc6-upstream-budget" },
+    "format_version": { "const": "1.0.0" },
+    "profile_id": { "const": "LC6_MAX_UPSTREAM_HOPS_V1" },
+    "truth_owner": { "const": "query_profile" },
+    "blueprint_asset_path": { "$ref": "#/$defs/id" },
+    "graph_id": { "$ref": "#/$defs/id" },
+    "asset_sha256": { "$ref": "#/$defs/sha256" },
+    "raw_sha256": { "$ref": "#/$defs/sha256" },
+    "scenario_id": { "const": "LC6_TRUNCATED" },
+    "root_node_id": { "$ref": "#/$defs/id" },
+    "criterion_node_id": { "$ref": "#/$defs/id" },
+    "max_upstream_hops": { "type": "integer", "minimum": 0 },
+    "status": { "enum": ["complete", "truncated"] },
+    "reason": { "enum": ["", "max_upstream_hops_exhausted"] },
+    "complete_node_ids": { "$ref": "#/$defs/ids" },
+    "complete_edge_ids": { "$ref": "#/$defs/ids" },
+    "selected_node_ids": { "$ref": "#/$defs/ids" },
+    "selected_edge_ids": { "$ref": "#/$defs/ids" },
+    "hop_distances": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/hop" }
+    },
+    "frontiers": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/frontier" }
+    },
+    "counts": { "$ref": "#/$defs/counts" }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "status": { "const": "complete" },
+        "reason": { "const": "" },
+        "frontiers": { "type": "array", "maxItems": 0 },
+        "counts": {
+          "type": "object",
+          "properties": {
+            "omitted_nodes": { "const": 0 },
+            "omitted_edges": { "const": 0 },
+            "frontiers": { "const": 0 }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "status": { "const": "truncated" },
+        "reason": { "const": "max_upstream_hops_exhausted" },
+        "frontiers": { "type": "array", "minItems": 1 }
+      }
+    }
+  ],
+  "$defs": {
+    "id": { "type": "string", "minLength": 1 },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/id" }
+    },
+    "hop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "distance"],
+      "properties": {
+        "node_id": { "$ref": "#/$defs/id" },
+        "distance": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "frontier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["edge_id", "source_node_id", "target_node_id"],
+      "properties": {
+        "edge_id": { "$ref": "#/$defs/id" },
+        "source_node_id": { "$ref": "#/$defs/id" },
+        "target_node_id": { "$ref": "#/$defs/id" }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["complete_nodes", "complete_edges", "selected_nodes", "selected_edges", "omitted_nodes", "omitted_edges", "frontiers"],
+      "properties": {
+        "complete_nodes": { "type": "integer", "minimum": 0 },
+        "complete_edges": { "type": "integer", "minimum": 0 },
+        "selected_nodes": { "type": "integer", "minimum": 0 },
+        "selected_edges": { "type": "integer", "minimum": 0 },
+        "omitted_nodes": { "type": "integer", "minimum": 0 },
+        "omitted_edges": { "type": "integer", "minimum": 0 },
+        "frontiers": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

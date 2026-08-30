@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m7-measurement-v1.schema.json",
+  "title": "Blueprint Lens M7 measurement report v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "measured_on",
+    "environment",
+    "timings",
+    "layout_metrics",
+    "telemetry",
+    "limitations",
+    "gaps"
+  ],
+  "properties": {
+    "schema_name": {"const": "blueprint-lens-m7-measurement"},
+    "schema_version": {"const": "1.0.0"},
+    "measured_on": {"$ref": "#/$defs/date"},
+    "environment": {"$ref": "#/$defs/environment"},
+    "timings": {
+      "type": "array",
+      "minItems": 3,
+      "items": {"$ref": "#/$defs/timing"}
+    },
+    "layout_metrics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/layout_metric"}
+    },
+    "telemetry": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/telemetry"}
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 4,
+      "items": {"$ref": "#/$defs/limitation"}
+    },
+    "gaps": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/limitation"}
+    }
+  },
+  "$defs": {
+    "non_empty": {"type": "string", "minLength": 1},
+    "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["platform", "processor", "python_version", "repeats", "repeat_reason"],
+      "properties": {
+        "platform": {"$ref": "#/$defs/non_empty"},
+        "processor": {"$ref": "#/$defs/non_empty"},
+        "python_version": {"$ref": "#/$defs/non_empty"},
+        "repeats": {"type": "integer", "minimum": 2},
+        "repeat_reason": {"$ref": "#/$defs/non_empty"}
+      }
+    },
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimum_ms", "median_ms", "maximum_ms", "repeats"],
+      "properties": {
+        "minimum_ms": {"type": "number", "minimum": 0},
+        "median_ms": {"type": "number", "minimum": 0},
+        "maximum_ms": {"type": "number", "minimum": 0},
+        "repeats": {"type": "integer", "minimum": 2}
+      }
+    },
+    "timing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage", "description", "measured_over", "distribution", "environment", "source"],
+      "properties": {
+        "stage": {"enum": ["typed_ir_build", "execution_slice", "data_slice"]},
+        "description": {"$ref": "#/$defs/non_empty"},
+        "measured_over": {"$ref": "#/$defs/non_empty"},
+        "distribution": {"$ref": "#/$defs/distribution"},
+        "environment": {"$ref": "#/$defs/environment"},
+        "source": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/non_empty"}}
+      }
+    },
+    "layout_metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric", "interpretation", "sources", "value"],
+      "properties": {
+        "metric": {"enum": ["overlap", "crossing", "truncation", "density", "bend", "disclosure_activation", "fallback_activation"]},
+        "interpretation": {"$ref": "#/$defs/non_empty"},
+        "sources": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/non_empty"}},
+        "value": {"type": "object"}
+      }
+    },
+    "telemetry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "record_type", "sealed", "stages", "event_types", "stage_durations_ms", "duration_count", "duration_ms_present", "event_count"],
+      "properties": {
+        "path": {"$ref": "#/$defs/non_empty"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "record_type": {
+          "enum": [
+            "BlueprintLens.M6.MeasuredTelemetry",
+            "BlueprintLens.M7.RenderTimingAttempt"
+          ]
+        },
+        "evidence_role": {"$ref": "#/$defs/non_empty"},
+        "scope": {"$ref": "#/$defs/non_empty"},
+        "sealed": {"const": true},
+        "stages": {"type": "array", "items": {"$ref": "#/$defs/non_empty"}},
+        "event_types": {"type": "array", "items": {"$ref": "#/$defs/non_empty"}},
+        "stage_durations_ms": {"type": "object"},
+        "duration_count": {"type": "integer", "minimum": 1},
+        "duration_ms_present": {"const": true},
+        "event_count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "limitation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "statement"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+        "statement": {"$ref": "#/$defs/non_empty"}
+      }
+    }
+  }
+}

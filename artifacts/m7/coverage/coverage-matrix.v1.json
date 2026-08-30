@@ -1,0 +1,297 @@
+{
+  "candidate_graph_count": 10,
+  "cells": [
+    {
+      "band": "medium",
+      "dimension": "source_traceability_and_progressive_disclosure",
+      "exhibited": null,
+      "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+      "node_count": 24,
+      "reason": "declared_unverified: Progressive disclosure is a renderer property and the retained typed graph exposes no non-tautological predicate for it; source identity is node_guid on every node.",
+      "row_id": "M7-C01",
+      "verification": "declared_unverified"
+    },
+    {
+      "band": "small",
+      "dimension": "branching_and_incomparable_outcomes",
+      "exhibited": true,
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter",
+      "node_count": 11,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C02",
+      "verification": "structural"
+    },
+    {
+      "band": "small",
+      "dimension": "data_provenance_fan_in_fan_out",
+      "exhibited": true,
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness",
+      "node_count": 6,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C03",
+      "verification": "structural"
+    },
+    {
+      "band": "small",
+      "dimension": "call_and_context",
+      "exhibited": true,
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService",
+      "node_count": 5,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C04",
+      "verification": "structural"
+    },
+    {
+      "band": "small",
+      "dimension": "sequence_async_completion_and_synchronization",
+      "exhibited": true,
+      "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph",
+      "node_count": 11,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C05",
+      "verification": "structural"
+    },
+    {
+      "band": "small",
+      "dimension": "opaque_unsupported_and_query_budget_boundaries",
+      "exhibited": true,
+      "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph",
+      "node_count": 16,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C06",
+      "verification": "structural"
+    },
+    {
+      "band": "small",
+      "dimension": "cycles_and_multiple_sccs",
+      "exhibited": true,
+      "graph_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph",
+      "node_count": 10,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C07",
+      "verification": "structural"
+    },
+    {
+      "band": "medium",
+      "dimension": "cycles_and_multiple_sccs",
+      "exhibited": true,
+      "graph_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph",
+      "node_count": 33,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C08",
+      "verification": "structural"
+    },
+    {
+      "band": "large",
+      "dimension": "branching_and_incomparable_outcomes",
+      "exhibited": true,
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "node_count": 338,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C09",
+      "verification": "structural"
+    },
+    {
+      "band": "large",
+      "dimension": "call_and_context",
+      "exhibited": true,
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "node_count": 338,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C09",
+      "verification": "structural"
+    },
+    {
+      "band": "large",
+      "dimension": "cycles_and_multiple_sccs",
+      "exhibited": true,
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "node_count": 338,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C09",
+      "verification": "structural"
+    },
+    {
+      "band": "large",
+      "dimension": "data_provenance_fan_in_fan_out",
+      "exhibited": true,
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "node_count": 338,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C09",
+      "verification": "structural"
+    },
+    {
+      "band": "large",
+      "dimension": "opaque_unsupported_and_query_budget_boundaries",
+      "exhibited": true,
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "node_count": 338,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C09",
+      "verification": "structural"
+    },
+    {
+      "band": "large",
+      "dimension": "sequence_async_completion_and_synchronization",
+      "exhibited": true,
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "node_count": 338,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C09",
+      "verification": "structural"
+    },
+    {
+      "band": "large",
+      "dimension": "small_medium_large_scale",
+      "exhibited": true,
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "node_count": 338,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C09",
+      "verification": "structural"
+    },
+    {
+      "band": "small",
+      "dimension": "call_and_context",
+      "exhibited": true,
+      "graph_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph",
+      "node_count": 12,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C10",
+      "verification": "structural"
+    },
+    {
+      "band": "small",
+      "dimension": "cycles_and_multiple_sccs",
+      "exhibited": true,
+      "graph_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph",
+      "node_count": 12,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C10",
+      "verification": "structural"
+    },
+    {
+      "band": "small",
+      "dimension": "opaque_unsupported_and_query_budget_boundaries",
+      "exhibited": true,
+      "graph_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph",
+      "node_count": 12,
+      "reason": "typed-IR structural predicate exhibited",
+      "row_id": "M7-C10",
+      "verification": "structural"
+    }
+  ],
+  "dimension_totals": {
+    "branching_and_incomparable_outcomes": 2,
+    "call_and_context": 3,
+    "cycles_and_multiple_sccs": 4,
+    "data_provenance_fan_in_fan_out": 2,
+    "opaque_unsupported_and_query_budget_boundaries": 3,
+    "sequence_async_completion_and_synchronization": 2,
+    "small_medium_large_scale": 1,
+    "source_traceability_and_progressive_disclosure": 0
+  },
+  "errors": [],
+  "gaps": [
+    "M7_COVERAGE_DIMENSION_NO_REPRESENTATIVE: source_traceability_and_progressive_disclosure: all admitted declarations are explicitly unverified",
+    "M7_COVERAGE_LC_NOT_A_CANDIDATE: LC2 graph /Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph is not an admitted candidate",
+    "M7_COVERAGE_LC_NOT_A_CANDIDATE: LC3 graph /Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph is not an admitted candidate",
+    "M7_COVERAGE_LC_NOT_A_CANDIDATE: LC4 graph /Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph is not an admitted candidate",
+    "M7_COVERAGE_LC_NOT_A_CANDIDATE: LC5 graph /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:CalculateRecovery is not an admitted candidate",
+    "M7_COVERAGE_LC_UNBOUND: LC1: LC1 has no frozen truth directory; artifacts/r1/lc1-* contains closure, visual-candidate and walkthrough material only"
+  ],
+  "lc_bindings": [
+    {
+      "artefact_verified": false,
+      "candidate_id": null,
+      "expected_dimension": "source_traceability_and_progressive_disclosure",
+      "graph_id": null,
+      "is_candidate": false,
+      "lc": "LC1",
+      "reason": "LC1 has no frozen truth directory; artifacts/r1/lc1-* contains closure, visual-candidate and walkthrough material only; unbound; no truth artefact; not an admitted candidate",
+      "truth_artefact": null
+    },
+    {
+      "artefact_verified": true,
+      "candidate_id": null,
+      "expected_dimension": "branching_and_incomparable_outcomes",
+      "graph_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph",
+      "is_candidate": false,
+      "lc": "LC2",
+      "reason": "LC2 frozen guard truth is a regression asset, not an admitted candidate; truth artefact names the bound graph; not an admitted candidate",
+      "truth_artefact": "artifacts/r1/lc2-guard-truth/BP_LC2_NestedGuards.ir.v1.json"
+    },
+    {
+      "artefact_verified": true,
+      "candidate_id": null,
+      "expected_dimension": "data_provenance_fan_in_fan_out",
+      "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+      "is_candidate": false,
+      "lc": "LC3",
+      "reason": "LC3 frozen value truth is a regression asset, not an admitted candidate; truth artefact names the bound graph; not an admitted candidate",
+      "truth_artefact": "artifacts/r1/lc3-value-truth/BP_LC3_ValueProvenance.ir.v1.json"
+    },
+    {
+      "artefact_verified": true,
+      "candidate_id": null,
+      "expected_dimension": "sequence_async_completion_and_synchronization",
+      "graph_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph",
+      "is_candidate": false,
+      "lc": "LC4",
+      "reason": "LC4 sequence truth is a regression asset; only LC4 async is an admitted candidate; truth artefact names the bound graph; not an admitted candidate",
+      "truth_artefact": "artifacts/r1/lc4-sequence-truth/BP_LC4_SequenceDisclosure.ir.v1.json"
+    },
+    {
+      "artefact_verified": true,
+      "candidate_id": "M7-C05",
+      "expected_dimension": "sequence_async_completion_and_synchronization",
+      "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph",
+      "is_candidate": true,
+      "lc": "LC4",
+      "reason": "LC4 async truth binds to the admitted M7 sequence/async candidate; truth artefact names the bound graph; admitted candidate M7-C05",
+      "truth_artefact": "artifacts/r1/lc4-async-truth/BP_LC4_AsyncBarrier.async-profile.v1.json"
+    },
+    {
+      "artefact_verified": true,
+      "candidate_id": null,
+      "expected_dimension": "call_and_context",
+      "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:CalculateRecovery",
+      "is_candidate": false,
+      "lc": "LC5",
+      "reason": "LC5 truth is the pure intra-Blueprint CalculateRecovery graph, not the admitted EventGraph candidate; truth artefact names the bound graph; not an admitted candidate",
+      "truth_artefact": "artifacts/r1/lc5-intra-bp-pure-truth/BP_SlicingProbe.contextual-slice.v1.json"
+    },
+    {
+      "artefact_verified": true,
+      "candidate_id": "M7-C06",
+      "expected_dimension": "opaque_unsupported_and_query_budget_boundaries",
+      "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph",
+      "is_candidate": true,
+      "lc": "LC6",
+      "reason": "LC6 frozen boundary truth binds to the admitted M7 candidate; truth artefact names the bound graph; admitted candidate M7-C06",
+      "truth_artefact": "artifacts/r1/lc6-boundary-truth/BP_LC6_BoundaryMatrix.core-boundary-matrix.v1.json"
+    },
+    {
+      "artefact_verified": true,
+      "candidate_id": "M7-C07",
+      "expected_dimension": "cycles_and_multiple_sccs",
+      "graph_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph",
+      "is_candidate": true,
+      "lc": "LC7",
+      "reason": "LC7 frozen static-SCC truth binds to the admitted M7 candidate; truth artefact names the bound graph; admitted candidate M7-C07",
+      "truth_artefact": "artifacts/r1/lc7-static-scc-truth/BP_LC7_StaticSCC.ir.v1.json"
+    }
+  ],
+  "lc_totals": {
+    "LC1": 0,
+    "LC2": 0,
+    "LC3": 0,
+    "LC4": 1,
+    "LC5": 0,
+    "LC6": 1,
+    "LC7": 1
+  },
+  "schema_name": "blueprint-lens-m7-coverage",
+  "schema_version": "1.0.0"
+}

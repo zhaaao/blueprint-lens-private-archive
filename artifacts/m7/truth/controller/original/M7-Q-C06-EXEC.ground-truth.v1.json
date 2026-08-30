@@ -1,0 +1,41 @@
+{
+  "criterion": {
+    "description": "Derive the execution slice through the delay boundary and preserve the opaque or unsupported endpoint.",
+    "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph",
+    "node_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346"
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:UserConstructionScript: excluded because slicing is graph-local to EventGraph",
+    "No forward context is selected after the criterion (forward_context_hops=0)",
+    "14 of 16 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 0,
+      "edges": 1,
+      "execution_edges": 1,
+      "nodes": 2
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::8817650b-4574-ed42-c067-30a1ef8bfd24::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346",
+      "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::8817650b-4574-ed42-c067-30a1ef8bfd24"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, frozen eighteen. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "execution_context",
+  "source_fixture": "6a735b729235ab8b19c55422026f47b04694dd214a06d07f9b2194862372a2ea.blueprint-lens-v1.json",
+  "source_sha256": "64E99BF58190AFED770FA1E1474672FB0492BEADB06FFA0FCE7504C52981F35A"
+}

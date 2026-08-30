@@ -1,0 +1,828 @@
+{
+  "aggregate": {
+    "criteria_in_scc": 71,
+    "criteria_in_scc_terminated": 71,
+    "criteria_refused": 107,
+    "criteria_sliceable": 359,
+    "criteria_total": 466,
+    "edge_count": 553,
+    "graph_count": 10,
+    "node_count": 466,
+    "scc_count": 9
+  },
+  "corpus": {
+    "graph_count": 10,
+    "manifest_path": "fixtures/m7/m7-corpus-manifest.v1.json",
+    "manifest_sha256": "45f8e9b894b8f36a95ff20a0633e39c665d9b273a3025c8b3ff836e7a71d2fef",
+    "typed_ir_path": "artifacts/m7/export/run1/typed-ir"
+  },
+  "graphs": [
+    {
+      "cycles": {
+        "criteria_in_scc": 0,
+        "criteria_in_scc_terminated": 0,
+        "scc_count": 0,
+        "scc_sizes": []
+      },
+      "edge_count": 11,
+      "execution": {
+        "by_node_family": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "criteria": 8,
+            "slice_node_median": 2,
+            "sliceable": 8
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Event",
+            "criteria": 1,
+            "slice_node_median": 1,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_ExecutionSequence",
+            "criteria": 1,
+            "slice_node_median": 2,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "criteria": 1,
+            "slice_node_median": 3,
+            "sliceable": 1
+          }
+        ],
+        "criteria_refused": 0,
+        "criteria_sliceable": 11,
+        "criteria_total": 11,
+        "refusals": [],
+        "retained_fraction": {
+          "denominator_basis": "graph_node_count",
+          "max": 0.363636,
+          "median": 0.181818,
+          "min": 0.090909
+        },
+        "slice_nodes": {
+          "max": 4,
+          "mean": 2.363636,
+          "median": 2.0,
+          "min": 1
+        }
+      },
+      "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph",
+      "node_count": 11
+    },
+    {
+      "cycles": {
+        "criteria_in_scc": 0,
+        "criteria_in_scc_terminated": 0,
+        "scc_count": 0,
+        "scc_sizes": []
+      },
+      "edge_count": 12,
+      "execution": {
+        "by_node_family": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "criteria": 2,
+            "slice_node_median": 2,
+            "sliceable": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CustomEvent",
+            "criteria": 4,
+            "slice_node_median": 1,
+            "sliceable": 4
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Select",
+            "criteria": 1,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "criteria": 9,
+            "slice_node_median": 3,
+            "sliceable": 9
+          }
+        ],
+        "criteria_refused": 1,
+        "criteria_sliceable": 15,
+        "criteria_total": 16,
+        "refusals": [
+          {
+            "by_node_family": [
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_Select",
+                "count": 1
+              }
+            ],
+            "code": "M4_CRITERION_INVALID",
+            "count": 1
+          }
+        ],
+        "retained_fraction": {
+          "denominator_basis": "graph_node_count",
+          "max": 0.4375,
+          "median": 0.125,
+          "min": 0.0625
+        },
+        "slice_nodes": {
+          "max": 7,
+          "mean": 2.8,
+          "median": 2.0,
+          "min": 1
+        }
+      },
+      "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph",
+      "node_count": 16
+    },
+    {
+      "cycles": {
+        "criteria_in_scc": 3,
+        "criteria_in_scc_terminated": 3,
+        "scc_count": 1,
+        "scc_sizes": [
+          3
+        ]
+      },
+      "edge_count": 10,
+      "execution": {
+        "by_node_family": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "criteria": 2,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CustomEvent",
+            "criteria": 1,
+            "slice_node_median": 1,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "criteria": 1,
+            "slice_node_median": 7,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "criteria": 2,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "criteria": 4,
+            "slice_node_median": 7,
+            "sliceable": 4
+          }
+        ],
+        "criteria_refused": 4,
+        "criteria_sliceable": 6,
+        "criteria_total": 10,
+        "refusals": [
+          {
+            "by_node_family": [
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+                "count": 2
+              },
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+                "count": 2
+              }
+            ],
+            "code": "M4_CRITERION_INVALID",
+            "count": 4
+          }
+        ],
+        "retained_fraction": {
+          "denominator_basis": "graph_node_count",
+          "max": 0.9,
+          "median": 0.7,
+          "min": 0.1
+        },
+        "slice_nodes": {
+          "max": 9,
+          "mean": 5.666667,
+          "median": 7.0,
+          "min": 1
+        }
+      },
+      "graph_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph",
+      "node_count": 10
+    },
+    {
+      "cycles": {
+        "criteria_in_scc": 0,
+        "criteria_in_scc_terminated": 0,
+        "scc_count": 0,
+        "scc_sizes": []
+      },
+      "edge_count": 7,
+      "execution": {
+        "by_node_family": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "criteria": 1,
+            "slice_node_median": 2,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+            "criteria": 1,
+            "slice_node_median": 1,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionResult",
+            "criteria": 1,
+            "slice_node_median": 3,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "criteria": 1,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "criteria": 1,
+            "slice_node_median": 4,
+            "sliceable": 1
+          }
+        ],
+        "criteria_refused": 1,
+        "criteria_sliceable": 4,
+        "criteria_total": 5,
+        "refusals": [
+          {
+            "by_node_family": [
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+                "count": 1
+              }
+            ],
+            "code": "M4_CRITERION_INVALID",
+            "count": 1
+          }
+        ],
+        "retained_fraction": {
+          "denominator_basis": "graph_node_count",
+          "max": 0.8,
+          "median": 0.5,
+          "min": 0.2
+        },
+        "slice_nodes": {
+          "max": 4,
+          "mean": 2.5,
+          "median": 2.5,
+          "min": 1
+        }
+      },
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService",
+      "node_count": 5
+    },
+    {
+      "cycles": {
+        "criteria_in_scc": 0,
+        "criteria_in_scc_terminated": 0,
+        "scc_count": 0,
+        "scc_sizes": []
+      },
+      "edge_count": 8,
+      "execution": {
+        "by_node_family": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+            "criteria": 1,
+            "slice_node_median": 1,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionResult",
+            "criteria": 1,
+            "slice_node_median": 3,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+            "criteria": 2,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "criteria": 1,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "criteria": 1,
+            "slice_node_median": 5,
+            "sliceable": 1
+          }
+        ],
+        "criteria_refused": 3,
+        "criteria_sliceable": 3,
+        "criteria_total": 6,
+        "refusals": [
+          {
+            "by_node_family": [
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+                "count": 2
+              },
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+                "count": 1
+              }
+            ],
+            "code": "M4_CRITERION_INVALID",
+            "count": 3
+          }
+        ],
+        "retained_fraction": {
+          "denominator_basis": "graph_node_count",
+          "max": 0.833333,
+          "median": 0.5,
+          "min": 0.166667
+        },
+        "slice_nodes": {
+          "max": 5,
+          "mean": 3.0,
+          "median": 3.0,
+          "min": 1
+        }
+      },
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness",
+      "node_count": 6
+    },
+    {
+      "cycles": {
+        "criteria_in_scc": 0,
+        "criteria_in_scc_terminated": 0,
+        "scc_count": 0,
+        "scc_sizes": []
+      },
+      "edge_count": 15,
+      "execution": {
+        "by_node_family": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+            "criteria": 1,
+            "slice_node_median": 1,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionResult",
+            "criteria": 1,
+            "slice_node_median": 10,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "criteria": 2,
+            "slice_node_median": 4,
+            "sliceable": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+            "criteria": 2,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "criteria": 1,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "criteria": 4,
+            "slice_node_median": 6,
+            "sliceable": 4
+          }
+        ],
+        "criteria_refused": 3,
+        "criteria_sliceable": 8,
+        "criteria_total": 11,
+        "refusals": [
+          {
+            "by_node_family": [
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+                "count": 2
+              },
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+                "count": 1
+              }
+            ],
+            "code": "M4_CRITERION_INVALID",
+            "count": 3
+          }
+        ],
+        "retained_fraction": {
+          "denominator_basis": "graph_node_count",
+          "max": 0.909091,
+          "median": 0.5,
+          "min": 0.090909
+        },
+        "slice_nodes": {
+          "max": 10,
+          "mean": 5.5,
+          "median": 5.5,
+          "min": 1
+        }
+      },
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter",
+      "node_count": 11
+    },
+    {
+      "cycles": {
+        "criteria_in_scc": 10,
+        "criteria_in_scc_terminated": 10,
+        "scc_count": 3,
+        "scc_sizes": [
+          3,
+          3,
+          4
+        ]
+      },
+      "edge_count": 36,
+      "execution": {
+        "by_node_family": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "criteria": 7,
+            "slice_node_median": 25,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CustomEvent",
+            "criteria": 1,
+            "slice_node_median": 1,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "criteria": 4,
+            "slice_node_median": 15,
+            "sliceable": 4
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "criteria": 7,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "criteria": 14,
+            "slice_node_median": 12,
+            "sliceable": 14
+          }
+        ],
+        "criteria_refused": 13,
+        "criteria_sliceable": 20,
+        "criteria_total": 33,
+        "refusals": [
+          {
+            "by_node_family": [
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+                "count": 6
+              },
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+                "count": 7
+              }
+            ],
+            "code": "M4_CRITERION_INVALID",
+            "count": 13
+          }
+        ],
+        "retained_fraction": {
+          "denominator_basis": "graph_node_count",
+          "max": 0.818182,
+          "median": 0.378788,
+          "min": 0.030303
+        },
+        "slice_nodes": {
+          "max": 27,
+          "mean": 13.0,
+          "median": 12.5,
+          "min": 1
+        }
+      },
+      "graph_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph",
+      "node_count": 33
+    },
+    {
+      "cycles": {
+        "criteria_in_scc": 6,
+        "criteria_in_scc_terminated": 6,
+        "scc_count": 1,
+        "scc_sizes": [
+          6
+        ]
+      },
+      "edge_count": 13,
+      "execution": {
+        "by_node_family": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "criteria": 2,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Event",
+            "criteria": 2,
+            "slice_node_median": 1,
+            "sliceable": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "criteria": 1,
+            "slice_node_median": 4,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Knot",
+            "criteria": 4,
+            "slice_node_median": 6,
+            "sliceable": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_MacroInstance",
+            "criteria": 2,
+            "slice_node_median": 6,
+            "sliceable": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "criteria": 1,
+            "slice_node_median": 7,
+            "sliceable": 1
+          }
+        ],
+        "criteria_refused": 4,
+        "criteria_sliceable": 8,
+        "criteria_total": 12,
+        "refusals": [
+          {
+            "by_node_family": [
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+                "count": 2
+              },
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_Knot",
+                "count": 2
+              }
+            ],
+            "code": "M4_CRITERION_INVALID",
+            "count": 4
+          }
+        ],
+        "retained_fraction": {
+          "denominator_basis": "graph_node_count",
+          "max": 0.833333,
+          "median": 0.416667,
+          "min": 0.083333
+        },
+        "slice_nodes": {
+          "max": 10,
+          "mean": 4.75,
+          "median": 5.0,
+          "min": 1
+        }
+      },
+      "graph_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph",
+      "node_count": 12
+    },
+    {
+      "cycles": {
+        "criteria_in_scc": 52,
+        "criteria_in_scc_terminated": 52,
+        "scc_count": 4,
+        "scc_sizes": [
+          13,
+          13,
+          13,
+          13
+        ]
+      },
+      "edge_count": 421,
+      "execution": {
+        "by_node_family": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "criteria": 84,
+            "slice_node_median": 5,
+            "sliceable": 60
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CustomEvent",
+            "criteria": 1,
+            "slice_node_median": 1,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_ExecutionSequence",
+            "criteria": 5,
+            "slice_node_median": 3,
+            "sliceable": 5
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "criteria": 36,
+            "slice_node_median": 2,
+            "sliceable": 36
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "criteria": 48,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "criteria": 164,
+            "slice_node_median": 3,
+            "sliceable": 164
+          }
+        ],
+        "criteria_refused": 72,
+        "criteria_sliceable": 266,
+        "criteria_total": 338,
+        "refusals": [
+          {
+            "by_node_family": [
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+                "count": 24
+              },
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+                "count": 48
+              }
+            ],
+            "code": "M4_CRITERION_INVALID",
+            "count": 72
+          }
+        ],
+        "retained_fraction": {
+          "denominator_basis": "graph_node_count",
+          "max": 0.130178,
+          "median": 0.008876,
+          "min": 0.002959
+        },
+        "slice_nodes": {
+          "max": 44,
+          "mean": 10.409774,
+          "median": 3.0,
+          "min": 1
+        }
+      },
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "node_count": 338
+    },
+    {
+      "cycles": {
+        "criteria_in_scc": 0,
+        "criteria_in_scc_terminated": 0,
+        "scc_count": 0,
+        "scc_sizes": []
+      },
+      "edge_count": 20,
+      "execution": {
+        "by_node_family": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "criteria": 8,
+            "slice_node_median": 3,
+            "sliceable": 7
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CustomEvent",
+            "criteria": 1,
+            "slice_node_median": 1,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Event",
+            "criteria": 3,
+            "slice_node_median": 1,
+            "sliceable": 3
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_ExecutionSequence",
+            "criteria": 1,
+            "slice_node_median": 2,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "criteria": 1,
+            "slice_node_median": 5,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Knot",
+            "criteria": 2,
+            "slice_node_median": 4,
+            "sliceable": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_MacroInstance",
+            "criteria": 1,
+            "slice_node_median": 2,
+            "sliceable": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+            "criteria": 2,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "criteria": 3,
+            "slice_node_median": null,
+            "sliceable": 0
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "criteria": 2,
+            "slice_node_median": 6,
+            "sliceable": 2
+          }
+        ],
+        "criteria_refused": 6,
+        "criteria_sliceable": 18,
+        "criteria_total": 24,
+        "refusals": [
+          {
+            "by_node_family": [
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+                "count": 1
+              },
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+                "count": 2
+              },
+              {
+                "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+                "count": 3
+              }
+            ],
+            "code": "M4_CRITERION_INVALID",
+            "count": 6
+          }
+        ],
+        "retained_fraction": {
+          "denominator_basis": "graph_node_count",
+          "max": 0.333333,
+          "median": 0.104167,
+          "min": 0.041667
+        },
+        "slice_nodes": {
+          "max": 8,
+          "mean": 3.388889,
+          "median": 2.5,
+          "min": 1
+        }
+      },
+      "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+      "node_count": 24
+    }
+  ],
+  "limitations": [
+    {
+      "id": "ONE_AUTHORED_CORPUS",
+      "statement": "This distribution is measured over one retained, project-owned M7 corpus and should not be generalized beyond that admitted dataset."
+    },
+    {
+      "id": "STRUCTURAL_NOT_COMPREHENSION",
+      "statement": "Node counts, retained fractions and cycle membership describe graph structure only; they do not establish that a reader understood the result."
+    },
+    {
+      "id": "BACKWARD_EXECUTION_ONLY",
+      "statement": "Every slice is the accepted backward execution context for a node criterion; bounded forward context is outside this measurement."
+    }
+  ],
+  "measured_on": "2026-08-23",
+  "schema_name": "blueprint-lens-m10-structural-effect",
+  "schema_version": "1.0.1"
+}

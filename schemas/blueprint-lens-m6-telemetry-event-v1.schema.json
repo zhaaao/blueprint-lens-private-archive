@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m6-telemetry-event-v1.schema.json",
+  "title": "Blueprint Lens M6 Telemetry Event v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "semantic_sha256",
+    "sequence",
+    "phase",
+    "event_type",
+    "payload",
+    "result"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._-]+$",
+      "minLength": 1
+    },
+    "semantic_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "sequence": { "type": "integer", "minimum": 1 },
+    "phase": { "enum": ["lifecycle", "interaction", "seal"] },
+    "event_type": {
+      "enum": [
+        "stage_started",
+        "stage_result",
+        "baseline_changed",
+        "entity_selected",
+        "entity_expanded",
+        "entity_collapsed",
+        "source_jump",
+        "reset",
+        "replay",
+        "record_sealed"
+      ]
+    },
+    "payload": { "type": "object" },
+    "result": {
+      "type": "object",
+      "required": ["status", "error_code"],
+      "properties": {
+        "status": {
+          "enum": ["ok", "error", "inapplicable", "sealed"]
+        },
+        "error_code": { "type": "string" },
+        "final_state": { "type": "object" }
+      }
+    },
+    "timestamp": { "type": "string", "minLength": 1 },
+    "duration_ms": { "type": "number", "minimum": 0 }
+  }
+}

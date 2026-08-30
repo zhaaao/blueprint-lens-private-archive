@@ -1,0 +1,1665 @@
+{
+  "blueprint": {
+    "graphs": [
+      {
+        "class": "/Script/Engine.EdGraph",
+        "edges": [
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48::pin::locator-output-OutputPin-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266::pin::locator-input-InputPin-0",
+            "kind": "execution",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48::pin::locator-output-OutputPin-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266::pin::locator-input-InputPin-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-output-then-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48::pin::locator-input-InputPin-0",
+            "kind": "execution",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-output-then-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48::pin::locator-input-InputPin-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-output-ReturnValue-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-Condition-0",
+            "kind": "data",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-output-ReturnValue-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-Condition-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5d2a735d-4a84-c568-fa79-7b897e015000::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-Open-0",
+            "kind": "execution",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5d2a735d-4a84-c568-fa79-7b897e015000",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5d2a735d-4a84-c568-fa79-7b897e015000::pin::locator-output-then-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-Open-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4::pin::locator-output-ReturnValue-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-input-A-0",
+            "kind": "data",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4::pin::locator-output-ReturnValue-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-input-A-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4::pin::locator-output-ReturnValue-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896::pin::locator-input-InputPin-0",
+            "kind": "data",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4::pin::locator-output-ReturnValue-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896::pin::locator-input-InputPin-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896::pin::locator-output-OutputPin-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158::pin::locator-input-InputPin-0",
+            "kind": "data",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896::pin::locator-output-OutputPin-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158::pin::locator-input-InputPin-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158::pin::locator-output-OutputPin-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-input-StoredGameMode-0",
+            "kind": "data",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158::pin::locator-output-OutputPin-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-input-StoredGameMode-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-output-Exit-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3::pin::locator-input-Execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-output-Exit-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3::pin::locator-input-Execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266::pin::locator-output-OutputPin-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-Close-0",
+            "kind": "execution",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266::pin::locator-output-OutputPin-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-Close-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3::pin::locator-output-Authority-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3::pin::locator-output-Authority-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::e0607f41-4815-d57b-2ca4-acbe83dda83a::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-Enter-0",
+            "kind": "execution",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::e0607f41-4815-d57b-2ca4-acbe83dda83a",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::e0607f41-4815-d57b-2ca4-acbe83dda83a::pin::locator-output-then-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-Enter-0"
+          }
+        ],
+        "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph",
+        "kind": "event",
+        "name": "EventGraph",
+        "nodes": [
+          {
+            "class": "/Script/BlueprintGraph.K2Node_Knot",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48",
+            "identity_source": "node_guid",
+            "native_guid": "0f071de3-4c38-554d-c00e-519c34424e48",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48::pin::locator-input-InputPin-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "InputPin",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48::pin::locator-output-OutputPin-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "OutputPin",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 1696,
+            "position_y": 816,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Reroute Node"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+            "identity_source": "node_guid",
+            "native_guid": "317c629f-4f35-54b1-096c-a59c0d372e6a",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-Condition-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Condition",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "branch_condition",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-output-else-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "else",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 1216,
+            "position_y": 592,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Branch"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+            "identity_source": "node_guid",
+            "native_guid": "5402da54-418c-a5d1-5f58-abbafa520621",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-input-StoredGameMode-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "StoredGameMode",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/Engine.GameModeBase",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/Engine.GameModeBase",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 1424,
+            "position_y": 608,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "70aac5cd-4183-e1fa-16ee-dfa0a3d09b67",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "StoredGameMode",
+              "parent_class": ""
+            },
+            "title": "Set StoredGameMode"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5",
+            "identity_source": "node_guid",
+            "native_guid": "58e25584-4903-9f8c-0ac8-24baab38dec5",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-input-A-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "A",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/CoreUObject.Object",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-input-B-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "B",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/CoreUObject.Object",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "/Script/Engine.Default__KismetMathLibrary",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/Engine.KismetMathLibrary",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-output-ReturnValue-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "ReturnValue",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 976,
+            "position_y": 704,
+            "semantic_reason": "function_body_not_expanded",
+            "semantic_status": "opaque",
+            "symbol": {
+              "guid": "",
+              "is_latent": false,
+              "is_local_scope": false,
+              "is_pure": true,
+              "is_self_context": false,
+              "kind": "function",
+              "name": "NotEqual_ObjectObject",
+              "parent_class": "/Script/Engine.KismetMathLibrary"
+            },
+            "title": "Not Equal (Object)"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_Event",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5d2a735d-4a84-c568-fa79-7b897e015000",
+            "identity_source": "node_guid",
+            "native_guid": "5d2a735d-4a84-c568-fa79-7b897e015000",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5d2a735d-4a84-c568-fa79-7b897e015000::pin::locator-output-OutputDelegate-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "OutputDelegate",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5d2a735d-4a84-c568-fa79-7b897e015000",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "delegate",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5d2a735d-4a84-c568-fa79-7b897e015000::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5d2a735d-4a84-c568-fa79-7b897e015000",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 192,
+            "position_y": 624,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Event BeginPlay"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4",
+            "identity_source": "node_guid",
+            "native_guid": "6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4::pin::locator-input-WorldContextObject-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "WorldContextObject",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": true,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/CoreUObject.Object",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "/Script/Engine.Default__GameplayStatics",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/Engine.GameplayStatics",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4::pin::locator-output-ReturnValue-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "ReturnValue",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/Engine.GameModeBase",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 768,
+            "position_y": 720,
+            "semantic_reason": "function_body_not_expanded",
+            "semantic_status": "opaque",
+            "symbol": {
+              "guid": "",
+              "is_latent": false,
+              "is_local_scope": false,
+              "is_pure": true,
+              "is_self_context": false,
+              "kind": "function",
+              "name": "GetGameMode",
+              "parent_class": "/Script/Engine.GameplayStatics"
+            },
+            "title": "GetGameMode"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_Knot",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896",
+            "identity_source": "node_guid",
+            "native_guid": "7e9cc9e1-4163-cb27-a940-1ebeca08b896",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896::pin::locator-input-InputPin-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "InputPin",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/Engine.GameModeBase",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896::pin::locator-output-OutputPin-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "OutputPin",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::7e9cc9e1-4163-cb27-a940-1ebeca08b896",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/Engine.GameModeBase",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 960,
+            "position_y": 784,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Reroute Node"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_Knot",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158",
+            "identity_source": "node_guid",
+            "native_guid": "93a6ca58-435c-96a5-71aa-408088656158",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158::pin::locator-input-InputPin-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "InputPin",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/Engine.GameModeBase",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158::pin::locator-output-OutputPin-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "OutputPin",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::93a6ca58-435c-96a5-71aa-408088656158",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Script/Engine.GameModeBase",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 1296,
+            "position_y": 784,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Reroute Node"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_MacroInstance",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+            "identity_source": "node_guid",
+            "native_guid": "b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-Close-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "Close",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-Enter-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "Enter",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-Open-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "Open",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-Toggle-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "Toggle",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-input-bStartClosed-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "bStartClosed",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c::pin::locator-output-Exit-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "Exit",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b37c7831-4d22-9ed9-0dcb-5fb53aeb4c4c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 480,
+            "position_y": 592,
+            "semantic_reason": "macro_body_not_expanded",
+            "semantic_status": "opaque",
+            "title": "Gate"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_Knot",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266",
+            "identity_source": "node_guid",
+            "native_guid": "b668795e-4f1b-97fc-c5dd-6ba9f69d4266",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266::pin::locator-input-InputPin-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "InputPin",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266::pin::locator-output-OutputPin-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "OutputPin",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 368,
+            "position_y": 816,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Reroute Node"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_MacroInstance",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3",
+            "identity_source": "node_guid",
+            "native_guid": "c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3::pin::locator-input-Execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "Execute",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3::pin::locator-output-Authority-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "Authority",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3::pin::locator-output-Remote-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "Remote",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 784,
+            "position_y": 592,
+            "semantic_reason": "macro_body_not_expanded",
+            "semantic_status": "opaque",
+            "title": "Switch Has Authority"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_Event",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::e0607f41-4815-d57b-2ca4-acbe83dda83a",
+            "identity_source": "node_guid",
+            "native_guid": "e0607f41-4815-d57b-2ca4-acbe83dda83a",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "0.0"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::e0607f41-4815-d57b-2ca4-acbe83dda83a::pin::locator-output-DeltaSeconds-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "DeltaSeconds",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::e0607f41-4815-d57b-2ca4-acbe83dda83a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "real",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "float"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::e0607f41-4815-d57b-2ca4-acbe83dda83a::pin::locator-output-OutputDelegate-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "OutputDelegate",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::e0607f41-4815-d57b-2ca4-acbe83dda83a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "delegate",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::e0607f41-4815-d57b-2ca4-acbe83dda83a::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::e0607f41-4815-d57b-2ca4-acbe83dda83a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 192,
+            "position_y": 432,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Event Tick"
+          }
+        ]
+      },
+      {
+        "class": "/Script/Engine.EdGraph",
+        "edges": [
+          {
+            "direction_is_valid": true,
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::643d2897-485d-2236-c5c5-388a8b8af1ca::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::643d2897-485d-2236-c5c5-388a8b8af1ca",
+            "source_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::643d2897-485d-2236-c5c5-388a8b8af1ca::pin::locator-output-then-0",
+            "target_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6",
+            "target_pin_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6::pin::locator-input-execute-0"
+          }
+        ],
+        "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript",
+        "kind": "construction_script",
+        "name": "UserConstructionScript",
+        "nodes": [
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6",
+            "identity_source": "node_guid",
+            "native_guid": "4a22199d-4cbe-1214-4f7a-819d0b3604c6",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6::pin::locator-input-SampleVariable-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "SampleVariable",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::4a22199d-4cbe-1214-4f7a-819d0b3604c6",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 288,
+            "position_y": 0,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "03bd10aa-43b0-70e0-0724-2196df15a920",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "SampleVariable",
+              "parent_class": ""
+            },
+            "title": "Set SampleVariable"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+            "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::643d2897-485d-2236-c5c5-388a8b8af1ca",
+            "identity_source": "node_guid",
+            "native_guid": "643d2897-485d-2236-c5c5-388a8b8af1ca",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::643d2897-485d-2236-c5c5-388a8b8af1ca::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript::node::643d2897-485d-2236-c5c5-388a8b8af1ca",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 0,
+            "position_y": 0,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Construction Script"
+          }
+        ]
+      }
+    ],
+    "id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample",
+    "name": "BP_M7_EngineSample",
+    "parent_class": "/Script/Engine.Actor",
+    "path": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample"
+  },
+  "counts": {
+    "edges": 14,
+    "graphs": 2,
+    "nodes": 14,
+    "opaque_nodes": 4,
+    "pins": 44,
+    "supported_nodes": 10,
+    "uncertain_nodes": 0,
+    "unsupported_nodes": 0
+  },
+  "engine_version": "5.8.1-56057345+++UE5+Release-5.8",
+  "format": "blueprint-lens",
+  "schema_version": "1.0.0"
+}

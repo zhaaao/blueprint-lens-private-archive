@@ -1,0 +1,14 @@
+{
+  "query_id": "M7-Q-C03-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668"
+  ],
+  "edge_ids": [],
+  "boundary": [],
+  "reasoning": [
+    "Execution rule 2.2: criterion /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668 (ComputeReadiness) is included as the root.",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed."
+  ],
+  "undetermined": []
+}

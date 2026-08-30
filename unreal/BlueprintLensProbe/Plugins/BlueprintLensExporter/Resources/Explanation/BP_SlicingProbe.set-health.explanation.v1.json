@@ -1,0 +1,295 @@
+{
+  "counts": {
+    "lanes": 6,
+    "relations": 5,
+    "source_edges": 7,
+    "source_nodes": 8,
+    "units": 6
+  },
+  "criterion_unit_id": "unit.criterion.set-health",
+  "format": "blueprint-lens-explanation",
+  "lanes": [
+    {
+      "empty_message": "",
+      "role": "criterion",
+      "state": "populated",
+      "unit_ids": [
+        "unit.criterion.set-health"
+      ]
+    },
+    {
+      "empty_message": "",
+      "role": "control",
+      "state": "populated",
+      "unit_ids": [
+        "unit.control.event-begin-play",
+        "unit.control.sequence",
+        "unit.control.branch"
+      ]
+    },
+    {
+      "empty_message": "",
+      "role": "predicate",
+      "state": "populated",
+      "unit_ids": [
+        "unit.predicate.health-positive"
+      ]
+    },
+    {
+      "empty_message": "",
+      "role": "value",
+      "state": "populated",
+      "unit_ids": [
+        "unit.value.health-minus-ten"
+      ]
+    },
+    {
+      "empty_message": "Not enabled in this backward-only query",
+      "role": "consequence",
+      "state": "not_enabled",
+      "unit_ids": []
+    },
+    {
+      "empty_message": "All selected constructs supported",
+      "role": "boundary",
+      "state": "empty",
+      "unit_ids": []
+    }
+  ],
+  "query": {
+    "criterion_source_node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c",
+    "direction": "backward_only",
+    "question": "Why does Set Health execute, and where does its assigned value come from?"
+  },
+  "relations": [
+    {
+      "id": "relation.execution.begin-play-to-sequence",
+      "kind": "execution_predecessor",
+      "label": "then",
+      "source_edge_ids": [
+        "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::0a170a17-4a0e-e306-76df-ac876e3d5f01::pin::locator-output-then-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e::pin::locator-input-execute-0"
+      ],
+      "source_unit_id": "unit.control.event-begin-play",
+      "target_unit_id": "unit.control.sequence"
+    },
+    {
+      "id": "relation.execution.sequence-to-branch",
+      "kind": "execution_predecessor",
+      "label": "then 0",
+      "source_edge_ids": [
+        "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e::pin::locator-output-then_0-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-execute-0"
+      ],
+      "source_unit_id": "unit.control.sequence",
+      "target_unit_id": "unit.control.branch"
+    },
+    {
+      "id": "relation.control.branch-to-set-health",
+      "kind": "controls_execution",
+      "label": "true branch",
+      "source_edge_ids": [
+        "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-output-then-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-execute-0"
+      ],
+      "source_unit_id": "unit.control.branch",
+      "target_unit_id": "unit.criterion.set-health"
+    },
+    {
+      "id": "relation.predicate.health-positive-to-branch",
+      "kind": "predicate_for",
+      "label": "condition",
+      "source_edge_ids": [
+        "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-input-A-0",
+        "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-output-ReturnValue-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-Condition-0"
+      ],
+      "source_unit_id": "unit.predicate.health-positive",
+      "target_unit_id": "unit.control.branch"
+    },
+    {
+      "id": "relation.value.health-minus-ten-to-set-health",
+      "kind": "provides_value",
+      "label": "Health input",
+      "source_edge_ids": [
+        "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80::pin::locator-output-ReturnValue-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-Health-0",
+        "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80::pin::locator-input-A-0"
+      ],
+      "source_unit_id": "unit.value.health-minus-ten",
+      "target_unit_id": "unit.criterion.set-health"
+    }
+  ],
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "source": {
+    "blueprint_asset_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+    "blueprint_package_sha256": "FFB14E0C9AB22E8FCD71472E063EE6F8F6C74B1FE3F5BFA8F0490E93C0C831B9",
+    "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+    "ir_path": "fixtures/v1/BP_SlicingProbe.v1.json",
+    "ir_sha256": "7A39FF8159761491DC8490AABB0449BAC4638AF9ADF488BBE3CB476F58943496",
+    "slice_path": "artifacts/v1/BP_SlicingProbe.execution.slice.v1.json",
+    "slice_sha256": "69DDF094A02910EA734FE4244C49D7F7F6A118DA9004060E0B04BDE8D8DC8671"
+  },
+  "units": [
+    {
+      "expression": "",
+      "id": "unit.criterion.set-health",
+      "inclusion_reasons": [
+        "criterion"
+      ],
+      "kind": "node",
+      "role": "criterion",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+          "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+          "native_node_guid": "63180c9c-4c18-1a57-ca71-60b47521033c",
+          "primary": true,
+          "source_node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c",
+          "source_pin_ids": [
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-execute-0",
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-Health-0"
+          ]
+        }
+      ],
+      "title": "Set Health"
+    },
+    {
+      "expression": "",
+      "id": "unit.control.event-begin-play",
+      "inclusion_reasons": [
+        "execution_predecessor"
+      ],
+      "kind": "node",
+      "role": "control",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+          "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+          "native_node_guid": "0a170a17-4a0e-e306-76df-ac876e3d5f01",
+          "primary": true,
+          "source_node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::0a170a17-4a0e-e306-76df-ac876e3d5f01",
+          "source_pin_ids": [
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::0a170a17-4a0e-e306-76df-ac876e3d5f01::pin::locator-output-then-0"
+          ]
+        }
+      ],
+      "title": "Event BeginPlay"
+    },
+    {
+      "expression": "",
+      "id": "unit.control.sequence",
+      "inclusion_reasons": [
+        "execution_predecessor"
+      ],
+      "kind": "node",
+      "role": "control",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+          "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+          "native_node_guid": "ff067901-4f51-b8c2-4b11-cda9a6bde21e",
+          "primary": true,
+          "source_node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e",
+          "source_pin_ids": [
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e::pin::locator-input-execute-0",
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e::pin::locator-output-then_0-0"
+          ]
+        }
+      ],
+      "title": "Sequence"
+    },
+    {
+      "expression": "",
+      "id": "unit.control.branch",
+      "inclusion_reasons": [
+        "execution_predecessor"
+      ],
+      "kind": "node",
+      "role": "control",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+          "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+          "native_node_guid": "cbbd5a81-42fa-5ea1-6363-c09cebb1efb2",
+          "primary": true,
+          "source_node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2",
+          "source_pin_ids": [
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-output-then-0",
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-Condition-0",
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-execute-0"
+          ]
+        }
+      ],
+      "title": "Branch"
+    },
+    {
+      "expression": "Health > 0",
+      "id": "unit.predicate.health-positive",
+      "inclusion_reasons": [
+        "required_data_producer"
+      ],
+      "kind": "expression",
+      "role": "predicate",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+          "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+          "native_node_guid": "b65b6930-4042-ba18-ea89-79b906d351ec",
+          "primary": false,
+          "source_node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec",
+          "source_pin_ids": [
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec::pin::locator-output-Health-0"
+          ]
+        },
+        {
+          "blueprint_asset_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+          "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+          "native_node_guid": "d609619c-44bc-d2f0-ef2a-aba7f13d1ea7",
+          "primary": true,
+          "source_node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7",
+          "source_pin_ids": [
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-input-A-0",
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-output-ReturnValue-0"
+          ]
+        }
+      ],
+      "title": "Health is positive"
+    },
+    {
+      "expression": "Health - 10",
+      "id": "unit.value.health-minus-ten",
+      "inclusion_reasons": [
+        "required_data_producer"
+      ],
+      "kind": "expression",
+      "role": "value",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+          "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+          "native_node_guid": "fd6fa7a3-4434-6992-629e-15bf05340f5a",
+          "primary": false,
+          "source_node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a",
+          "source_pin_ids": [
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a::pin::locator-output-Health-0"
+          ]
+        },
+        {
+          "blueprint_asset_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+          "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+          "native_node_guid": "f84a6e45-473e-5019-1800-7f884b5e7b80",
+          "primary": true,
+          "source_node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80",
+          "source_pin_ids": [
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80::pin::locator-output-ReturnValue-0",
+            "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80::pin::locator-input-A-0"
+          ]
+        }
+      ],
+      "title": "Assigned value"
+    }
+  ]
+}

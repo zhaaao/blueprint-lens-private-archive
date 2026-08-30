@@ -1,0 +1,32 @@
+{
+  "candidate_graph_count": 8,
+  "claim_boundary": "bounded M3 deterministic export, schema/identity fidelity, risk coverage, adapter readiness, and engineering smoke only; no runtime, human, default, or general scalability claim",
+  "covered_risk_dimensions": [
+    "source_traceability_and_progressive_disclosure",
+    "branching_and_incomparable_outcomes",
+    "data_provenance_fan_in_fan_out",
+    "sequence_async_completion_and_synchronization",
+    "call_and_context",
+    "opaque_unsupported_and_query_budget_boundaries",
+    "cycles_and_multiple_sccs",
+    "small_medium_large_scale"
+  ],
+  "dangling_reference_count": 0,
+  "duplicate_entity_count": 0,
+  "node_count": 211,
+  "regression_asset_count": 8,
+  "scale_band_counts": {
+    "large": 1,
+    "medium": 4,
+    "small": 3
+  },
+  "schema_name": "blueprint-lens-m3-fidelity-coverage-report",
+  "schema_version": "1.0.0",
+  "semantic_status_counts": {
+    "opaque": 36,
+    "supported": 166,
+    "uncertain": 4,
+    "unsupported": 5
+  },
+  "unclassified_node_count": 0
+}

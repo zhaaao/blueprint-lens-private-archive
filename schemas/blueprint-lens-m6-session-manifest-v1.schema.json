@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m6-session-manifest-v1.schema.json",
+  "title": "Blueprint Lens M6 Session Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schema_version",
+    "generator_version",
+    "query_kind",
+    "source_fingerprint",
+    "renderer_id",
+    "versions",
+    "semantic_sha256",
+    "files",
+    "counts"
+  ],
+  "properties": {
+    "format": { "const": "blueprint-lens-m6-session-manifest" },
+    "schema_version": { "const": "1.0.0" },
+    "generator_version": { "const": "m6-session-pipeline-v1" },
+    "query_kind": { "enum": ["execution", "data"] },
+    "source_fingerprint": { "$ref": "#/$defs/sha256" },
+    "renderer_id": { "const": "R1_GENERIC_FRAME_FLOW_V1" },
+    "versions": { "$ref": "#/$defs/versions" },
+    "semantic_sha256": { "$ref": "#/$defs/sha256" },
+    "files": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": { "$ref": "#/$defs/file" },
+      "uniqueItems": true
+    },
+    "counts": { "$ref": "#/$defs/counts" }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "versions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "raw",
+        "typed_ir",
+        "slice_rules",
+        "explanation",
+        "baseline_facts"
+      ],
+      "properties": {
+        "raw": { "const": "0.2" },
+        "typed_ir": { "const": "1.0.0" },
+        "slice_rules": { "const": "1.0.0" },
+        "explanation": { "const": "1.0.0" },
+        "baseline_facts": { "const": "1.0.0" }
+      }
+    },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "path", "sha256"],
+      "properties": {
+        "role": {
+          "enum": [
+            "request",
+            "raw_source",
+            "typed_source",
+            "slice",
+            "explanation",
+            "baseline_facts"
+          ]
+        },
+        "path": {
+          "enum": [
+            "request.json",
+            "raw-source.json",
+            "typed-source.json",
+            "slice.json",
+            "explanation.json",
+            "baseline-facts.json"
+          ]
+        },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bound_files",
+        "packet_files",
+        "selected_entities",
+        "selected_relations"
+      ],
+      "properties": {
+        "bound_files": { "const": 6 },
+        "packet_files": { "const": 7 },
+        "selected_entities": { "type": "integer", "minimum": 1 },
+        "selected_relations": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "criterion": {
+    "graph_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph",
+    "member_guid": "c1ece1ef-4295-6131-552a-589bec897444",
+    "member_name": "M3ParcelComplete",
+    "question": "Derive the data dependency slice for the M3ParcelComplete member across the multi-SCC graph."
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:UserConstructionScript: excluded because slicing is graph-local to EventGraph",
+    "No downstream consumers of a member Get are selected (data rule 8)",
+    "31 of 33 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 0,
+      "edges": 1,
+      "execution_edges": 1,
+      "nodes": 2
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4aad83e7-481d-1697-83bd-37b6bd1b8b5c::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::238c69c9-47ee-b942-5e43-b89cfffe919a::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::238c69c9-47ee-b942-5e43-b89cfffe919a",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4aad83e7-481d-1697-83bd-37b6bd1b8b5c"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, frozen eighteen. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "member_variable_data_dependency",
+  "source_fixture": "af88808755640042329d2c05f0cd80b49ad186548244e8b33baad2c1ce1e5267.blueprint-lens-v1.json",
+  "source_sha256": "8ABEACFBB7061F44BBF2E60293AE1E62195A3FD62E140A6ABCD14463878775EB"
+}

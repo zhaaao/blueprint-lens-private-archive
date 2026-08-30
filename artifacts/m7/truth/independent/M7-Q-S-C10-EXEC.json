@@ -1,0 +1,50 @@
+{
+  "query_id": "M7-Q-S-C10-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3"
+  ],
+  "edge_ids": [
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48::pin::locator-output-OutputPin-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266::pin::locator-input-InputPin-0",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-input-execute-0",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48::pin::locator-input-InputPin-0",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-output-ReturnValue-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-Condition-0",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4::pin::locator-output-ReturnValue-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-input-A-0",
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3::pin::locator-output-Authority-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-execute-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5",
+      "why": "data rule 2.6: opaque function call retained; function graph is not expanded"
+    },
+    {
+      "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4",
+      "why": "data rule 2.6: opaque function call retained; function graph is not expanded"
+    },
+    {
+      "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3",
+      "why": "execution rule 2.5/4: opaque predecessor retained as a visible boundary; traversal stops"
+    }
+  ],
+  "reasoning": [
+    "Ambiguity reading: /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5 (Not Equal (Object)) reports is_pure=true but semantic_status=opaque; the named opaque-function case in data rule 2.6 takes precedence over supported-pure continuation.",
+    "Ambiguity reading: /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4 (GetGameMode) reports is_pure=true but semantic_status=opaque; the named opaque-function case in data rule 2.6 takes precedence over supported-pure continuation.",
+    "Execution rule 2.2: criterion /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266 (Reroute Node) is included as the root.",
+    "Execution rule 2.4: 3 supported execution predecessors were included and reverse traversal continued through each; cycles were guarded by visited IDs.",
+    "Execution rule 2.6: Branch /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a (Branch) contributes only its marked branch_condition pin /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-Condition-0; non-condition data pins and unrelated output paths are not roots.",
+    "Execution rule 2.6: root pin /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-Condition-0 receives producer /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5 (Not Equal (Object)).",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed.",
+    "Rule 2.5: /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3 (Switch Has Authority) is a opaque execution predecessor, so it is included but not traversed further.",
+    "Rule 2.6/2.7: /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5 (Not Equal (Object)) entered data traversal via data_root; status=opaque, so its applicable boundary rule was applied.",
+    "Rule 2.6/2.7: /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4 (GetGameMode) entered data traversal via opaque_input_producer; status=opaque, so its applicable boundary rule was applied.",
+    "Rule 2.6: opaque call /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5 (Not Equal (Object)) retains explicit input producer /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4 (GetGameMode) from pin /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-input-A-0; reason=opaque_input_producer.",
+    "Rule 2.6: opaque call /Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4 (GetGameMode) has no connected explicit data-input producer in the typed IR, so none was added."
+  ],
+  "undetermined": []
+}

@@ -1,0 +1,51 @@
+{
+  "query_id": "M7-Q-S-C02-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::161a2cc2-4fa8-0c63-1a65-3a8208f616f2",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::376fdf7e-436d-f921-04ef-f5a79bce5c7a",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::4091bcad-432a-3718-d733-3ab29eeb0c9f",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::50273b7f-433a-c06d-1889-328fcf6c5f2a",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::54ee58ce-41ab-65cc-5a51-03a178ab1811",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::69d60620-4e54-5210-0757-60b7147f2dfd",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::7a8d77d9-4808-25a4-27c2-1c89efeb0880",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::be88db39-4b56-2182-f0d8-e2a4c6726cea",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::d121002b-44ff-50fc-db72-75bfb3246831"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::d121002b-44ff-50fc-db72-75bfb3246831::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::161a2cc2-4fa8-0c63-1a65-3a8208f616f2::pin::locator-output-ArmorValue-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::69d60620-4e54-5210-0757-60b7147f2dfd::pin::locator-input-A-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::161a2cc2-4fa8-0c63-1a65-3a8208f616f2::pin::locator-output-HealthValue-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::376fdf7e-436d-f921-04ef-f5a79bce5c7a::pin::locator-input-A-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::161a2cc2-4fa8-0c63-1a65-3a8208f616f2::pin::locator-output-ThreatValue-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::69d60620-4e54-5210-0757-60b7147f2dfd::pin::locator-input-B-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::161a2cc2-4fa8-0c63-1a65-3a8208f616f2::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::7a8d77d9-4808-25a4-27c2-1c89efeb0880::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::376fdf7e-436d-f921-04ef-f5a79bce5c7a::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::7a8d77d9-4808-25a4-27c2-1c89efeb0880::pin::locator-input-Condition-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::4091bcad-432a-3718-d733-3ab29eeb0c9f::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::50273b7f-433a-c06d-1889-328fcf6c5f2a::pin::locator-output-else-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::4091bcad-432a-3718-d733-3ab29eeb0c9f::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::50273b7f-433a-c06d-1889-328fcf6c5f2a::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::54ee58ce-41ab-65cc-5a51-03a178ab1811::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::54ee58ce-41ab-65cc-5a51-03a178ab1811::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::69d60620-4e54-5210-0757-60b7147f2dfd::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::50273b7f-433a-c06d-1889-328fcf6c5f2a::pin::locator-input-Condition-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::7a8d77d9-4808-25a4-27c2-1c89efeb0880::pin::locator-output-else-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::be88db39-4b56-2182-f0d8-e2a4c6726cea::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::7a8d77d9-4808-25a4-27c2-1c89efeb0880::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::50273b7f-433a-c06d-1889-328fcf6c5f2a::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::be88db39-4b56-2182-f0d8-e2a4c6726cea::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::0988c876-4804-1d3b-ee91-ed86086514b8::pin::locator-input-execute-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::69d60620-4e54-5210-0757-60b7147f2dfd",
+      "why": "data rule 2.7: uncertain producer retained as a boundary; traversal stops"
+    }
+  ],
+  "reasoning": [
+    "Ambiguity reading: /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::161a2cc2-4fa8-0c63-1a65-3a8208f616f2 (EvaluateEncounter) lacks symbol.is_pure; it is treated as a supported graph-visible source/transparent reroute for data rule 2.7, with only its explicit incoming data edges followed; this rejects stopping solely because the optional purity flag is absent.",
+    "Execution rule 2.2: criterion /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::d121002b-44ff-50fc-db72-75bfb3246831 (Return Node) is included as the root.",
+    "Execution rule 2.4: 7 supported execution predecessors were included and reverse traversal continued through each; cycles were guarded by visited IDs.",
+    "Execution rule 2.6: Branch /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::50273b7f-433a-c06d-1889-328fcf6c5f2a (Branch) contributes only its marked branch_condition pin /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::50273b7f-433a-c06d-1889-328fcf6c5f2a::pin::locator-input-Condition-0; non-condition data pins and unrelated output paths are not roots.",
+    "Execution rule 2.6: Branch /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::7a8d77d9-4808-25a4-27c2-1c89efeb0880 (Branch) contributes only its marked branch_condition pin /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::7a8d77d9-4808-25a4-27c2-1c89efeb0880::pin::locator-input-Condition-0; non-condition data pins and unrelated output paths are not roots.",
+    "Execution rule 2.6: root pin /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::50273b7f-433a-c06d-1889-328fcf6c5f2a::pin::locator-input-Condition-0 receives producer /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::69d60620-4e54-5210-0757-60b7147f2dfd (integer >= integer).",
+    "Execution rule 2.6: root pin /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::7a8d77d9-4808-25a4-27c2-1c89efeb0880::pin::locator-input-Condition-0 receives producer /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::376fdf7e-436d-f921-04ef-f5a79bce5c7a (integer > integer).",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed.",
+    "Rule 2.6/2.7: /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::69d60620-4e54-5210-0757-60b7147f2dfd (integer >= integer) entered data traversal via data_root; status=uncertain, so its applicable boundary rule was applied.",
+    "Rule 2.7: supported pure producer /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::376fdf7e-436d-f921-04ef-f5a79bce5c7a (integer > integer) is included and its incoming data edges are followed."
+  ],
+  "undetermined": []
+}

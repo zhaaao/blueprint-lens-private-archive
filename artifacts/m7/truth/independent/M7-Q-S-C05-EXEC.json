@@ -1,0 +1,26 @@
+{
+  "query_id": "M7-Q-S-C05-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::1d27282b-45ad-6d3e-6b10-328738c3daaa",
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::4c733898-4c04-882e-f540-f28ebf82fa9a",
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::cf20391b-47d9-5493-fba2-0cb745443345"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::edge::/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::1d27282b-45ad-6d3e-6b10-328738c3daaa::pin::locator-output-then_1-0->/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::4c733898-4c04-882e-f540-f28ebf82fa9a::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::edge::/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::cf20391b-47d9-5493-fba2-0cb745443345::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::1d27282b-45ad-6d3e-6b10-328738c3daaa::pin::locator-input-execute-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::cf20391b-47d9-5493-fba2-0cb745443345",
+      "why": "execution rule 2.5/4: opaque predecessor retained as a visible boundary; traversal stops"
+    }
+  ],
+  "reasoning": [
+    "Execution rule 2.2: criterion /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::4c733898-4c04-882e-f540-f28ebf82fa9a (RecordLC4AsyncLaunch) is included as the root.",
+    "Execution rule 2.4: 1 supported execution predecessors were included and reverse traversal continued through each; cycles were guarded by visited IDs.",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed.",
+    "Rule 2.5: /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::cf20391b-47d9-5493-fba2-0cb745443345 (BeginLC4AsyncInvocation) is a opaque execution predecessor, so it is included but not traversed further."
+  ],
+  "undetermined": []
+}

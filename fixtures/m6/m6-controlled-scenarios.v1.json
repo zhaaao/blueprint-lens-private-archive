@@ -1,0 +1,81 @@
+{
+  "scenarios": [
+    {
+      "expected": {
+        "node_count": 9,
+        "relation_count": 10
+      },
+      "ground_truth": {
+        "path": "artifacts/r1/lc2-guard-truth/BP_LC2_NestedGuards.execution.ground-truth.v1.json",
+        "sha256": "f8a45bba980aa6966f492bd3a155a62c5ff9067cfaa56bd45fe0d488622c696a"
+      },
+      "request": {
+        "asset_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards",
+        "criterion": {
+          "criterion_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+          "direction": "backward",
+          "graph_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph",
+          "kind": "execution"
+        },
+        "graph_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph",
+        "presentation_budget": {
+          "max_visible_entities": 128,
+          "max_visible_relations": 256
+        },
+        "query_kind": "execution",
+        "raw_version": "0.2",
+        "renderer_id": "R1_GENERIC_FRAME_FLOW_V1",
+        "schema_name": "blueprint-lens-m6-request",
+        "schema_version": "1.0.0",
+        "semantic_budget": {
+          "max_selected_nodes": 128,
+          "max_selected_relations": 256
+        },
+        "slice_rules_version": "1.0.0",
+        "source_fingerprint": "3237123e67644493014a60af1173200d8a40110fad3e4608638e280282648122",
+        "typed_ir_version": "1.0.0"
+      },
+      "scenario_id": "M6-E01"
+    },
+    {
+      "expected": {
+        "node_count": 7,
+        "relation_count": 6
+      },
+      "ground_truth": {
+        "path": "artifacts/r1/lc3-value-truth/BP_LC3_ValueProvenance.data.ground-truth.v1.json",
+        "sha256": "ce1fa1f7a080216f472ca4563426e1101ab463da131c8e74589790e200504178"
+      },
+      "request": {
+        "asset_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+        "criterion": {
+          "direction": "backward",
+          "expected_member_name": "LC3Score",
+          "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+          "kind": "data",
+          "member_guid": "175c3370-4752-21d1-da22-4e94033ccbe5"
+        },
+        "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+        "presentation_budget": {
+          "max_visible_entities": 128,
+          "max_visible_relations": 256
+        },
+        "query_kind": "data",
+        "raw_version": "0.2",
+        "renderer_id": "R1_GENERIC_FRAME_FLOW_V1",
+        "schema_name": "blueprint-lens-m6-request",
+        "schema_version": "1.0.0",
+        "semantic_budget": {
+          "max_selected_nodes": 128,
+          "max_selected_relations": 256
+        },
+        "slice_rules_version": "1.0.0",
+        "source_fingerprint": "8523303754c909a393a78ca7a4f9f52865dd024a5bdeb7a540824fbc7611ea5e",
+        "typed_ir_version": "1.0.0"
+      },
+      "scenario_id": "M6-D01"
+    }
+  ],
+  "schema_name": "blueprint-lens-m6-controlled-scenarios",
+  "schema_version": "1.0.0"
+}

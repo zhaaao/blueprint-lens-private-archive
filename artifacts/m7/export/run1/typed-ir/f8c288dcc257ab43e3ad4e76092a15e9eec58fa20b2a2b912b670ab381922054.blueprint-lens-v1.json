@@ -1,0 +1,1563 @@
+{
+  "blueprint": {
+    "graphs": [
+      {
+        "class": "/Script/Engine.EdGraph",
+        "edges": [
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+            "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93",
+            "target_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_0-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+            "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_0-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8",
+            "target_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_1-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+            "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_1-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37",
+            "target_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_2-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+            "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_2-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a",
+            "target_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37",
+            "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9",
+            "target_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9",
+            "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+            "target_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8",
+            "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf",
+            "target_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::dd625b98-43d7-960d-b1f9-9f9bf86b4362::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::dd625b98-43d7-960d-b1f9-9f9bf86b4362",
+            "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::dd625b98-43d7-960d-b1f9-9f9bf86b4362::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+            "target_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::edge::/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf",
+            "source_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+            "target_pin_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-input-execute-0"
+          }
+        ],
+        "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph",
+        "kind": "event",
+        "name": "EventGraph",
+        "nodes": [
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+            "identity_source": "node_guid",
+            "native_guid": "13ea0ba2-4b12-9f49-72f8-faad36310c13",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-input-LC4Reconverged-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "LC4Reconverged",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::13ea0ba2-4b12-9f49-72f8-faad36310c13",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 240,
+            "position_y": -112,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "c6439aae-4fb4-a88c-2cd0-9e8e79b96381",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "LC4Reconverged",
+              "parent_class": ""
+            },
+            "title": "Set LC4Reconverged"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_ExecutionSequence",
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+            "identity_source": "node_guid",
+            "native_guid": "550c6ff9-469c-2849-9e00-289f7d98d82f",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_0-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then_0",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_1-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then_1",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_2-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then_2",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f::pin::locator-output-then_3-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then_3",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::550c6ff9-469c-2849-9e00-289f7d98d82f",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": -704,
+            "position_y": 0,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Sequence"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37",
+            "identity_source": "node_guid",
+            "native_guid": "6ddf096b-45de-a542-c98b-26bdd49c8c37",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-input-LC4BranchB1-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "LC4BranchB1",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::6ddf096b-45de-a542-c98b-26bdd49c8c37",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": -400,
+            "position_y": 96,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "1fdb46c7-44b5-94ad-36a3-719c321abb7a",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "LC4BranchB1",
+              "parent_class": ""
+            },
+            "title": "Set LC4BranchB1"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a",
+            "identity_source": "node_guid",
+            "native_guid": "8e4e88de-4ff5-cf66-b613-a99208094b0a",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a::pin::locator-input-LC4SideEffect-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "LC4SideEffect",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::8e4e88de-4ff5-cf66-b613-a99208094b0a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": -112,
+            "position_y": 448,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "ed7c6943-4c2b-5b45-7f4c-1e922ed1cdb6",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "LC4SideEffect",
+              "parent_class": ""
+            },
+            "title": "Set LC4SideEffect"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9",
+            "identity_source": "node_guid",
+            "native_guid": "9b3e8e6e-418f-a316-f791-cab3d5addae9",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-input-LC4BranchB2-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "LC4BranchB2",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::9b3e8e6e-418f-a316-f791-cab3d5addae9",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": -112,
+            "position_y": 96,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "6d5545f1-4e1a-cf0b-975b-3b80fb8be48b",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "LC4BranchB2",
+              "parent_class": ""
+            },
+            "title": "Set LC4BranchB2"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8",
+            "identity_source": "node_guid",
+            "native_guid": "d68f13ea-471b-a090-f0c3-ecadf42e69e8",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-input-LC4BranchA1-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "LC4BranchA1",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::d68f13ea-471b-a090-f0c3-ecadf42e69e8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": -400,
+            "position_y": -304,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "0bc26151-4db5-192e-d178-11bd2f5eaba5",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "LC4BranchA1",
+              "parent_class": ""
+            },
+            "title": "Set LC4BranchA1"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93",
+            "identity_source": "node_guid",
+            "native_guid": "da604371-4208-a9cc-a6f3-b388dc461c93",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93::pin::locator-input-LC4Complete-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "LC4Complete",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::da604371-4208-a9cc-a6f3-b388dc461c93",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 544,
+            "position_y": -112,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "f51e5bb4-44b4-fb2b-0b89-efb579634139",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "LC4Complete",
+              "parent_class": ""
+            },
+            "title": "Set LC4Complete"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_Event",
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::dd625b98-43d7-960d-b1f9-9f9bf86b4362",
+            "identity_source": "node_guid",
+            "native_guid": "dd625b98-43d7-960d-b1f9-9f9bf86b4362",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::dd625b98-43d7-960d-b1f9-9f9bf86b4362::pin::locator-output-OutputDelegate-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "OutputDelegate",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::dd625b98-43d7-960d-b1f9-9f9bf86b4362",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "delegate",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::dd625b98-43d7-960d-b1f9-9f9bf86b4362::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::dd625b98-43d7-960d-b1f9-9f9bf86b4362",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": -1008,
+            "position_y": 0,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Event BeginPlay"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf",
+            "identity_source": "node_guid",
+            "native_guid": "ef25b6b2-45d0-4676-14be-1b871d88e0cf",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-input-LC4BranchA2-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "LC4BranchA2",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:EventGraph::node::ef25b6b2-45d0-4676-14be-1b871d88e0cf",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": -112,
+            "position_y": -304,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "dcdc5c85-481a-5714-770a-4f83c32923b6",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "LC4BranchA2",
+              "parent_class": ""
+            },
+            "title": "Set LC4BranchA2"
+          }
+        ]
+      },
+      {
+        "class": "/Script/Engine.EdGraph",
+        "edges": [],
+        "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:UserConstructionScript",
+        "kind": "construction_script",
+        "name": "UserConstructionScript",
+        "nodes": [
+          {
+            "class": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+            "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:UserConstructionScript::node::26ccb675-4eeb-c2ce-8e1c-fc9a2d83b746",
+            "identity_source": "node_guid",
+            "native_guid": "26ccb675-4eeb-c2ce-8e1c-fc9a2d83b746",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:UserConstructionScript::node::26ccb675-4eeb-c2ce-8e1c-fc9a2d83b746::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure:UserConstructionScript::node::26ccb675-4eeb-c2ce-8e1c-fc9a2d83b746",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 0,
+            "position_y": 0,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Construction Script"
+          }
+        ]
+      }
+    ],
+    "id": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure",
+    "name": "BP_LC4_SequenceDisclosure",
+    "parent_class": "/Script/Engine.Actor",
+    "path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure"
+  },
+  "counts": {
+    "edges": 9,
+    "graphs": 2,
+    "nodes": 10,
+    "opaque_nodes": 0,
+    "pins": 43,
+    "supported_nodes": 10,
+    "uncertain_nodes": 0,
+    "unsupported_nodes": 0
+  },
+  "engine_version": "5.8.1-56057345+++UE5+Release-5.8",
+  "format": "blueprint-lens",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m6-g6-evidence-v1.schema.json",
+  "title": "Blueprint Lens M6 G6 Evidence v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schema_version",
+    "registry",
+    "scenarios",
+    "baseline_parity",
+    "visible_review",
+    "negative_matrix",
+    "denominators",
+    "missing",
+    "retained_files",
+    "counts"
+  ],
+  "properties": {
+    "format": { "const": "blueprint-lens-m6-g6-evidence" },
+    "schema_version": { "const": "1.0.0" },
+    "registry": { "$ref": "#/$defs/path_hash" },
+    "scenarios": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "$ref": "#/$defs/scenario" }
+    },
+    "baseline_parity": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": { "$ref": "#/$defs/parity" }
+    },
+    "visible_review": { "$ref": "#/$defs/path_hash" },
+    "negative_matrix": { "$ref": "#/$defs/nine_of_nine" },
+    "denominators": { "$ref": "#/$defs/denominators" },
+    "missing": { "$ref": "#/$defs/missing" },
+    "retained_files": {
+      "type": "array",
+      "minItems": 44,
+      "maxItems": 44,
+      "items": { "$ref": "#/$defs/path_hash" }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["retained_files"],
+      "properties": { "retained_files": { "const": 45 } }
+    }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "portable_path": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    },
+    "path_hash": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "$ref": "#/$defs/portable_path" },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "generation",
+        "packet_path",
+        "semantic_sha256",
+        "telemetry_path",
+        "telemetry_sha256"
+      ],
+      "properties": {
+        "generation": { "enum": [1, 2] },
+        "packet_path": { "$ref": "#/$defs/portable_path" },
+        "semantic_sha256": { "$ref": "#/$defs/sha256" },
+        "telemetry_path": { "$ref": "#/$defs/portable_path" },
+        "telemetry_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "scenario": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scenario_id",
+        "query_kind",
+        "truth_path",
+        "truth_sha256",
+        "expected_node_count",
+        "expected_relation_count",
+        "semantic_agreement",
+        "generations"
+      ],
+      "properties": {
+        "scenario_id": { "enum": ["M6-E01", "M6-D01"] },
+        "query_kind": { "enum": ["execution", "data"] },
+        "truth_path": { "$ref": "#/$defs/portable_path" },
+        "truth_sha256": { "$ref": "#/$defs/sha256" },
+        "expected_node_count": { "type": "integer", "minimum": 1 },
+        "expected_relation_count": { "type": "integer", "minimum": 0 },
+        "semantic_agreement": { "const": true },
+        "generations": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "$ref": "#/$defs/generation" }
+        }
+      }
+    },
+    "parity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scenario_id", "generation", "baseline_id", "passed"],
+      "properties": {
+        "scenario_id": { "enum": ["M6-E01", "M6-D01"] },
+        "generation": { "enum": [1, 2] },
+        "baseline_id": { "enum": ["A", "B", "C"] },
+        "passed": { "const": true }
+      }
+    },
+    "nine_of_nine": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total"],
+      "properties": {
+        "passed": { "const": 9 },
+        "total": { "const": 9 }
+      }
+    },
+    "denominators": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "execution_generations_passed",
+        "execution_generations_total",
+        "data_generations_passed",
+        "data_generations_total",
+        "execution_semantic_agreement_passed",
+        "execution_semantic_agreement_total",
+        "data_semantic_agreement_passed",
+        "data_semantic_agreement_total",
+        "aggregate_agreement_passed",
+        "aggregate_agreement_total",
+        "baseline_parity_passed",
+        "baseline_parity_total",
+        "primary_visible_passed",
+        "primary_visible_total"
+      ],
+      "properties": {
+        "execution_generations_passed": { "const": 2 },
+        "execution_generations_total": { "const": 2 },
+        "data_generations_passed": { "const": 2 },
+        "data_generations_total": { "const": 2 },
+        "execution_semantic_agreement_passed": { "const": 1 },
+        "execution_semantic_agreement_total": { "const": 1 },
+        "data_semantic_agreement_passed": { "const": 1 },
+        "data_semantic_agreement_total": { "const": 1 },
+        "aggregate_agreement_passed": { "const": 2 },
+        "aggregate_agreement_total": { "const": 2 },
+        "baseline_parity_passed": { "const": 12 },
+        "baseline_parity_total": { "const": 12 },
+        "primary_visible_passed": { "const": 6 },
+        "primary_visible_total": { "const": 6 }
+      }
+    },
+    "missing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_references", "facts", "reasons", "boundaries"],
+      "properties": {
+        "source_references": { "minimum": 0, "type": "integer" },
+        "facts": { "minimum": 0, "type": "integer" },
+        "reasons": { "minimum": 0, "type": "integer" },
+        "boundaries": { "minimum": 0, "type": "integer" }
+      }
+    }
+  }
+}

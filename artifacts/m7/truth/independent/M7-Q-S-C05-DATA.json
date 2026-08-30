@@ -1,0 +1,38 @@
+{
+  "query_id": "M7-Q-S-C05-DATA",
+  "slice_kind": "data",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::08c1e70c-4e59-fdb8-1622-13b709965d08",
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::bce4e760-4a4a-3ec0-9b4f-149648c0341e",
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::edge::/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::08c1e70c-4e59-fdb8-1622-13b709965d08::pin::locator-output-Released-0->/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::edge::/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::bce4e760-4a4a-3ec0-9b4f-149648c0341e::pin::locator-output-Released-0->/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e::pin::locator-input-execute-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::08c1e70c-4e59-fdb8-1622-13b709965d08",
+      "why": "data rule 2.6: opaque function call retained; function graph is not expanded"
+    },
+    {
+      "node_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::bce4e760-4a4a-3ec0-9b4f-149648c0341e",
+      "why": "data rule 2.6: opaque function call retained; function graph is not expanded"
+    }
+  ],
+  "reasoning": [
+    "Ambiguity reading: /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::08c1e70c-4e59-fdb8-1622-13b709965d08 (ArriveAtLC4Barrier) is both the direct execution controller and an opaque function call; its connected explicit input producers are retained under data rule 2.6, rather than treating direct-controller inclusion as a reason to omit those inputs.",
+    "Ambiguity reading: /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::bce4e760-4a4a-3ec0-9b4f-149648c0341e (ArriveAtLC4Barrier) is both the direct execution controller and an opaque function call; its connected explicit input producers are retained under data rule 2.6, rather than treating direct-controller inclusion as a reason to omit those inputs.",
+    "Data rule 2.1/2.2: GUID 13d24cee-4f6f-1497-5f20-fb9c6ef8b9b7 matched 0 Get node(s) and 1 Set node(s); the display name was not used for lookup.",
+    "Data rule 2.3: Set /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e (Set LC4AsyncComplete) uses its uniquely marked variable_set_value pin /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e::pin::locator-input-LC4AsyncComplete-0 as an independent producer-closure root.",
+    "Data rule 2.3: root pin /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e::pin::locator-input-LC4AsyncComplete-0 has no incoming data edge; no producer can be added.",
+    "Data rule 2.4: Set /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e (Set LC4AsyncComplete) is directly controlled by /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::08c1e70c-4e59-fdb8-1622-13b709965d08 (ArriveAtLC4Barrier); only this immediate execution predecessor is added.",
+    "Data rule 2.4: Set /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e (Set LC4AsyncComplete) is directly controlled by /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::bce4e760-4a4a-3ec0-9b4f-149648c0341e (ArriveAtLC4Barrier); only this immediate execution predecessor is added.",
+    "Data rule 2.8: no downstream consumers were added merely because a member Get exists; only independently selected nodes contribute induced edges.",
+    "Rule 2.6/2.7: /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::08c1e70c-4e59-fdb8-1622-13b709965d08 (ArriveAtLC4Barrier) entered data traversal via direct_write_controller; status=opaque, so its applicable boundary rule was applied.",
+    "Rule 2.6/2.7: /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::bce4e760-4a4a-3ec0-9b4f-149648c0341e (ArriveAtLC4Barrier) entered data traversal via direct_write_controller; status=opaque, so its applicable boundary rule was applied.",
+    "Rule 2.6: opaque call /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::08c1e70c-4e59-fdb8-1622-13b709965d08 (ArriveAtLC4Barrier) has no connected explicit data-input producer in the typed IR, so none was added.",
+    "Rule 2.6: opaque call /Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::bce4e760-4a4a-3ec0-9b4f-149648c0341e (ArriveAtLC4Barrier) has no connected explicit data-input producer in the typed IR, so none was added."
+  ],
+  "undetermined": []
+}

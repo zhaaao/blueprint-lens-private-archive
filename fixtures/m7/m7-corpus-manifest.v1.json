@@ -1,0 +1,579 @@
+{
+  "band_definitions": {
+    "bands": [
+      {
+        "band": "small",
+        "max_nodes": 16,
+        "min_nodes": 1
+      },
+      {
+        "band": "medium",
+        "max_nodes": 128,
+        "min_nodes": 17
+      },
+      {
+        "band": "large",
+        "max_nodes": 512,
+        "min_nodes": 129
+      }
+    ],
+    "binding": "bound",
+    "binding_note": "Bound from the measured candidate distribution after the round-2 export: the lower observed cluster reaches 16 nodes and is assigned the 1-16 small class; the next observed cluster is 24-33 nodes and is assigned the 17-128 medium class; the 338-node motif-scale cluster is assigned the 129-512 large class. The boundaries follow observed cluster separation and power-of-two headroom above the observed maximum, rather than terminating at observed points."
+  },
+  "candidate_graphs": [
+    {
+      "band": "medium",
+      "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+      "id": "M7-C01",
+      "licence": "project-owned",
+      "measured": {
+        "data_edge_count": 6,
+        "edge_count": 20,
+        "execution_edge_count": 14,
+        "node_count": 24,
+        "node_families": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "count": 8
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CustomEvent",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Event",
+            "count": 3
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_ExecutionSequence",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Knot",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_MacroInstance",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "count": 3
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "count": 2
+          }
+        ]
+      },
+      "object_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+      "provenance": {
+        "detail": "Retained M3 production-pipeline candidate graph authored in the Blueprint Lens project.",
+        "origin": "authored_in_project",
+        "recorded_on": "2026-08-21"
+      },
+      "risk_dimensions": [
+        {
+          "dimension": "source_traceability_and_progressive_disclosure",
+          "unchecked_reason": "Progressive disclosure is a renderer property and the retained typed graph exposes no non-tautological predicate for it; source identity is node_guid on every node.",
+          "verification": "declared_unverified"
+        }
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter",
+      "id": "M7-C02",
+      "licence": "project-owned",
+      "measured": {
+        "data_edge_count": 6,
+        "edge_count": 15,
+        "execution_edge_count": 9,
+        "node_count": 11,
+        "node_families": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionResult",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "count": 4
+          }
+        ]
+      },
+      "object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "provenance": {
+        "detail": "Retained M3 production-pipeline candidate graph authored in the Blueprint Lens project.",
+        "origin": "authored_in_project",
+        "recorded_on": "2026-08-21"
+      },
+      "risk_dimensions": [
+        {
+          "dimension": "branching_and_incomparable_outcomes",
+          "verification": "structural"
+        }
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness",
+      "id": "M7-C03",
+      "licence": "project-owned",
+      "measured": {
+        "data_edge_count": 6,
+        "edge_count": 8,
+        "execution_edge_count": 2,
+        "node_count": 6,
+        "node_families": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionResult",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "count": 1
+          }
+        ]
+      },
+      "object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "provenance": {
+        "detail": "Retained M3 production-pipeline candidate graph authored in the Blueprint Lens project.",
+        "origin": "authored_in_project",
+        "recorded_on": "2026-08-21"
+      },
+      "risk_dimensions": [
+        {
+          "dimension": "data_provenance_fan_in_fan_out",
+          "verification": "structural"
+        }
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService",
+      "id": "M7-C04",
+      "licence": "project-owned",
+      "measured": {
+        "data_edge_count": 4,
+        "edge_count": 7,
+        "execution_edge_count": 3,
+        "node_count": 5,
+        "node_families": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_FunctionResult",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "count": 1
+          }
+        ]
+      },
+      "object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "provenance": {
+        "detail": "Retained M3 production-pipeline candidate graph authored in the Blueprint Lens project.",
+        "origin": "authored_in_project",
+        "recorded_on": "2026-08-21"
+      },
+      "risk_dimensions": [
+        {
+          "dimension": "call_and_context",
+          "verification": "structural"
+        }
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph",
+      "id": "M7-C05",
+      "licence": "project-owned",
+      "measured": {
+        "data_edge_count": 0,
+        "edge_count": 11,
+        "execution_edge_count": 11,
+        "node_count": 11,
+        "node_families": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "count": 8
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Event",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_ExecutionSequence",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "count": 1
+          }
+        ]
+      },
+      "object_path": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier",
+      "provenance": {
+        "detail": "Retained M3 production-pipeline candidate graph authored in the Blueprint Lens project.",
+        "origin": "authored_in_project",
+        "recorded_on": "2026-08-21"
+      },
+      "risk_dimensions": [
+        {
+          "dimension": "sequence_async_completion_and_synchronization",
+          "verification": "structural"
+        }
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph",
+      "id": "M7-C06",
+      "licence": "project-owned",
+      "measured": {
+        "data_edge_count": 1,
+        "edge_count": 12,
+        "execution_edge_count": 11,
+        "node_count": 16,
+        "node_families": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CustomEvent",
+            "count": 4
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Select",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "count": 9
+          }
+        ]
+      },
+      "object_path": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix",
+      "provenance": {
+        "detail": "Retained M3 production-pipeline candidate graph authored in the Blueprint Lens project.",
+        "origin": "authored_in_project",
+        "recorded_on": "2026-08-21"
+      },
+      "risk_dimensions": [
+        {
+          "dimension": "opaque_unsupported_and_query_budget_boundaries",
+          "verification": "structural"
+        }
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph",
+      "id": "M7-C07",
+      "licence": "project-owned",
+      "measured": {
+        "data_edge_count": 4,
+        "edge_count": 10,
+        "execution_edge_count": 6,
+        "node_count": 10,
+        "node_families": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CustomEvent",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "count": 4
+          }
+        ]
+      },
+      "object_path": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC",
+      "provenance": {
+        "detail": "Retained M3 production-pipeline candidate graph authored in the Blueprint Lens project.",
+        "origin": "authored_in_project",
+        "recorded_on": "2026-08-21"
+      },
+      "risk_dimensions": [
+        {
+          "dimension": "cycles_and_multiple_sccs",
+          "verification": "structural"
+        }
+      ]
+    },
+    {
+      "band": "medium",
+      "graph_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph",
+      "id": "M7-C08",
+      "licence": "project-owned",
+      "measured": {
+        "data_edge_count": 13,
+        "edge_count": 36,
+        "execution_edge_count": 23,
+        "node_count": 33,
+        "node_families": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "count": 7
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CustomEvent",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "count": 4
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "count": 7
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "count": 14
+          }
+        ]
+      },
+      "object_path": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk",
+      "provenance": {
+        "detail": "Retained M3 production-pipeline candidate graph authored in the Blueprint Lens project.",
+        "origin": "authored_in_project",
+        "recorded_on": "2026-08-21"
+      },
+      "risk_dimensions": [
+        {
+          "dimension": "cycles_and_multiple_sccs",
+          "verification": "structural"
+        }
+      ]
+    },
+    {
+      "band": "large",
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "id": "M7-C09",
+      "licence": "project-owned",
+      "measured": {
+        "data_edge_count": 120,
+        "edge_count": 421,
+        "execution_edge_count": 301,
+        "node_count": 338,
+        "node_families": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "count": 84
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CustomEvent",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_ExecutionSequence",
+            "count": 5
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "count": 36
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "count": 48
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "count": 164
+          }
+        ]
+      },
+      "object_path": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale",
+      "provenance": {
+        "detail": "Parameterised motif-based EventGraph generated by the Blueprint Lens project fixture authoring code; no third-party content is included.",
+        "origin": "authored_in_project",
+        "recorded_on": "2026-08-21"
+      },
+      "risk_dimensions": [
+        {
+          "dimension": "branching_and_incomparable_outcomes",
+          "verification": "structural"
+        },
+        {
+          "dimension": "data_provenance_fan_in_fan_out",
+          "verification": "structural"
+        },
+        {
+          "dimension": "sequence_async_completion_and_synchronization",
+          "verification": "structural"
+        },
+        {
+          "dimension": "call_and_context",
+          "verification": "structural"
+        },
+        {
+          "dimension": "opaque_unsupported_and_query_budget_boundaries",
+          "verification": "structural"
+        },
+        {
+          "dimension": "cycles_and_multiple_sccs",
+          "verification": "structural"
+        },
+        {
+          "dimension": "small_medium_large_scale",
+          "verification": "structural"
+        }
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph",
+      "id": "M7-C10",
+      "licence": "Epic Games Unreal Engine 5.8.1 Engine Content license (project use under the Unreal Engine EULA)",
+      "measured": {
+        "data_edge_count": 5,
+        "edge_count": 13,
+        "execution_edge_count": 8,
+        "node_count": 12,
+        "node_families": [
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_CallFunction",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Event",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "count": 1
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_Knot",
+            "count": 4
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_MacroInstance",
+            "count": 2
+          },
+          {
+            "class_path": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "count": 1
+          }
+        ]
+      },
+      "object_path": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample",
+      "provenance": {
+        "detail": "Project-local duplicate of the UE 5.8.1 Tutorial Blueprint Class sample, retained only as a sourced corpus graph and not as a project-authored fixture.",
+        "origin": "engine_sample",
+        "recorded_on": "2026-08-21",
+        "source_reference": "UE_5.8.1 Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_Class.uasset (SHA-256 458E4186F7AA294B17FC6079DA05B27D13009F6D0D238BEF3FD4BCD3F76A527D)"
+      },
+      "risk_dimensions": [
+        {
+          "dimension": "call_and_context",
+          "verification": "structural"
+        },
+        {
+          "dimension": "cycles_and_multiple_sccs",
+          "verification": "structural"
+        },
+        {
+          "dimension": "opaque_unsupported_and_query_budget_boundaries",
+          "verification": "structural"
+        }
+      ]
+    }
+  ],
+  "regression_assets": [
+    {
+      "id": "M7-R01",
+      "object_path": "/Game/LensCorpus/BP_LC1_LongChain.BP_LC1_LongChain"
+    },
+    {
+      "id": "M7-R02",
+      "object_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards"
+    },
+    {
+      "id": "M7-R03",
+      "object_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance"
+    },
+    {
+      "id": "M7-R04",
+      "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure"
+    },
+    {
+      "id": "M7-R05",
+      "object_path": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier"
+    },
+    {
+      "id": "M7-R06",
+      "object_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe"
+    },
+    {
+      "id": "M7-R07",
+      "object_path": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix"
+    },
+    {
+      "id": "M7-R08",
+      "object_path": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC"
+    }
+  ],
+  "schema_name": "blueprint-lens-m7-corpus",
+  "schema_version": "1.0.0"
+}

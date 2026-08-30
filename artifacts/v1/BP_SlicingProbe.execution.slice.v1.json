@@ -1,0 +1,64 @@
+{
+  "format": "blueprint-lens-slice",
+  "schema_version": "1.0.0",
+  "rules_version": "1.0.0",
+  "source_fixture": "../../fixtures/v1/BP_SlicingProbe.v1.json",
+  "source_sha256": "7A39FF8159761491DC8490AABB0449BAC4638AF9ADF488BBE3CB476F58943496",
+  "slice_kind": "execution_context",
+  "criterion": {
+    "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+    "node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c",
+    "description": "True-branch Set Health whose value is Health - 10"
+  },
+  "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+  "node_ids": [
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::0a170a17-4a0e-e306-76df-ac876e3d5f01",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e"
+  ],
+  "edge_ids": [
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::0a170a17-4a0e-e306-76df-ac876e3d5f01::pin::locator-output-then-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e::pin::locator-input-execute-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-input-A-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-output-then-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-execute-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-output-ReturnValue-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-Condition-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80::pin::locator-output-ReturnValue-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-Health-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80::pin::locator-input-A-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e::pin::locator-output-then_0-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-execute-0"
+  ],
+  "inclusion_reasons": {
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::0a170a17-4a0e-e306-76df-ac876e3d5f01": [
+      "execution_predecessor"
+    ],
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c": [
+      "criterion"
+    ],
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec": [
+      "required_data_producer"
+    ],
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2": [
+      "execution_predecessor"
+    ],
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7": [
+      "required_data_producer"
+    ],
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80": [
+      "required_data_producer"
+    ],
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a": [
+      "required_data_producer"
+    ],
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e": [
+      "execution_predecessor"
+    ]
+  },
+  "boundaries": [],
+  "counts": {
+    "nodes": 8,
+    "edges": 7
+  }
+}

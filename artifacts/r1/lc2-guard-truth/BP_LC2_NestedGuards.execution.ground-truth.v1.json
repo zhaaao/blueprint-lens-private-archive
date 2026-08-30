@@ -1,0 +1,57 @@
+{
+  "criterion": {
+    "description": "Set LC2Complete after the three nested-guard outcomes reconverge",
+    "graph_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph",
+    "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c"
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:UserConstructionScript: excluded because execution-context slicing is graph-local to EventGraph",
+    "No forward context is selected after LC2Complete (forward_context_hops=0)"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 2,
+      "edges": 10,
+      "execution_edges": 8,
+      "nodes": 9
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-else-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-else-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4::pin::locator-output-InnerEnabled-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-Condition-0",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb::pin::locator-output-OuterEnabled-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-Condition-0",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb",
+      "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "author_source_review",
+      "independent_inventory_review"
+    ],
+    "notes": "Reviewed from the real UE source export and the independent TSV inventory before comparison with the generated execution slice.",
+    "reviewed_at": "2026-08-09",
+    "status": "frozen"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "execution_context",
+  "source_fixture": "BP_LC2_NestedGuards.ir.v1.json",
+  "source_sha256": "6E80667FF69ED31DFC8AF51FA1F43A74F852177FEEB96539F50FDF419A40908E"
+}

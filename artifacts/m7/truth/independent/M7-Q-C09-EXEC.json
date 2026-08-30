@@ -1,0 +1,25 @@
+{
+  "query_id": "M7-Q-C09-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::0c70a6bc-4e64-47fe-22ac-27bb32f47a21",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::a40c3e52-4b12-ddb3-b2a5-c0b226f3cc8d"
+  ],
+  "edge_ids": [
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::edge::/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::a40c3e52-4b12-ddb3-b2a5-c0b226f3cc8d::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::0c70a6bc-4e64-47fe-22ac-27bb32f47a21::pin::locator-input-execute-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::a40c3e52-4b12-ddb3-b2a5-c0b226f3cc8d",
+      "why": "execution rule 2.5/4: opaque predecessor retained as a visible boundary; traversal stops"
+    }
+  ],
+  "reasoning": [
+    "Execution rule 2.2: criterion /Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::0c70a6bc-4e64-47fe-22ac-27bb32f47a21 (Branch) is included as the root.",
+    "Execution rule 2.6: Branch /Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::0c70a6bc-4e64-47fe-22ac-27bb32f47a21 (Branch) contributes only its marked branch_condition pin /Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::0c70a6bc-4e64-47fe-22ac-27bb32f47a21::pin::locator-input-Condition-0; non-condition data pins and unrelated output paths are not roots.",
+    "Execution rule 2.6: root pin /Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::0c70a6bc-4e64-47fe-22ac-27bb32f47a21::pin::locator-input-Condition-0 has no incoming data edge; no producer can be added.",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed.",
+    "Rule 2.5: /Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::a40c3e52-4b12-ddb3-b2a5-c0b226f3cc8d (PrintString) is a opaque execution predecessor, so it is included but not traversed further."
+  ],
+  "undetermined": []
+}

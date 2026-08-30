@@ -1,0 +1,101 @@
+{
+  "controlled_cases": [
+    {
+      "case_id": "M4-T01",
+      "document_path": "fixtures/v1/BP_SlicingProbe.v1.json",
+      "document_sha256": "7a39ff8159761491dc8490aabb0449bac4638af9adf488bbe3cb476f58943496",
+      "ground_truth_path": "fixtures/ground_truth/v1/BP_SlicingProbe.execution.v1.json",
+      "ground_truth_sha256": "480b71905a9ec57cd920c23e25d09623a541d92771ed2c7fd3f8d9eff273b428",
+      "review_status": "independent_reviewed"
+    },
+    {
+      "case_id": "M4-T02",
+      "document_path": "artifacts/r1/lc2-guard-truth/BP_LC2_NestedGuards.ir.v1.json",
+      "document_sha256": "6e80667ff69ed31dfc8af51fa1f43a74f852177feeb96539f50fdf419a40908e",
+      "ground_truth_path": "artifacts/r1/lc2-guard-truth/BP_LC2_NestedGuards.execution.ground-truth.v1.json",
+      "ground_truth_sha256": "f8a45bba980aa6966f492bd3a155a62c5ff9067cfaa56bd45fe0d488622c696a",
+      "review_status": "frozen"
+    },
+    {
+      "case_id": "M4-T03",
+      "document_path": "artifacts/r1/lc4-sequence-truth/BP_LC4_SequenceDisclosure.ir.v1.json",
+      "document_sha256": "06c2e95c0d2f65c83c4e2bbc65ca7076d918c7ccaac5b93a597fda9de89d3d6c",
+      "ground_truth_path": "artifacts/r1/lc4-sequence-truth/BP_LC4_SequenceDisclosure.execution.ground-truth.reviewed.v1.json",
+      "ground_truth_sha256": "885d25d0e2f34d81456b5ea8fe7d5d8d4a85f7859893756e8064db129ccdaff2",
+      "review_status": "frozen"
+    }
+  ],
+  "corpus_manifest": {
+    "path": "fixtures/m3/m3-corpus-manifest.v1.json",
+    "sha256": "276ce44f4df3e24ba1afee4ac0d9657fcbefa2e26e9e42affc95f7230576a7b1"
+  },
+  "corpus_smoke_cases": [
+    {
+      "blueprint_object_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+      "candidate_id": "M3-C01",
+      "case_id": "M4-S01",
+      "criterion_node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c",
+      "description": "Set Health on the selected true branch",
+      "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "candidate_id": "M3-C02",
+      "case_id": "M4-S02",
+      "criterion_node_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::d121002b-44ff-50fc-db72-75bfb3246831",
+      "description": "Return Node for EvaluateEncounter",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "candidate_id": "M3-C03",
+      "case_id": "M4-S03",
+      "criterion_node_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41",
+      "description": "Set MaxCapacity in ComputeReadiness",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "candidate_id": "M3-C04",
+      "case_id": "M4-S04",
+      "criterion_node_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::2ef55eff-443a-869a-ab63-359ce19fd32f",
+      "description": "Set IsServiceAccepted in CallService",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier",
+      "candidate_id": "M3-C05",
+      "case_id": "M4-S05",
+      "criterion_node_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::d9f01bae-4dd7-046a-d13e-04b05a6e8ba0",
+      "description": "RecordLC4AsyncCriterion after the bounded async path",
+      "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix",
+      "candidate_id": "M3-C06",
+      "case_id": "M4-S06",
+      "criterion_node_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0d8c4ee5-4b65-b17a-8251-80862ab5475c",
+      "description": "Set LC6UnsupportedDone at the unsupported boundary case",
+      "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC",
+      "candidate_id": "M3-C07",
+      "case_id": "M4-S07",
+      "criterion_node_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412",
+      "description": "Set LC7Counter in the retained static SCC",
+      "graph_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk",
+      "candidate_id": "M3-C08",
+      "case_id": "M4-S08",
+      "criterion_node_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::238c69c9-47ee-b942-5e43-b89cfffe919a",
+      "description": "Set M3ParcelComplete after the multi-SCC workflow",
+      "graph_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph"
+    }
+  ],
+  "rules_version": "1.0.0",
+  "schema_name": "blueprint-lens-m4-execution-criteria",
+  "schema_version": "1.0.0"
+}

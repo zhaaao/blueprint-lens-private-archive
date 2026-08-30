@@ -1,0 +1,503 @@
+{
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m5-data-evidence-v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "portable_path": {
+      "minLength": 1,
+      "pattern": "^[^\\\\/](?:[^\\\\]*[^\\\\/])?$",
+      "type": "string"
+    },
+    "sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "binding": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/portable_path"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "boundary": {
+      "additionalProperties": false,
+      "properties": {
+        "node_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "reason": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "opaque",
+            "uncertain",
+            "unsupported"
+          ]
+        }
+      },
+      "required": [
+        "node_id",
+        "status",
+        "reason"
+      ],
+      "type": "object"
+    },
+    "boundaries": {
+      "items": {
+        "$ref": "#/$defs/boundary"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "reason_map": {
+      "additionalProperties": {
+        "items": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "minItems": 1,
+        "type": "array",
+        "uniqueItems": true
+      },
+      "type": "object"
+    },
+    "controlled_case": {
+      "additionalProperties": false,
+      "properties": {
+        "boundaries": {
+          "$ref": "#/$defs/boundaries"
+        },
+        "case_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "edge_inclusion_reasons": {
+          "$ref": "#/$defs/reason_map"
+        },
+        "expected_edge_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "expected_node_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "ground_truth_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "membership_equal": {
+          "const": true
+        },
+        "node_inclusion_reasons": {
+          "$ref": "#/$defs/reason_map"
+        },
+        "observed_edge_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "observed_node_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "review_status": {
+          "enum": [
+            "independent_reviewed",
+            "frozen"
+          ]
+        },
+        "source_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "case_id",
+        "review_status",
+        "source_sha256",
+        "ground_truth_sha256",
+        "expected_node_count",
+        "expected_edge_count",
+        "observed_node_count",
+        "observed_edge_count",
+        "membership_equal",
+        "node_inclusion_reasons",
+        "edge_inclusion_reasons",
+        "boundaries"
+      ],
+      "type": "object"
+    },
+    "smoke_case": {
+      "additionalProperties": false,
+      "properties": {
+        "blueprint_object_path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "candidate_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "case_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "graph_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "member_guid": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "member_name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "normalized_equal": {
+          "const": true
+        },
+        "question": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "run1_boundaries": {
+          "$ref": "#/$defs/boundaries"
+        },
+        "run1_edge_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "run1_edge_inclusion_reasons": {
+          "$ref": "#/$defs/reason_map"
+        },
+        "run1_node_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "run1_node_inclusion_reasons": {
+          "$ref": "#/$defs/reason_map"
+        },
+        "run1_slice_path": {
+          "$ref": "#/$defs/portable_path"
+        },
+        "run1_slice_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "run1_source_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "run2_boundaries": {
+          "$ref": "#/$defs/boundaries"
+        },
+        "run2_edge_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "run2_edge_inclusion_reasons": {
+          "$ref": "#/$defs/reason_map"
+        },
+        "run2_node_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "run2_node_inclusion_reasons": {
+          "$ref": "#/$defs/reason_map"
+        },
+        "run2_slice_path": {
+          "$ref": "#/$defs/portable_path"
+        },
+        "run2_slice_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "run2_source_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "case_id",
+        "candidate_id",
+        "blueprint_object_path",
+        "graph_id",
+        "member_guid",
+        "member_name",
+        "question",
+        "run1_source_sha256",
+        "run2_source_sha256",
+        "run1_slice_path",
+        "run1_slice_sha256",
+        "run2_slice_path",
+        "run2_slice_sha256",
+        "run1_node_count",
+        "run1_edge_count",
+        "run2_node_count",
+        "run2_edge_count",
+        "run1_node_inclusion_reasons",
+        "run2_node_inclusion_reasons",
+        "run1_edge_inclusion_reasons",
+        "run2_edge_inclusion_reasons",
+        "run1_boundaries",
+        "run2_boundaries",
+        "normalized_equal"
+      ],
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "accountability": {
+      "additionalProperties": false,
+      "properties": {
+        "boundaries_reported": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "boundaries_valid": {
+          "const": true
+        },
+        "edges_with_reasons": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "nodes_with_reasons": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "selected_boundaries": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "selected_edges": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "selected_nodes": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "nodes_with_reasons",
+        "selected_nodes",
+        "edges_with_reasons",
+        "selected_edges",
+        "boundaries_reported",
+        "selected_boundaries",
+        "boundaries_valid"
+      ],
+      "type": "object"
+    },
+    "claims": {
+      "additionalProperties": false,
+      "properties": {
+        "bounded_corpus_smoke_established": {
+          "const": true
+        },
+        "controlled_exactness_established": {
+          "const": true
+        },
+        "general_correctness_established": {
+          "const": false
+        },
+        "layout_or_human_claim_established": {
+          "const": false
+        },
+        "runtime_causality_established": {
+          "const": false
+        },
+        "scale_or_performance_established": {
+          "const": false
+        }
+      },
+      "required": [
+        "controlled_exactness_established",
+        "bounded_corpus_smoke_established",
+        "general_correctness_established",
+        "scale_or_performance_established",
+        "layout_or_human_claim_established",
+        "runtime_causality_established"
+      ],
+      "type": "object"
+    },
+    "contracts": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria_schema": {
+          "$ref": "#/$defs/binding"
+        },
+        "data_rules": {
+          "$ref": "#/$defs/binding"
+        },
+        "evidence_schema": {
+          "$ref": "#/$defs/binding"
+        },
+        "ground_truth_schema": {
+          "$ref": "#/$defs/binding"
+        },
+        "slice_schema": {
+          "$ref": "#/$defs/binding"
+        }
+      },
+      "required": [
+        "data_rules",
+        "slice_schema",
+        "ground_truth_schema",
+        "criteria_schema",
+        "evidence_schema"
+      ],
+      "type": "object"
+    },
+    "controlled": {
+      "additionalProperties": false,
+      "properties": {
+        "cases": {
+          "items": {
+            "$ref": "#/$defs/controlled_case"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "passed": {
+          "const": 2
+        },
+        "total": {
+          "const": 2
+        }
+      },
+      "required": [
+        "passed",
+        "total",
+        "cases"
+      ],
+      "type": "object"
+    },
+    "corpus_smoke": {
+      "additionalProperties": false,
+      "properties": {
+        "cases": {
+          "items": {
+            "$ref": "#/$defs/smoke_case"
+          },
+          "maxItems": 8,
+          "minItems": 8,
+          "type": "array"
+        },
+        "normalized_agreement": {
+          "const": 8
+        },
+        "run1_passed": {
+          "const": 8
+        },
+        "run2_passed": {
+          "const": 8
+        },
+        "total_per_run": {
+          "const": 8
+        }
+      },
+      "required": [
+        "run1_passed",
+        "run2_passed",
+        "total_per_run",
+        "normalized_agreement",
+        "cases"
+      ],
+      "type": "object"
+    },
+    "criterion_registry": {
+      "$ref": "#/$defs/binding"
+    },
+    "m3_pipeline_report": {
+      "$ref": "#/$defs/binding"
+    },
+    "outcome": {
+      "const": "G5_READY_FOR_OWNER_ACCEPTANCE"
+    },
+    "rules_version": {
+      "const": "1.0.0"
+    },
+    "schema_name": {
+      "const": "blueprint-lens-m5-data-evidence"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "verification": {
+      "additionalProperties": false,
+      "properties": {
+        "controlled_membership_passed": {
+          "const": 2
+        },
+        "controlled_membership_total": {
+          "const": 2
+        },
+        "input_permutation_passed": {
+          "const": 18
+        },
+        "input_permutation_total": {
+          "const": 18
+        },
+        "packet_reverification_passed": {
+          "const": true
+        },
+        "slice_contract_passed": {
+          "const": 18
+        },
+        "slice_contract_total": {
+          "const": 18
+        },
+        "termination_passed": {
+          "const": 18
+        },
+        "termination_total": {
+          "const": 18
+        },
+        "two_run_determinism_passed": {
+          "const": 8
+        },
+        "two_run_determinism_total": {
+          "const": 8
+        }
+      },
+      "required": [
+        "controlled_membership_passed",
+        "controlled_membership_total",
+        "termination_passed",
+        "termination_total",
+        "input_permutation_passed",
+        "input_permutation_total",
+        "slice_contract_passed",
+        "slice_contract_total",
+        "two_run_determinism_passed",
+        "two_run_determinism_total",
+        "packet_reverification_passed"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_name",
+    "schema_version",
+    "rules_version",
+    "criterion_registry",
+    "m3_pipeline_report",
+    "contracts",
+    "controlled",
+    "corpus_smoke",
+    "accountability",
+    "verification",
+    "claims",
+    "outcome"
+  ],
+  "type": "object"
+}

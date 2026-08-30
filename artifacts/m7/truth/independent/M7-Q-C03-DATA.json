@@ -1,0 +1,33 @@
+{
+  "query_id": "M7-Q-C03-DATA",
+  "slice_kind": "data",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::a0382a0b-4a8b-abe6-6377-dcb90fc6ddce",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::bb4508bb-4c61-ba3c-a9f4-5bb95eb09541",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::d3143d38-4d09-19df-9cab-3bb1e9b932c7"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668::pin::locator-output-Base-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::d3143d38-4d09-19df-9cab-3bb1e9b932c7::pin::locator-input-A-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668::pin::locator-output-Bonus-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::d3143d38-4d09-19df-9cab-3bb1e9b932c7::pin::locator-input-B-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::a0382a0b-4a8b-abe6-6377-dcb90fc6ddce::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41::pin::locator-input-MaxCapacity-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::bb4508bb-4c61-ba3c-a9f4-5bb95eb09541::pin::locator-output-Armor-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::a0382a0b-4a8b-abe6-6377-dcb90fc6ddce::pin::locator-input-B-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::d3143d38-4d09-19df-9cab-3bb1e9b932c7::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::a0382a0b-4a8b-abe6-6377-dcb90fc6ddce::pin::locator-input-A-0"
+  ],
+  "boundary": [],
+  "reasoning": [
+    "Ambiguity reading: /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668 (ComputeReadiness) lacks symbol.is_pure; it is treated as a supported graph-visible source/transparent reroute for data rule 2.7, with only its explicit incoming data edges followed; this rejects stopping solely because the optional purity flag is absent.",
+    "Ambiguity reading: /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::bb4508bb-4c61-ba3c-a9f4-5bb95eb09541 (Get Armor) lacks symbol.is_pure; it is treated as a supported graph-visible source/transparent reroute for data rule 2.7, with only its explicit incoming data edges followed; this rejects stopping solely because the optional purity flag is absent.",
+    "Data rule 2.1/2.2: GUID 663548ed-41d5-a0bc-5de1-769686b34b74 matched 0 Get node(s) and 1 Set node(s); the display name was not used for lookup.",
+    "Data rule 2.3: Set /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41 (Set MaxCapacity) uses its uniquely marked variable_set_value pin /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41::pin::locator-input-MaxCapacity-0 as an independent producer-closure root.",
+    "Data rule 2.3: root pin /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41::pin::locator-input-MaxCapacity-0 receives producer /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::a0382a0b-4a8b-abe6-6377-dcb90fc6ddce (int + int).",
+    "Data rule 2.4: /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668 (ComputeReadiness) is not a Branch, so no broader control-dependence or earlier execution context is inferred.",
+    "Data rule 2.4: Set /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41 (Set MaxCapacity) is directly controlled by /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668 (ComputeReadiness); only this immediate execution predecessor is added.",
+    "Data rule 2.8: no downstream consumers were added merely because a member Get exists; only independently selected nodes contribute induced edges.",
+    "Rule 2.7: supported pure producer /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::a0382a0b-4a8b-abe6-6377-dcb90fc6ddce (int + int) is included and its incoming data edges are followed.",
+    "Rule 2.7: supported pure producer /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::d3143d38-4d09-19df-9cab-3bb1e9b932c7 (int + int) is included and its incoming data edges are followed."
+  ],
+  "undetermined": []
+}

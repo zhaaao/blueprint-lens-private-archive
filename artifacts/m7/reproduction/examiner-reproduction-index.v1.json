@@ -1,0 +1,402 @@
+{
+  "schema_name": "blueprint-lens-examiner-reproduction-index",
+  "schema_version": "1.0.0",
+  "boundary": "This distribution index contains only the 98 files required for the bounded 38-query static reproduction. Internal workflow records and raw session material are outside the software archive.",
+  "dataset": {
+    "file_count": 98,
+    "files": [
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/0e00a99a51d384eda19095e556f214deebf797d1d8008371f071e872b6cb187b.blueprint-lens-v1.json",
+        "sha256": "8259e7bb889934e9ad97e64ff3d53d8bda840d5131a2f689da8c63b713caf82e"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/13f86e0003e83ed8669789051c1108eee78f51aa32b0095100b68bca2382799f.blueprint-lens-v1.json",
+        "sha256": "1a0853abcb4b03ac5051de9158094ce2e38e654b2bd27dbb08dd0d646c2f9d45"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/5bebefa4aec82c95a10e88b13e18d2c8939618ff49e06fdb9e92d3d008901263.blueprint-lens-v1.json",
+        "sha256": "2137fae1d155823e529402b102a613109d910807a034ab6826bd3edd6909ae12"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/60fb3c769ebf10e0a24a0217d14cfd19c168b7e294ca7d9f9c26cb10b59e6386.blueprint-lens-v1.json",
+        "sha256": "0841255d9d523bda0ecae105a2ec2cba39f28fb2f4afe99dbed1cd8e2c4b5ccd"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/638fdded9113279cefc9e97f78a6c6fab40909a4f05bc6e5ab813392e70ae5fd.blueprint-lens-v1.json",
+        "sha256": "57597332d2c08e1a968ffe8cdb231d372bcda74514d2c1a05c00e6bedde047e0"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/6a735b729235ab8b19c55422026f47b04694dd214a06d07f9b2194862372a2ea.blueprint-lens-v1.json",
+        "sha256": "64e99bf58190afed770fa1e1474672fb0492beadb06ffa0fce7504c52981f35a"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/750a8bc86d98b397b419580312baa8a187e58de7e9f12eb5e461cd39be768e8e.blueprint-lens-v1.json",
+        "sha256": "582a07de8191be3ec7aa8d0a0d458bb9e739e01b42e93d372f20e7b3229ef61c"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/8ca0b6a00f2943b8672a1308934442b81e1e88fb2cc366c0805668e872ba7661.blueprint-lens-v1.json",
+        "sha256": "ae3081275ada00b7370f17695b111c13f86e29a0707ba3b722e48ac48ded9e8f"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/a6fea0235eb7390b0bd6f3d8ca4813dea7f0256e044a6d30eda4e112c10f8083.blueprint-lens-v1.json",
+        "sha256": "17b56de55bd564965eeabf82345e4e2b501db9688007eac0e0151e633d8e645a"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/af88808755640042329d2c05f0cd80b49ad186548244e8b33baad2c1ce1e5267.blueprint-lens-v1.json",
+        "sha256": "8abeacfbb7061f44bbf2e60293ae1e62195a3fd62e140a6abcd14463878775eb"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/f030e7a1fbbf23ff1acfb2ee1cdd4d970a4cdd6a8bbac34951abc97c8357217c.blueprint-lens-v1.json",
+        "sha256": "498effe9831ade7ced981b6b78bdc1b35a430396ef1cf747b1780fdeb9ee205d"
+      },
+      {
+        "path": "artifacts/m7/export/run1/typed-ir/f8c288dcc257ab43e3ad4e76092a15e9eec58fa20b2a2b912b670ab381922054.blueprint-lens-v1.json",
+        "sha256": "06c2e95c0d2f65c83c4e2bbc65ca7076d918c7ccaac5b93a597fda9de89d3d6c"
+      },
+      {
+        "path": "artifacts/m7/truth/adjudication.v1.json",
+        "sha256": "cefb8e4979338341821746b720b8442113686b5ed5fc1f596cd92800aff78357"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C02-DATA.ground-truth.v1.json",
+        "sha256": "c63e3e641df23cee0da26bb4a885fc9c62eb2df9094e37ae96413b5e0cb22219"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C02-EXEC.ground-truth.v1.json",
+        "sha256": "86d5e768421e62a41d0edde89e74afd3e733b8d6847a0f1d625b4bc1b3d0fc40"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C03-DATA.ground-truth.v1.json",
+        "sha256": "3cb58a96aec9c3efc23e9c005b0624055ec27371937dffadf834dfdfdf46185c"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C03-EXEC.ground-truth.v1.json",
+        "sha256": "e6bfed326d87d6742419829b67deb80c7afa77c8652b6278e8e060ae3dfdce78"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C04-DATA.ground-truth.v1.json",
+        "sha256": "9ca5192b9f728db1033a94bd14e6d45dbcc7815f410ccedd1693e3c07abbae3c"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C04-EXEC.ground-truth.v1.json",
+        "sha256": "a1afbba97932e20f57f3d40c14a51283368a77c751e2bf3a385dbc1c3463d1ff"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C05-DATA.ground-truth.v1.json",
+        "sha256": "531f5a0036fc7f8b951c694edb188a5b72ab4a70c4e520bf8debab78af3ee4b9"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C05-EXEC.ground-truth.v1.json",
+        "sha256": "90df99f1879fadcc745d81835fac32978cfdb0d4430c1d3e3c31120880215fdd"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C06-DATA.ground-truth.v1.json",
+        "sha256": "79dc69bc99861dd1220f64ce151669436ac4a31736e1d604c2b02d76e7e94a8c"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C06-EXEC.ground-truth.v1.json",
+        "sha256": "cbb451c9837d54f9b903192b6dd0e21902a7f6fcefb3b2ad945e482110b27480"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C07-DATA.ground-truth.v1.json",
+        "sha256": "599c6c48d640c4bf06f7a5bde1be3334aac64c83c67c16b8b4a4959f992a10e3"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C07-EXEC.ground-truth.v1.json",
+        "sha256": "7f250706d6e39f2c1c971923ecbd88f4f0b22c1c97df80678c28d59b68de5f42"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C08-DATA.ground-truth.v1.json",
+        "sha256": "d6a479adc2ec94591d8f35182904e7db95eb253d2e2aa8147091ec53e140e240"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C08-EXEC.ground-truth.v1.json",
+        "sha256": "4e50aa1984c796efcf1f4c9e296854870d0d966c9e14e4420ced6a2d67a204bd"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C09-DATA.ground-truth.v1.json",
+        "sha256": "ac27770339448832ef1250dc6be4ab15ae8fea969d8b48aab4a3d70c2b8235ab"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C09-EXEC.ground-truth.v1.json",
+        "sha256": "251ecf2d39274d6868c2e29008ce259f3c4db9f80969b00da94d3ed908bdb7eb"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C10-DATA.ground-truth.v1.json",
+        "sha256": "7b9355816f1a700ecdd11175dee0810ca51b8095a023e1556a3e8c8b5ebf9021"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/original/M7-Q-C10-EXEC.ground-truth.v1.json",
+        "sha256": "d65e66ac32454c998fd7acf93f3a455a2ba743aa317ea3b8d4cc9cef4a974558"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C01-DATA.ground-truth.v1.json",
+        "sha256": "db53fb17b3e4b86be24c5465217f0220760252e7058ff1e7aee347e07ef81fd0"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C01-EXEC.ground-truth.v1.json",
+        "sha256": "dff3da75bf884ed7231d3c1811566cfe7dc37826dba41d11c006b351fe7d9c09"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C02-DATA.ground-truth.v1.json",
+        "sha256": "06ef2390c95ab0e92e626187586f32e6509839313a28644e0a68941631583e3a"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C02-EXEC.ground-truth.v1.json",
+        "sha256": "544404433ccb66ccd3692b5cc333197be823ec36c07f12f0b1c6031b17011513"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C03-DATA.ground-truth.v1.json",
+        "sha256": "9b30f5803331633b6ec1c6920d89a43b0d1cf4bf415cef98704652acfdc1f3f6"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C03-EXEC.ground-truth.v1.json",
+        "sha256": "c5900b2a575cc70e907c58fef54107425465d9621c5a35249cf828c1bdc86bcd"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C04-DATA.ground-truth.v1.json",
+        "sha256": "a2a5a664d629d3e38d8d3b2c7d70744e5f4ad8081914511ed373b0ba8e35f5ec"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C04-EXEC.ground-truth.v1.json",
+        "sha256": "d8b3658ef98a2d1c119412b33297ccda16e70dc5e8ccf45be8ab2ab2c61b37d2"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C05-DATA.ground-truth.v1.json",
+        "sha256": "1905ec8cab8368aca3ad82eb6579efac2bdb2e403dd97abaf545b28492fdf16b"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C05-EXEC.ground-truth.v1.json",
+        "sha256": "2723050f93ed229613008335b763b78ef8dcbf2ca65bf15b36c07c5820189665"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C06-DATA.ground-truth.v1.json",
+        "sha256": "f37790a82bf3f5492e26df5180db8e01731848a862bb66681a5c9e1a4ac39873"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C06-EXEC.ground-truth.v1.json",
+        "sha256": "61c934ab9ee031d96161cb86145a80a12366b8bc0b62577fa077f22005cab095"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C07-DATA.ground-truth.v1.json",
+        "sha256": "d75d8c2b9792d3958fe673d7e51cee061e0b146c21a95e593a00e9f4fb1ec19c"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C07-EXEC.ground-truth.v1.json",
+        "sha256": "d64b0934495e6854e3ca4f9ae494b6532307cd70fca3313b2d16951e5c9bfc8b"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C08-DATA.ground-truth.v1.json",
+        "sha256": "675a2835892cd704f0a07561c91c2e9fb80f190347f77b4b8600b502ae1a61ec"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C08-EXEC.ground-truth.v1.json",
+        "sha256": "f76896b1d02c83ad8213a1e6cdd8f4cb95052216ba82040681da6562fa6ad8e4"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C09-DATA.ground-truth.v1.json",
+        "sha256": "2e8a303199e89120c1691cf9a426fdc44c3cb7e80f1aa7bafc24d0df7a62a747"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C09-EXEC.ground-truth.v1.json",
+        "sha256": "53ac3110731fc5cf8cd06a4c6d20d7f87e5f0b4c372cba21cdc5e1f79c11ba23"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C10-DATA.ground-truth.v1.json",
+        "sha256": "4ff76532cf06b970c89b60ed508ff76b832df5175d1d7bfcaf1782f7e051aaba"
+      },
+      {
+        "path": "artifacts/m7/truth/controller/supplement/M7-Q-S-C10-EXEC.ground-truth.v1.json",
+        "sha256": "e856d5eeb61d7dc2b0f303d474b7a53e777f9c16481d3831d8aad131e9646590"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C02-DATA.json",
+        "sha256": "9a09e8ce56baa8be68c178bcf9e511bd679b211c99123201ce9ef19ceb470f4d"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C02-EXEC.json",
+        "sha256": "deee39f675488a5157a058a3bd9bee35b2b6861feee40ea8c1687d44b0f11a6b"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C03-DATA.json",
+        "sha256": "838b6403ddede3c918355683cd5a24699252e28fc7bc356eb8c7653c7ac5c0e7"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C03-EXEC.json",
+        "sha256": "7afdb0d2dbf0e779b60b53fa7f0fb54280035e7611d04031604ec19594e70217"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C04-DATA.json",
+        "sha256": "24fd74b2342e5a26679c27994788f821e573dfb91365b0f41ed917ac380fe418"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C04-EXEC.json",
+        "sha256": "0e8bd06b45e3579d4da83fd6cf2bc2aad62b4f91d048b28b7599e6e6a635ef26"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C05-DATA.json",
+        "sha256": "e1e23655b3ffea866df06f82dd301a275ab442d1c7879d1d6adef132a98052a8"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C05-EXEC.json",
+        "sha256": "a5a391a2b72b6baa29a7d0631c4fd8c02e35470715492be021b0f2e6cc3c794a"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C06-DATA.json",
+        "sha256": "69561f07109d918d8f96787b8c731572f930b20449d051ee82ad7495d188267f"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C06-EXEC.json",
+        "sha256": "9aa2bbe429cdc157851de31b3d2776b3e612cb8c964c05c093ace1a2acccdef9"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C07-DATA.json",
+        "sha256": "d50a53f00c5d3b02dc74ff88eceeddc12ede469ccd01d5acccf25ffdb6fd0140"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C07-EXEC.json",
+        "sha256": "dac02d46f2ccaf3fbb582bd40bb831c5d64c7a23f4c03f4e7972cffb47addadb"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C08-DATA.json",
+        "sha256": "90c3099b5aed80cf5be90b0b0ad8f45aa290abf859657f13f62d0d3789ae1fb8"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C08-EXEC.json",
+        "sha256": "bd5abd2c616d2a1077e4e7dbb914cb50947705a041bc04fa322defb389e310ee"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C09-DATA.json",
+        "sha256": "1a5fb445d1f1a2d913f6a54f222b263edc27899348ddd4868f633b8a2367ccf8"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C09-EXEC.json",
+        "sha256": "e3d57bcefbcfb5986521be2583700a1b366a2cb07bfc994d67f5efb55806efef"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C10-DATA.json",
+        "sha256": "1ccd88aafacac428b8fe36705c2c0855b58582a2962784e466d09b1fe3934ec3"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-C10-EXEC.json",
+        "sha256": "ff646afa6ce28972a45a0484ae4f45b93c86a23b4d8dbd480db7c45adf0f79d2"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C01-DATA.json",
+        "sha256": "e6236ea00efcf6c2ebd2bb7043649359e0194da92b7572a12de6a6263c4f8cd0"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C01-EXEC.json",
+        "sha256": "3d16d6f4b21480eb5a67302aa00b084e3f472e8e694281811a9be1bbf118b275"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C02-DATA.json",
+        "sha256": "e94d0f4b35351b371591473a61fd6cddac7e36fa90a7ad83bc8c98b224d98b29"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C02-EXEC.json",
+        "sha256": "f2829be1801d1dc7c583299f223a30cbfc1c79d4546d4419dcb976037698a0f1"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C03-DATA.json",
+        "sha256": "96b47814da8476e77855ab1a8653091a4711b3ad0161789be1ee57a7abee330d"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C03-EXEC.json",
+        "sha256": "93cfe88ed01888bb387cfe6d10bc0743ae398805b6f5ec9b8f42bda14d4e9a94"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C04-DATA.json",
+        "sha256": "4d73712d278e783abd16e1112166fa810de342bf360deb3d701b7a6acb844f8a"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C04-EXEC.json",
+        "sha256": "b57282e57eddfd7ac428ef61041067b9fb516f77418b07ffd2c4608f6c185bdd"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C05-DATA.json",
+        "sha256": "6a7aa9b64a1d5075c102c0286d847e9cf085a06f8892f52a1405e0fcf62b4886"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C05-EXEC.json",
+        "sha256": "c5d44ae735e9f5f711a8805d6db2fb754bd5688936339f71704d4e925462110a"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C06-DATA.json",
+        "sha256": "a2c61000a893b87cb7ecb69f92c7aa509ba4a6fa73272f420d1dd2726fba8709"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C06-EXEC.json",
+        "sha256": "4c9655be4854ee1e4ea86d15e368f3bf6d0f5f35d474e1fc335773b587e27985"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C07-DATA.json",
+        "sha256": "787a631fa8725c8fc3b1fa16ba2f57eb56301e5bef0628d815cc6a1ab4c14deb"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C07-EXEC.json",
+        "sha256": "bd5949d7769b79e93f5df2724302c071ece941fbc0e1e83f3a16c28898fe5b7a"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C08-DATA.json",
+        "sha256": "31694fe02814db91a9ae5f0bd1d6035a9339c6e7d4eb82d667f7b7faf554390d"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C08-EXEC.json",
+        "sha256": "dce86be929e25fb695c6c872aa8184d0e9f5f02a84bb3531ac4bc1d19faa0f8a"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C09-DATA.json",
+        "sha256": "6c6519a6dc631069c89a436c8db2bac2c9bab1d21e72b5ebac86b3b18245979a"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C09-EXEC.json",
+        "sha256": "247110b8554f0e6219ccaa73307e6591d12232351ab7ec6362b4fca0056d0b85"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C10-DATA.json",
+        "sha256": "014c61f4bfb5c8203fcbb2b01870555e493804195173c32e45d8cd159268d894"
+      },
+      {
+        "path": "artifacts/m7/truth/independent/M7-Q-S-C10-EXEC.json",
+        "sha256": "b6f4c12577414c58f6c74ec2ae0ad6127d8639dda4bb1be10ed8b56918f74cbb"
+      },
+      {
+        "path": "artifacts/r1/lc2-guard-truth/BP_LC2_NestedGuards.execution.ground-truth.v1.json",
+        "sha256": "5d84a83da2c344dc15de0e1281bc631017ef6ab392155bbd4359882d2cea97c4"
+      },
+      {
+        "path": "artifacts/r1/lc3-value-truth/BP_LC3_ValueProvenance.data.ground-truth.v1.json",
+        "sha256": "03ec89dc9bec78004510c62e8f6ab9f2858cb12435f57429ac381487c7c2c34d"
+      },
+      {
+        "path": "artifacts/r1/lc4-sequence-truth/BP_LC4_SequenceDisclosure.execution.ground-truth.reviewed.v1.json",
+        "sha256": "e553b69b2f34d57c678902d62956b0ad236354f5363b243dc01e1f7c476c0dd7"
+      },
+      {
+        "path": "fixtures/ground_truth/v1/BP_SlicingProbe.execution.v1.json",
+        "sha256": "6679b84d68ff9d6da2c897f823521962af698fed495460b45f9fbb25bb65c7cb"
+      },
+      {
+        "path": "fixtures/ground_truth/v1/BP_SlicingProbe.health-data.v1.json",
+        "sha256": "f17c21d39e6cf56cc384af55aa5657b984372e0be930bb8be6b5e127cd1bdd0d"
+      },
+      {
+        "path": "fixtures/m7/m7-corpus-manifest.v1.json",
+        "sha256": "45f8e9b894b8f36a95ff20a0633e39c665d9b273a3025c8b3ff836e7a71d2fef"
+      },
+      {
+        "path": "fixtures/m7/m7-queries-supplement.v1.json",
+        "sha256": "3b7ed989a8adcfbf6fb593e9e37cf00ddfb71784937ef41d9872535f7daf9efd"
+      },
+      {
+        "path": "fixtures/m7/m7-queries.v1.json",
+        "sha256": "db96594b6de7007fa97ed352306a5502e8911756e2f634dde23644f0f9b544b7"
+      },
+      {
+        "path": "fixtures/m7/m7-truth-registry.v1.json",
+        "sha256": "ad5a9417b29fabb14c26f04a4d93bac4801c78e1bd55a7a7d48993dd66383076"
+      }
+    ]
+  }
+}

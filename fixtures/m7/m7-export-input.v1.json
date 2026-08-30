@@ -1,0 +1,138 @@
+{
+  "candidate_graphs": [
+    {
+      "band": "medium",
+      "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+      "id": "M7-C01",
+      "object_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+      "risk_dimensions": [
+        "source_traceability_and_progressive_disclosure"
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter",
+      "id": "M7-C02",
+      "object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "risk_dimensions": [
+        "branching_and_incomparable_outcomes"
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness",
+      "id": "M7-C03",
+      "object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "risk_dimensions": [
+        "data_provenance_fan_in_fan_out"
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService",
+      "id": "M7-C04",
+      "object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "risk_dimensions": [
+        "call_and_context"
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph",
+      "id": "M7-C05",
+      "object_path": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier",
+      "risk_dimensions": [
+        "sequence_async_completion_and_synchronization"
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph",
+      "id": "M7-C06",
+      "object_path": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix",
+      "risk_dimensions": [
+        "opaque_unsupported_and_query_budget_boundaries"
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph",
+      "id": "M7-C07",
+      "object_path": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC",
+      "risk_dimensions": [
+        "cycles_and_multiple_sccs"
+      ]
+    },
+    {
+      "band": "medium",
+      "graph_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph",
+      "id": "M7-C08",
+      "object_path": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk",
+      "risk_dimensions": [
+        "cycles_and_multiple_sccs"
+      ]
+    },
+    {
+      "band": "large",
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "id": "M7-C09",
+      "object_path": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale",
+      "risk_dimensions": [
+        "branching_and_incomparable_outcomes",
+        "call_and_context",
+        "cycles_and_multiple_sccs",
+        "data_provenance_fan_in_fan_out",
+        "opaque_unsupported_and_query_budget_boundaries",
+        "sequence_async_completion_and_synchronization",
+        "small_medium_large_scale"
+      ]
+    },
+    {
+      "band": "small",
+      "graph_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph",
+      "id": "M7-C10",
+      "object_path": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample",
+      "risk_dimensions": [
+        "call_and_context",
+        "cycles_and_multiple_sccs",
+        "opaque_unsupported_and_query_budget_boundaries"
+      ]
+    }
+  ],
+  "regression_assets": [
+    {
+      "id": "M7-R01",
+      "object_path": "/Game/LensCorpus/BP_LC1_LongChain.BP_LC1_LongChain"
+    },
+    {
+      "id": "M7-R02",
+      "object_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards"
+    },
+    {
+      "id": "M7-R03",
+      "object_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance"
+    },
+    {
+      "id": "M7-R04",
+      "object_path": "/Game/LensCorpus/BP_LC4_SequenceDisclosure.BP_LC4_SequenceDisclosure"
+    },
+    {
+      "id": "M7-R05",
+      "object_path": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier"
+    },
+    {
+      "id": "M7-R06",
+      "object_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe"
+    },
+    {
+      "id": "M7-R07",
+      "object_path": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix"
+    },
+    {
+      "id": "M7-R08",
+      "object_path": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC"
+    }
+  ],
+  "schema_name": "blueprint-lens-m3-corpus",
+  "schema_version": "1.0.0"
+}

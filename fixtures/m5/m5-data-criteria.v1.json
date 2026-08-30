@@ -1,0 +1,105 @@
+{
+  "controlled_cases": [
+    {
+      "case_id": "M5-T01",
+      "document_path": "fixtures/v1/BP_SlicingProbe.v1.json",
+      "document_sha256": "7a39ff8159761491dc8490aabb0449bac4638af9adf488bbe3cb476f58943496",
+      "ground_truth_path": "fixtures/ground_truth/v1/BP_SlicingProbe.health-data.v1.json",
+      "ground_truth_sha256": "7c143618f81ca72758f51c8c5c7192f27f5fd6fdbf04ccdfa114a28f1132d534",
+      "review_status": "independent_reviewed"
+    },
+    {
+      "case_id": "M5-T02",
+      "document_path": "artifacts/r1/lc3-value-truth/BP_LC3_ValueProvenance.ir.v1.json",
+      "document_sha256": "f7a0911c1567489012b277cf6a0a9bd1756d77e4d9871cd51f20b8177078333f",
+      "ground_truth_path": "artifacts/r1/lc3-value-truth/BP_LC3_ValueProvenance.data.ground-truth.v1.json",
+      "ground_truth_sha256": "ce1fa1f7a080216f472ca4563426e1101ab463da131c8e74589790e200504178",
+      "review_status": "frozen"
+    }
+  ],
+  "corpus_manifest": {
+    "path": "fixtures/m3/m3-corpus-manifest.v1.json",
+    "sha256": "276ce44f4df3e24ba1afee4ac0d9657fcbefa2e26e9e42affc95f7230576a7b1"
+  },
+  "corpus_smoke_cases": [
+    {
+      "blueprint_object_path": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe",
+      "candidate_id": "M3-C01",
+      "case_id": "M5-S01",
+      "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+      "member_guid": "0fdf8c87-4cc0-0093-a246-d2a760d4d912",
+      "member_name": "Health",
+      "question": "Where is Health read and written, where do its written values come from, and which direct conditions control those writes?"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "candidate_id": "M3-C02",
+      "case_id": "M5-S02",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter",
+      "member_guid": "fb89bbda-4c06-a817-0d9e-13bb96e04595",
+      "member_name": "Ready",
+      "question": "Where is Ready read and written, where do its written values come from, and which direct conditions control those writes?"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "candidate_id": "M3-C03",
+      "case_id": "M5-S03",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness",
+      "member_guid": "663548ed-41d5-a0bc-5de1-769686b34b74",
+      "member_name": "MaxCapacity",
+      "question": "Where is MaxCapacity read and written, where do its written values come from, and which direct conditions control those writes?"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main",
+      "candidate_id": "M3-C04",
+      "case_id": "M5-S04",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService",
+      "member_guid": "39422539-451a-9f61-92fd-ac913050f763",
+      "member_name": "IsServiceAccepted",
+      "question": "Where is IsServiceAccepted read and written, where do its written values come from, and which direct conditions control those writes?"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier",
+      "candidate_id": "M3-C05",
+      "case_id": "M5-S05",
+      "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph",
+      "member_guid": "13d24cee-4f6f-1497-5f20-fb9c6ef8b9b7",
+      "member_name": "LC4AsyncComplete",
+      "question": "Where is LC4AsyncComplete read and written, where do its written values come from, and which direct conditions control those writes?"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix",
+      "candidate_id": "M3-C06",
+      "case_id": "M5-S06",
+      "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph",
+      "member_guid": "e3e804e9-49a8-93e1-75f4-1ab7ba13da25",
+      "member_name": "LC6OpaqueDone",
+      "question": "Where is LC6OpaqueDone read and written, where do its written values come from, and which direct conditions control those writes?"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC",
+      "candidate_id": "M3-C07",
+      "case_id": "M5-S07",
+      "graph_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph",
+      "member_guid": "f057a73c-4c2c-d664-651c-129321be6a47",
+      "member_name": "LC7Counter",
+      "question": "Where is LC7Counter read and written, where do its written values come from, and which direct conditions control those writes?"
+    },
+    {
+      "blueprint_object_path": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk",
+      "candidate_id": "M3-C08",
+      "case_id": "M5-S08",
+      "graph_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph",
+      "member_guid": "0467f668-4810-2a51-e0a3-f98a3b1ee2cc",
+      "member_name": "M3DispatchAttempts",
+      "question": "Where is M3DispatchAttempts read and written, where do its written values come from, and which direct conditions control those writes?"
+    }
+  ],
+  "m3_pipeline_report": {
+    "path": "artifacts/m3/production-pipeline/pipeline-report.v1.json",
+    "sha256": "b1dd66d5a3afeb2f0cf35e7b21db7e595074ff1a3d7d66d3575f4efc18c7f7c5"
+  },
+  "rules_version": "1.0.0",
+  "schema_name": "blueprint-lens-m5-data-criteria",
+  "schema_version": "1.0.0"
+}

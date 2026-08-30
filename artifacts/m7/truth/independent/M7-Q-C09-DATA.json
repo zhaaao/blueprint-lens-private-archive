@@ -1,0 +1,37 @@
+{
+  "query_id": "M7-Q-C09-DATA",
+  "slice_kind": "data",
+  "node_ids": [
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::00edf045-466b-13a4-b3a7-78a6ace94d8c",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::1b8c6650-4d20-f4aa-67ca-afaf19672f87",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::226395a1-4ce3-aa59-583b-348258fcb8b0",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::247b1287-4a4c-7c91-582a-f3b8dd05e066",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::2514c2fd-4e3c-db37-da00-d8b4750c786d",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::2b6dcb81-465c-1bdf-a286-2ca8f3c1bf47",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::4abd9a70-438b-9577-f9fa-208c916b935f",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::5168f89d-4f45-a419-0813-a195dffb1149",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::52a0c202-48f7-2ede-71ea-959d6a8eb4de",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::545f47ce-4d0a-3e6d-0582-8080be90f71d",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::6066c775-45b3-6b20-bc3c-47882f50b2bf",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::61cb7dd9-4a1c-0634-5828-e7a165d4eb99",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::62497411-46bc-f6e9-2b40-bfb293414d3c",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::73a1e785-40f8-d475-0836-9b83d5a6a6af",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::a635eed6-4173-f94e-3527-df8bd4b3a3fc",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::ae229ff8-445a-9198-8ebe-0d839e7aa938",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::b507db8c-4514-4465-6b91-4ba1d0b3a57e",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::b759c878-4bd1-c98a-4b0c-34ad3f9c931e",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::cd8a3a20-4914-ad0d-6ea0-5d9550b6ce66",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::cdeabb37-454f-f8ff-67d4-92b0ed67f580",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::d9ae7f26-4e0f-3072-d55f-838ff50e3b97",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::ea8739da-4a66-d66a-d289-cba182ed542b",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::ee6d6979-4ae3-ec14-4827-03b48c89caba",
+    "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::f07911e8-4766-fb19-2449-19a29643313f"
+  ],
+  "edge_ids": [],
+  "boundary": [],
+  "reasoning": [
+    "Data rule 2.1/2.2: GUID 0d49f811-4e46-eed6-5fae-4a871ee940f4 matched 24 Get node(s) and 0 Set node(s); the display name was not used for lookup.",
+    "Data rule 2.8: no downstream consumers were added merely because a member Get exists; only independently selected nodes contribute induced edges."
+  ],
+  "undetermined": []
+}

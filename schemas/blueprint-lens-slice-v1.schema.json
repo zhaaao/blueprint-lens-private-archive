@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-slice-v1.schema.json",
+  "title": "Blueprint Lens Slice Output v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schema_version",
+    "rules_version",
+    "source_fixture",
+    "source_sha256",
+    "slice_kind",
+    "criterion",
+    "graph_id",
+    "node_ids",
+    "edge_ids",
+    "inclusion_reasons",
+    "boundaries",
+    "counts"
+  ],
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["slice_kind", "criterion"],
+      "properties": {
+        "slice_kind": { "const": "execution_context" },
+        "criterion": { "$ref": "#/$defs/executionCriterion" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["slice_kind", "criterion"],
+      "properties": {
+        "slice_kind": { "const": "member_variable_data_dependency" },
+        "criterion": { "$ref": "#/$defs/memberVariableCriterion" }
+      }
+    }
+  ],
+  "properties": {
+    "format": { "const": "blueprint-lens-slice" },
+    "schema_version": { "const": "1.0.0" },
+    "rules_version": { "const": "1.0.0" },
+    "source_fixture": { "type": "string", "minLength": 1 },
+    "source_sha256": { "type": "string", "pattern": "^[0-9A-F]{64}$" },
+    "slice_kind": {
+      "enum": ["execution_context", "member_variable_data_dependency"]
+    },
+    "criterion": {
+      "oneOf": [
+        { "$ref": "#/$defs/executionCriterion" },
+        { "$ref": "#/$defs/memberVariableCriterion" }
+      ]
+    },
+    "graph_id": { "type": "string", "minLength": 1 },
+    "node_ids": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "edge_ids": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "inclusion_reasons": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "enum": [
+            "criterion",
+            "execution_predecessor",
+            "required_data_producer",
+            "opaque_input_producer",
+            "member_get",
+            "member_set",
+            "direct_write_controller",
+            "opaque_boundary",
+            "uncertain_boundary",
+            "unsupported_boundary"
+          ]
+        },
+        "uniqueItems": true
+      }
+    },
+    "boundaries": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["node_id", "status", "reason"],
+        "properties": {
+          "node_id": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["opaque", "uncertain", "unsupported"] },
+          "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nodes", "edges"],
+      "properties": {
+        "nodes": { "type": "integer", "minimum": 0 },
+        "edges": { "type": "integer", "minimum": 0 }
+      }
+    }
+  },
+  "$defs": {
+    "executionCriterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["graph_id", "node_id", "description"],
+      "properties": {
+        "graph_id": { "type": "string", "minLength": 1 },
+        "node_id": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 }
+      }
+    },
+    "memberVariableCriterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["graph_id", "member_guid", "member_name", "question"],
+      "properties": {
+        "graph_id": { "type": "string", "minLength": 1 },
+        "member_guid": { "type": "string", "minLength": 1 },
+        "member_name": { "type": "string", "minLength": 1 },
+        "question": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

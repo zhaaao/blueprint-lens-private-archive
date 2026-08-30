@@ -1,0 +1,48 @@
+{
+  "criterion": {
+    "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService",
+    "member_guid": "39422539-451a-9f61-92fd-ac913050f763",
+    "member_name": "IsServiceAccepted",
+    "question": "Derive the data dependency slice for the IsServiceAccepted member around the service call."
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:UserConstructionScript: excluded because slicing is graph-local to CallService",
+    "No downstream consumers of a member Get are selected (data rule 8)",
+    "1 of 5 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 3,
+      "edges": 5,
+      "execution_edges": 2,
+      "nodes": 4
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::35f01962-4399-b1bc-ebe0-b19fefc2c8df::pin::locator-output-Demand-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b::pin::locator-input-Demand-0",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::35f01962-4399-b1bc-ebe0-b19fefc2c8df::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::8a4f7bc9-4676-a822-461d-778b6a2bb01f::pin::locator-output-ServiceRef-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b::pin::locator-input-self-0",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b::pin::locator-output-Accepted-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::2ef55eff-443a-869a-ab63-359ce19fd32f::pin::locator-input-IsServiceAccepted-0",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::2ef55eff-443a-869a-ab63-359ce19fd32f::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::2ef55eff-443a-869a-ab63-359ce19fd32f",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::35f01962-4399-b1bc-ebe0-b19fefc2c8df",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::8a4f7bc9-4676-a822-461d-778b6a2bb01f",
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, frozen eighteen. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "member_variable_data_dependency",
+  "source_fixture": "8ca0b6a00f2943b8672a1308934442b81e1e88fb2cc366c0805668e872ba7661.blueprint-lens-v1.json",
+  "source_sha256": "AE3081275ADA00B7370F17695B111C13F86E29A0707BA3B722E48AC48DED9E8F"
+}

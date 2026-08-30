@@ -1,0 +1,20 @@
+{
+  "query_id": "M7-Q-S-C03-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::66938d40-45b4-c96c-9c02-06a66e7d55f4",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::edge::/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::80f3e472-4e75-3038-5199-e1800ea3db41::pin::locator-output-then-0->/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::66938d40-45b4-c96c-9c02-06a66e7d55f4::pin::locator-input-execute-0"
+  ],
+  "boundary": [],
+  "reasoning": [
+    "Execution rule 2.2: criterion /Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::66938d40-45b4-c96c-9c02-06a66e7d55f4 (Return Node) is included as the root.",
+    "Execution rule 2.4: 2 supported execution predecessors were included and reverse traversal continued through each; cycles were guarded by visited IDs.",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed."
+  ],
+  "undetermined": []
+}

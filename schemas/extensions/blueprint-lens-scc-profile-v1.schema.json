@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/extensions/blueprint-lens-scc-profile-v1.schema.json",
+  "title": "Blueprint Lens LC7 Static Source-Visible SCC Profile v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "profile_id",
+    "claim_scope",
+    "runtime_iterations",
+    "source_binding",
+    "criterion_node_id",
+    "scc",
+    "counts"
+  ],
+  "properties": {
+    "format": { "const": "blueprint-lens-lc7-static-scc-profile" },
+    "format_version": { "const": "1.0.0" },
+    "profile_id": { "const": "LC7_STATIC_SINGLE_ENTRY_EXIT_SCC_V1" },
+    "claim_scope": { "const": "STATIC_SOURCE_VISIBLE_SCC" },
+    "runtime_iterations": { "const": "NOT_CLAIMED" },
+    "source_binding": { "$ref": "#/$defs/source_binding" },
+    "criterion_node_id": { "$ref": "#/$defs/id" },
+    "scc": { "$ref": "#/$defs/scc" },
+    "counts": { "$ref": "#/$defs/counts" }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "blueprint_asset_path",
+        "graph_id",
+        "asset_sha256",
+        "raw_sha256",
+        "source_sha256",
+        "audit_sha256"
+      ],
+      "properties": {
+        "blueprint_asset_path": { "$ref": "#/$defs/id" },
+        "graph_id": { "$ref": "#/$defs/id" },
+        "asset_sha256": { "$ref": "#/$defs/sha256" },
+        "raw_sha256": { "$ref": "#/$defs/sha256" },
+        "source_sha256": { "$ref": "#/$defs/sha256" },
+        "audit_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "three_ids": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/id" }
+    },
+    "one_id": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/id" }
+    },
+    "scc": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "member_node_ids",
+        "internal_edge_ids",
+        "incoming_edge_ids",
+        "outgoing_edge_ids",
+        "returning_edge_ids",
+        "entry_node_id",
+        "exit_node_id"
+      ],
+      "properties": {
+        "member_node_ids": { "$ref": "#/$defs/three_ids" },
+        "internal_edge_ids": { "$ref": "#/$defs/three_ids" },
+        "incoming_edge_ids": { "$ref": "#/$defs/one_id" },
+        "outgoing_edge_ids": { "$ref": "#/$defs/one_id" },
+        "returning_edge_ids": { "$ref": "#/$defs/one_id" },
+        "entry_node_id": { "$ref": "#/$defs/id" },
+        "exit_node_id": { "$ref": "#/$defs/id" }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nodes",
+        "edges",
+        "scc_members",
+        "internal_edges",
+        "incoming_edges",
+        "outgoing_edges"
+      ],
+      "properties": {
+        "nodes": { "const": 10 },
+        "edges": { "const": 10 },
+        "scc_members": { "const": 3 },
+        "internal_edges": { "const": 3 },
+        "incoming_edges": { "const": 1 },
+        "outgoing_edges": { "const": 1 }
+      }
+    }
+  }
+}

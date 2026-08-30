@@ -1,0 +1,51 @@
+{
+  "criterion": {
+    "description": "Rule-selected execution criterion: the node with the longest backward supported-execution chain.",
+    "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+    "node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::4dfa7c52-4c68-5126-fd8b-8ea83dbf590e"
+  },
+  "excluded_regions": [
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:UserConstructionScript: excluded because slicing is graph-local to EventGraph",
+    "No forward context is selected after the criterion (forward_context_hops=0)",
+    "17 of 24 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 2,
+      "edges": 6,
+      "execution_edges": 4,
+      "nodes": 7
+    },
+    "edge_ids": [
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::0a170a17-4a0e-e306-76df-ac876e3d5f01::pin::locator-output-then-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e::pin::locator-input-execute-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::5c0c95b9-436e-fd23-8ad4-468a09f1a36e::pin::locator-output-OutputPin-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::4dfa7c52-4c68-5126-fd8b-8ea83dbf590e::pin::locator-input-execute-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-input-A-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-output-else-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::5c0c95b9-436e-fd23-8ad4-468a09f1a36e::pin::locator-input-InputPin-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-output-ReturnValue-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-Condition-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e::pin::locator-output-then_0-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::0a170a17-4a0e-e306-76df-ac876e3d5f01",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::4dfa7c52-4c68-5126-fd8b-8ea83dbf590e",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::5c0c95b9-436e-fd23-8ad4-468a09f1a36e",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::ff067901-4f51-b8c2-4b11-cda9a6bde21e"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, rule-selected supplement. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "execution_context",
+  "source_fixture": "60fb3c769ebf10e0a24a0217d14cfd19c168b7e294ca7d9f9c26cb10b59e6386.blueprint-lens-v1.json",
+  "source_sha256": "0841255D9D523BDA0ECAE105A2EC2CBA39F28FB2F4AFE99DBED1CD8E2C4B5CCD"
+}

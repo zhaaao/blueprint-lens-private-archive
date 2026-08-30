@@ -1,0 +1,38 @@
+{
+  "criterion": {
+    "description": "Derive the readiness function execution slice and retain the fan-in that produces its result.",
+    "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness",
+    "node_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668"
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:UserConstructionScript: excluded because slicing is graph-local to ComputeReadiness",
+    "No forward context is selected after the criterion (forward_context_hops=0)",
+    "5 of 6 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 0,
+      "edges": 0,
+      "execution_edges": 0,
+      "nodes": 1
+    },
+    "edge_ids": [],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, frozen eighteen. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "execution_context",
+  "source_fixture": "8ca0b6a00f2943b8672a1308934442b81e1e88fb2cc366c0805668e872ba7661.blueprint-lens-v1.json",
+  "source_sha256": "AE3081275ADA00B7370F17695B111C13F86E29A0707BA3B722E48AC48DED9E8F"
+}

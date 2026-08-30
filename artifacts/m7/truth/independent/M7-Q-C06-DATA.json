@@ -1,0 +1,26 @@
+{
+  "query_id": "M7-Q-C06-DATA",
+  "slice_kind": "data",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0d8c4ee5-4b65-b17a-8251-80862ab5475c"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0d8c4ee5-4b65-b17a-8251-80862ab5475c::pin::locator-input-execute-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346",
+      "why": "data rule 2.7: unsupported/latent producer retained as a hard boundary; traversal stops"
+    }
+  ],
+  "reasoning": [
+    "Data rule 2.1/2.2: GUID 0068d568-47ad-601c-5cb2-4e9b90fc1266 matched 0 Get node(s) and 1 Set node(s); the display name was not used for lookup.",
+    "Data rule 2.3: Set /Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0d8c4ee5-4b65-b17a-8251-80862ab5475c (Set LC6UnsupportedDone) uses its uniquely marked variable_set_value pin /Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0d8c4ee5-4b65-b17a-8251-80862ab5475c::pin::locator-input-LC6UnsupportedDone-0 as an independent producer-closure root.",
+    "Data rule 2.3: root pin /Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0d8c4ee5-4b65-b17a-8251-80862ab5475c::pin::locator-input-LC6UnsupportedDone-0 has no incoming data edge; no producer can be added.",
+    "Data rule 2.4: Set /Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0d8c4ee5-4b65-b17a-8251-80862ab5475c (Set LC6UnsupportedDone) is directly controlled by /Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346 (Delay); only this immediate execution predecessor is added.",
+    "Data rule 2.8: no downstream consumers were added merely because a member Get exists; only independently selected nodes contribute induced edges.",
+    "Rule 2.6/2.7: /Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346 (Delay) entered data traversal via direct_write_controller; status=unsupported, so its applicable boundary rule was applied."
+  ],
+  "undetermined": []
+}

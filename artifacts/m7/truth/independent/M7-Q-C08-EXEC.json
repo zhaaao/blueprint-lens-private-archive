@@ -1,0 +1,54 @@
+{
+  "query_id": "M7-Q-C08-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::2867b71e-4162-284e-48a3-399294f2d029",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::30b9c731-416a-adae-1c12-2986755a3737",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4390b104-4d84-e0d5-6bf9-02859d7ac933",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::705fdaa3-4602-45fe-ca39-d3be1b0e3795",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::70d42898-4a51-f165-714a-d5ab2a1c5f77",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::86d5e311-40ec-ebef-1ca9-b6950f6ca4ed",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::9f13a2c6-402e-02c1-3a71-5fb6704b143a",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::d0bffadd-43f5-abf7-8f1c-fd8b9af7ee4f",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::db47e471-42f2-dff4-0728-0b951148716f",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::2867b71e-4162-284e-48a3-399294f2d029::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::30b9c731-416a-adae-1c12-2986755a3737::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::30b9c731-416a-adae-1c12-2986755a3737::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4390b104-4d84-e0d5-6bf9-02859d7ac933::pin::locator-output-M3PriorityParcel-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a::pin::locator-input-Condition-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3::pin::locator-input-Condition-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::705fdaa3-4602-45fe-ca39-d3be1b0e3795::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::70d42898-4a51-f165-714a-d5ab2a1c5f77::pin::locator-output-M3IntakeAttempts-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535::pin::locator-input-A-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::d0bffadd-43f5-abf7-8f1c-fd8b9af7ee4f::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::86d5e311-40ec-ebef-1ca9-b6950f6ca4ed::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::9f13a2c6-402e-02c1-3a71-5fb6704b143a::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::86d5e311-40ec-ebef-1ca9-b6950f6ca4ed::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::d0bffadd-43f5-abf7-8f1c-fd8b9af7ee4f::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::705fdaa3-4602-45fe-ca39-d3be1b0e3795::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::db47e471-42f2-dff4-0728-0b951148716f::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::86d5e311-40ec-ebef-1ca9-b6950f6ca4ed::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a::pin::locator-output-else-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::9f13a2c6-402e-02c1-3a71-5fb6704b143a::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::db47e471-42f2-dff4-0728-0b951148716f::pin::locator-input-execute-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535",
+      "why": "data rule 2.6: opaque function call retained; function graph is not expanded"
+    }
+  ],
+  "reasoning": [
+    "Ambiguity reading: /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4390b104-4d84-e0d5-6bf9-02859d7ac933 (Get M3PriorityParcel) lacks symbol.is_pure; it is treated as a supported graph-visible source/transparent reroute for data rule 2.7, with only its explicit incoming data edges followed; this rejects stopping solely because the optional purity flag is absent.",
+    "Ambiguity reading: /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535 (integer < integer) reports is_pure=true but semantic_status=opaque; the named opaque-function case in data rule 2.6 takes precedence over supported-pure continuation.",
+    "Ambiguity reading: /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::70d42898-4a51-f165-714a-d5ab2a1c5f77 (Get M3IntakeAttempts) lacks symbol.is_pure; it is treated as a supported graph-visible source/transparent reroute for data rule 2.7, with only its explicit incoming data edges followed; this rejects stopping solely because the optional purity flag is absent.",
+    "Execution rule 2.2: criterion /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3 (Branch) is included as the root.",
+    "Execution rule 2.4: 9 supported execution predecessors were included and reverse traversal continued through each; cycles were guarded by visited IDs.",
+    "Execution rule 2.6: Branch /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3 (Branch) contributes only its marked branch_condition pin /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3::pin::locator-input-Condition-0; non-condition data pins and unrelated output paths are not roots.",
+    "Execution rule 2.6: Branch /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a (Branch) contributes only its marked branch_condition pin /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a::pin::locator-input-Condition-0; non-condition data pins and unrelated output paths are not roots.",
+    "Execution rule 2.6: root pin /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3::pin::locator-input-Condition-0 receives producer /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535 (integer < integer).",
+    "Execution rule 2.6: root pin /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a::pin::locator-input-Condition-0 receives producer /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4390b104-4d84-e0d5-6bf9-02859d7ac933 (Get M3PriorityParcel).",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed.",
+    "Rule 2.6/2.7: /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535 (integer < integer) entered data traversal via data_root; status=opaque, so its applicable boundary rule was applied.",
+    "Rule 2.6: opaque call /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535 (integer < integer) retains explicit input producer /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::70d42898-4a51-f165-714a-d5ab2a1c5f77 (Get M3IntakeAttempts) from pin /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535::pin::locator-input-A-0; reason=opaque_input_producer."
+  ],
+  "undetermined": []
+}

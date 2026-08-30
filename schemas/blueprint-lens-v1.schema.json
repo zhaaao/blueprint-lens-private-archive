@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-v1.schema.json",
+  "title": "Blueprint Lens Typed Graph Exchange v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schema_version",
+    "engine_version",
+    "blueprint",
+    "counts"
+  ],
+  "properties": {
+    "format": { "const": "blueprint-lens" },
+    "schema_version": { "const": "1.0.0" },
+    "engine_version": { "type": "string", "minLength": 1 },
+    "blueprint": { "$ref": "#/$defs/blueprint" },
+    "counts": { "$ref": "#/$defs/counts" }
+  },
+  "$defs": {
+    "nonEmptyString": { "type": "string", "minLength": 1 },
+    "blueprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "path", "parent_class", "graphs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/nonEmptyString" },
+        "name": { "$ref": "#/$defs/nonEmptyString" },
+        "path": { "$ref": "#/$defs/nonEmptyString" },
+        "parent_class": { "$ref": "#/$defs/nonEmptyString" },
+        "graphs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/graph" }
+        }
+      }
+    },
+    "graph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "kind", "class", "nodes", "edges"],
+      "properties": {
+        "id": { "$ref": "#/$defs/nonEmptyString" },
+        "name": { "$ref": "#/$defs/nonEmptyString" },
+        "kind": {
+          "enum": [
+            "event",
+            "function",
+            "construction_script",
+            "macro",
+            "delegate_signature",
+            "unknown"
+          ]
+        },
+        "class": { "$ref": "#/$defs/nonEmptyString" },
+        "nodes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/node" }
+        },
+        "edges": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/edge" }
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "native_guid",
+        "identity_source",
+        "class",
+        "title",
+        "position_x",
+        "position_y",
+        "semantic_status",
+        "semantic_reason",
+        "pins"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/nonEmptyString" },
+        "native_guid": { "type": "string" },
+        "identity_source": { "enum": ["node_guid", "fallback"] },
+        "class": { "$ref": "#/$defs/nonEmptyString" },
+        "title": { "type": "string" },
+        "position_x": { "type": "integer" },
+        "position_y": { "type": "integer" },
+        "semantic_status": {
+          "enum": ["supported", "opaque", "uncertain", "unsupported"]
+        },
+        "semantic_reason": { "type": "string" },
+        "symbol": { "$ref": "#/$defs/symbol" },
+        "pins": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/pin" }
+        }
+      }
+    },
+    "symbol": {
+      "oneOf": [
+        { "$ref": "#/$defs/variableSymbol" },
+        { "$ref": "#/$defs/functionSymbol" }
+      ]
+    },
+    "variableSymbol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "guid",
+        "parent_class",
+        "is_self_context",
+        "is_local_scope",
+        "kind",
+        "access"
+      ],
+      "properties": {
+        "name": { "$ref": "#/$defs/nonEmptyString" },
+        "guid": { "$ref": "#/$defs/nonEmptyString" },
+        "parent_class": { "type": "string" },
+        "is_self_context": { "type": "boolean" },
+        "is_local_scope": { "type": "boolean" },
+        "kind": { "const": "variable" },
+        "access": { "enum": ["get", "set"] }
+      }
+    },
+    "functionSymbol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "guid",
+        "parent_class",
+        "is_self_context",
+        "is_local_scope",
+        "kind",
+        "is_pure",
+        "is_latent"
+      ],
+      "properties": {
+        "name": { "$ref": "#/$defs/nonEmptyString" },
+        "guid": { "type": "string" },
+        "parent_class": { "type": "string" },
+        "is_self_context": { "type": "boolean" },
+        "is_local_scope": { "type": "boolean" },
+        "kind": { "const": "function" },
+        "is_pure": { "type": "boolean" },
+        "is_latent": { "type": "boolean" }
+      }
+    },
+    "pin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "persistent_guid",
+        "identity_source",
+        "node_id",
+        "name",
+        "direction",
+        "kind",
+        "pin_role",
+        "type",
+        "default",
+        "hidden",
+        "orphaned",
+        "not_connectable"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/nonEmptyString" },
+        "persistent_guid": { "type": "string" },
+        "identity_source": {
+          "enum": ["persistent_guid", "pin_locator"]
+        },
+        "node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "name": { "type": "string" },
+        "direction": { "enum": ["input", "output"] },
+        "kind": { "enum": ["execution", "data"] },
+        "pin_role": {
+          "enum": ["none", "variable_set_value", "branch_condition"]
+        },
+        "type": { "$ref": "#/$defs/pinType" },
+        "default": { "$ref": "#/$defs/pinDefault" },
+        "hidden": { "type": "boolean" },
+        "orphaned": { "type": "boolean" },
+        "not_connectable": { "type": "boolean" }
+      }
+    },
+    "pinType": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "category",
+        "subcategory",
+        "object_path",
+        "container",
+        "is_reference",
+        "is_const",
+        "is_weak_pointer",
+        "is_uobject_wrapper",
+        "serialize_as_single_precision_float"
+      ],
+      "properties": {
+        "category": { "type": "string" },
+        "subcategory": { "type": "string" },
+        "object_path": { "type": "string" },
+        "container": { "enum": ["none", "array", "set", "map"] },
+        "is_reference": { "type": "boolean" },
+        "is_const": { "type": "boolean" },
+        "is_weak_pointer": { "type": "boolean" },
+        "is_uobject_wrapper": { "type": "boolean" },
+        "serialize_as_single_precision_float": { "type": "boolean" },
+        "map_value_type": { "$ref": "#/$defs/terminalType" }
+      }
+    },
+    "terminalType": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "category",
+        "subcategory",
+        "object_path",
+        "is_const",
+        "is_weak_pointer",
+        "is_uobject_wrapper"
+      ],
+      "properties": {
+        "category": { "type": "string" },
+        "subcategory": { "type": "string" },
+        "object_path": { "type": "string" },
+        "is_const": { "type": "boolean" },
+        "is_weak_pointer": { "type": "boolean" },
+        "is_uobject_wrapper": { "type": "boolean" }
+      }
+    },
+    "pinDefault": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "object_path", "text"],
+      "properties": {
+        "value": { "type": "string" },
+        "object_path": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "source_node_id",
+        "source_pin_id",
+        "target_node_id",
+        "target_pin_id",
+        "direction_is_valid"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/nonEmptyString" },
+        "kind": { "enum": ["execution", "data"] },
+        "source_node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "source_pin_id": { "$ref": "#/$defs/nonEmptyString" },
+        "target_node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "target_pin_id": { "$ref": "#/$defs/nonEmptyString" },
+        "direction_is_valid": { "const": true }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "graphs",
+        "nodes",
+        "pins",
+        "edges",
+        "supported_nodes",
+        "opaque_nodes",
+        "uncertain_nodes",
+        "unsupported_nodes"
+      ],
+      "properties": {
+        "graphs": { "type": "integer", "minimum": 0 },
+        "nodes": { "type": "integer", "minimum": 0 },
+        "pins": { "type": "integer", "minimum": 0 },
+        "edges": { "type": "integer", "minimum": 0 },
+        "supported_nodes": { "type": "integer", "minimum": 0 },
+        "opaque_nodes": { "type": "integer", "minimum": 0 },
+        "uncertain_nodes": { "type": "integer", "minimum": 0 },
+        "unsupported_nodes": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

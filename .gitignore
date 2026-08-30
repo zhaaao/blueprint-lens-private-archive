@@ -1,0 +1,33 @@
+# Unreal Engine generated files
+**/.vs/
+**/Binaries/
+**/DerivedDataCache/
+**/Intermediate/
+**/Saved/
+*.sln
+*.suo
+*.VC.db*
+*.user
+
+# Python caches and local environments
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-tmp-*/
+.venv/
+venv/
+
+# Credentials and machine-local settings
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# Editor and operating-system noise
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+.DS_Store
+~$*

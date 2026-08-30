@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m10-lc-capacity-v1.schema.json",
+  "title": "Blueprint Lens M10 LC capacity v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_name", "schema_version", "measured_on", "corpus", "grammars", "limitations"],
+  "properties": {
+    "schema_name": {"const": "blueprint-lens-m10-lc-capacity"},
+    "schema_version": {"const": "1.0.0"},
+    "measured_on": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "corpus": {"$ref": "#/$defs/corpus"},
+    "grammars": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"$ref": "#/$defs/grammar"}},
+    "limitations": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"$ref": "#/$defs/limitation"}}
+  },
+  "$defs": {
+    "non_empty": {"type": "string", "minLength": 1},
+    "non_negative": {"type": "integer", "minimum": 0},
+    "positive": {"type": "integer", "minimum": 1},
+    "corpus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manifest_path", "manifest_sha256", "typed_ir_path", "graph_count", "selection_policy"],
+      "properties": {
+        "manifest_path": {"$ref": "#/$defs/non_empty"},
+        "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "typed_ir_path": {"$ref": "#/$defs/non_empty"},
+        "graph_count": {"$ref": "#/$defs/positive"},
+        "selection_policy": {"$ref": "#/$defs/non_empty"}
+      }
+    },
+    "invariant_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["outcome", "evidence"],
+      "properties": {
+        "outcome": {"type": "string", "enum": ["held", "broken", "refused"]},
+        "evidence": {"$ref": "#/$defs/non_empty"}
+      }
+    },
+    "invariants": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["collinear_overlap_pairs", "out_of_bounds_ids", "long_relation_route_ids", "max_bends", "first_screen_fact_errors"],
+      "properties": {
+        "collinear_overlap_pairs": {"$ref": "#/$defs/invariant_result"},
+        "out_of_bounds_ids": {"$ref": "#/$defs/invariant_result"},
+        "long_relation_route_ids": {"$ref": "#/$defs/invariant_result"},
+        "max_bends": {"$ref": "#/$defs/invariant_result"},
+        "first_screen_fact_errors": {"$ref": "#/$defs/invariant_result"}
+      }
+    },
+    "measurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unit_count", "source_graph_id", "source_criterion_node_id", "laid_out", "invariants"],
+      "properties": {
+        "unit_count": {"$ref": "#/$defs/positive"},
+        "source_graph_id": {"$ref": "#/$defs/non_empty"},
+        "source_criterion_node_id": {"$ref": "#/$defs/non_empty"},
+        "laid_out": {"type": "boolean"},
+        "invariants": {"$ref": "#/$defs/invariants"}
+      }
+    },
+    "first_break": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["invariant", "unit_count", "evidence"],
+          "properties": {
+            "invariant": {"type": "string", "enum": ["collinear_overlap_pairs", "out_of_bounds_ids", "long_relation_route_ids", "max_bends", "first_screen_fact_errors"]},
+            "unit_count": {"$ref": "#/$defs/positive"},
+            "evidence": {"$ref": "#/$defs/non_empty"}
+          }
+        }
+      ]
+    },
+    "grammar": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["grammar", "measurements", "first_break", "held_to_at_least", "monotone", "non_monotone_note"],
+      "properties": {
+        "grammar": {"type": "string", "enum": ["LC4", "LC5", "LC6", "LC7"]},
+        "measurements": {"type": "array", "minItems": 4, "items": {"$ref": "#/$defs/measurement"}},
+        "first_break": {"$ref": "#/$defs/first_break"},
+        "held_to_at_least": {"$ref": "#/$defs/non_negative"},
+        "monotone": {"type": "boolean"},
+        "non_monotone_note": {"type": "string"}
+      }
+    },
+    "limitation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "statement"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+        "statement": {"$ref": "#/$defs/non_empty"}
+      }
+    }
+  }
+}

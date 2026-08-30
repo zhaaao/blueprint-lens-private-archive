@@ -1,0 +1,234 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m6-baseline-facts-v1.schema.json",
+  "title": "Blueprint Lens M6 Baseline Facts v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schema_version",
+    "renderer_id",
+    "graph_id",
+    "criterion_entity_id",
+    "entities",
+    "relations",
+    "boundaries",
+    "entity_lookup",
+    "relation_lookup",
+    "counts"
+  ],
+  "properties": {
+    "format": { "const": "blueprint-lens-m6-baseline-facts" },
+    "schema_version": { "const": "1.0.0" },
+    "renderer_id": { "const": "R1_GENERIC_FRAME_FLOW_V1" },
+    "graph_id": { "$ref": "#/$defs/nonempty_string" },
+    "criterion_entity_id": {
+      "description": "Deterministic rendering anchor; member-level Data queries retain every matching Set as a criterion-role entity.",
+      "$ref": "#/$defs/nonempty_string"
+    },
+    "entities": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/entity" }
+    },
+    "relations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/relation" }
+    },
+    "boundaries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/boundary" },
+      "uniqueItems": true
+    },
+    "entity_lookup": { "$ref": "#/$defs/lookup" },
+    "relation_lookup": { "$ref": "#/$defs/lookup" },
+    "counts": { "$ref": "#/$defs/counts" }
+  },
+  "$defs": {
+    "nonempty_string": { "type": "string", "minLength": 1 },
+    "role": {
+      "enum": [
+        "criterion",
+        "control",
+        "predicate",
+        "value",
+        "consequence",
+        "boundary"
+      ]
+    },
+    "semantic_status": {
+      "enum": ["supported", "opaque", "uncertain", "unsupported"]
+    },
+    "presentation_status": {
+      "enum": [
+        "supported",
+        "opaque",
+        "uncertain",
+        "unsupported",
+        "truncated"
+      ]
+    },
+    "entity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "role",
+        "semantic_status",
+        "semantic_reason",
+        "presentation_status",
+        "presentation_reason",
+        "inclusion_reasons",
+        "analysis",
+        "source"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/nonempty_string" },
+        "label": { "$ref": "#/$defs/nonempty_string" },
+        "role": { "$ref": "#/$defs/role" },
+        "semantic_status": { "$ref": "#/$defs/semantic_status" },
+        "semantic_reason": { "type": "string" },
+        "presentation_status": { "$ref": "#/$defs/presentation_status" },
+        "presentation_reason": { "type": "string" },
+        "inclusion_reasons": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/nonempty_string" },
+          "uniqueItems": true
+        },
+        "analysis": { "$ref": "#/$defs/analysis" },
+        "source": { "$ref": "#/$defs/entity_source" }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["class_path", "position_x", "position_y", "symbol"],
+      "properties": {
+        "class_path": { "$ref": "#/$defs/nonempty_string" },
+        "position_x": { "type": "integer" },
+        "position_y": { "type": "integer" },
+        "symbol": {
+          "oneOf": [
+            { "type": "object" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "entity_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "asset_path",
+        "graph_id",
+        "node_id",
+        "native_node_guid",
+        "pin_ids"
+      ],
+      "properties": {
+        "asset_path": { "$ref": "#/$defs/nonempty_string" },
+        "graph_id": { "$ref": "#/$defs/nonempty_string" },
+        "node_id": { "$ref": "#/$defs/nonempty_string" },
+        "native_node_guid": { "$ref": "#/$defs/nonempty_string" },
+        "pin_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/nonempty_string" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "kind",
+        "semantic_label",
+        "semantic_status",
+        "semantic_reason",
+        "source_entity_id",
+        "target_entity_id",
+        "source"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/nonempty_string" },
+        "label": { "$ref": "#/$defs/nonempty_string" },
+        "kind": {
+          "enum": [
+            "execution_predecessor",
+            "controls_execution",
+            "predicate_for",
+            "provides_value"
+          ]
+        },
+        "semantic_label": {
+          "enum": [
+            "condition_true",
+            "condition_false",
+            "next_execution",
+            "branch_condition",
+            "value_input"
+          ]
+        },
+        "semantic_status": { "$ref": "#/$defs/semantic_status" },
+        "semantic_reason": { "type": "string" },
+        "source_entity_id": { "$ref": "#/$defs/nonempty_string" },
+        "target_entity_id": { "$ref": "#/$defs/nonempty_string" },
+        "source": { "$ref": "#/$defs/relation_source" }
+      }
+    },
+    "relation_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "edge_id",
+        "source_node_id",
+        "source_pin_id",
+        "source_port_label",
+        "target_node_id",
+        "target_pin_id",
+        "target_port_label"
+      ],
+      "properties": {
+        "edge_id": { "$ref": "#/$defs/nonempty_string" },
+        "source_node_id": { "$ref": "#/$defs/nonempty_string" },
+        "source_pin_id": { "$ref": "#/$defs/nonempty_string" },
+        "source_port_label": { "$ref": "#/$defs/nonempty_string" },
+        "target_node_id": { "$ref": "#/$defs/nonempty_string" },
+        "target_pin_id": { "$ref": "#/$defs/nonempty_string" },
+        "target_port_label": { "$ref": "#/$defs/nonempty_string" }
+      }
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "status", "reason"],
+      "properties": {
+        "node_id": { "$ref": "#/$defs/nonempty_string" },
+        "status": { "enum": ["opaque", "uncertain", "unsupported"] },
+        "reason": { "$ref": "#/$defs/nonempty_string" }
+      }
+    },
+    "lookup": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entities", "relations", "boundaries", "truncated"],
+      "properties": {
+        "entities": { "type": "integer", "minimum": 1 },
+        "relations": { "type": "integer", "minimum": 0 },
+        "boundaries": { "type": "integer", "minimum": 0 },
+        "truncated": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

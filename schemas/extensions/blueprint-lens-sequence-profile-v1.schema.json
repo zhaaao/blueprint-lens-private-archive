@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/extensions/blueprint-lens-sequence-profile-v1.schema.json",
+  "title": "Blueprint Lens Sequence Fan-out Profile v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schema_version",
+    "profile_id",
+    "rules_version",
+    "query_mode",
+    "source",
+    "outputs",
+    "reconvergences",
+    "counts"
+  ],
+  "properties": {
+    "format": { "const": "blueprint-lens-sequence-profile" },
+    "schema_version": { "const": "1.0.0" },
+    "profile_id": { "const": "LC4_SEQUENCE_FANOUT_TO_BOUNDARY_V1" },
+    "rules_version": { "const": "sequence_fanout_to_first_boundary_v1" },
+    "query_mode": { "const": "sequence_fanout_overview" },
+    "source": { "$ref": "#/$defs/source" },
+    "outputs": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/output" }
+    },
+    "reconvergences": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/reconvergence" }
+    },
+    "counts": { "$ref": "#/$defs/counts" }
+  },
+  "$defs": {
+    "nonEmptyString": { "type": "string", "minLength": 1 },
+    "sha256": { "type": "string", "pattern": "^[0-9A-F]{64}$" },
+    "stringIdArray": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nonEmptyString" }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "blueprint_asset_path",
+        "graph_id",
+        "sequence_node_id",
+        "criterion_node_id",
+        "asset_file",
+        "asset_sha256",
+        "raw_file",
+        "raw_sha256",
+        "sequence_source_file",
+        "sequence_source_sha256",
+        "compiler_audit_file",
+        "compiler_audit_sha256",
+        "ir_file",
+        "ir_sha256",
+        "slice_file",
+        "slice_sha256"
+      ],
+      "properties": {
+        "blueprint_asset_path": { "$ref": "#/$defs/nonEmptyString" },
+        "graph_id": { "$ref": "#/$defs/nonEmptyString" },
+        "sequence_node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "criterion_node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "asset_file": { "$ref": "#/$defs/nonEmptyString" },
+        "asset_sha256": { "$ref": "#/$defs/sha256" },
+        "raw_file": { "$ref": "#/$defs/nonEmptyString" },
+        "raw_sha256": { "$ref": "#/$defs/sha256" },
+        "sequence_source_file": { "$ref": "#/$defs/nonEmptyString" },
+        "sequence_source_sha256": { "$ref": "#/$defs/sha256" },
+        "compiler_audit_file": { "$ref": "#/$defs/nonEmptyString" },
+        "compiler_audit_sha256": { "$ref": "#/$defs/sha256" },
+        "ir_file": { "$ref": "#/$defs/nonEmptyString" },
+        "ir_sha256": { "$ref": "#/$defs/sha256" },
+        "slice_file": { "$ref": "#/$defs/nonEmptyString" },
+        "slice_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "termination": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "node_id"],
+      "properties": {
+        "kind": {
+          "enum": [
+            "criterion",
+            "ordinary_reconvergence",
+            "nested_fanout",
+            "unsupported_boundary",
+            "uncertain_boundary",
+            "opaque_boundary",
+            "terminal",
+            "cycle_revisit",
+            "graph_boundary",
+            "unconnected"
+          ]
+        },
+        "node_id": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_pin_id",
+        "source_pin_name",
+        "ordinal",
+        "connection_state",
+        "connected_edge_ids",
+        "criterion_relation",
+        "criterion_reason",
+        "reachable_node_ids",
+        "reachable_edge_ids",
+        "termination"
+      ],
+      "properties": {
+        "source_pin_id": { "$ref": "#/$defs/nonEmptyString" },
+        "source_pin_name": { "$ref": "#/$defs/nonEmptyString" },
+        "ordinal": { "type": "integer", "minimum": 0 },
+        "connection_state": { "enum": ["connected", "unconnected"] },
+        "connected_edge_ids": { "$ref": "#/$defs/stringIdArray" },
+        "criterion_relation": { "enum": ["included", "outside", "indeterminate"] },
+        "criterion_reason": {
+          "enum": [
+            "selected_execution_edge",
+            "no_selected_execution_edge",
+            "unconnected_output",
+            "unsupported_or_uncertain_boundary"
+          ]
+        },
+        "reachable_node_ids": { "$ref": "#/$defs/stringIdArray" },
+        "reachable_edge_ids": { "$ref": "#/$defs/stringIdArray" },
+        "termination": { "$ref": "#/$defs/termination" }
+      }
+    },
+    "reconvergence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "kind",
+        "incoming_output_ordinals",
+        "shared_reachable_node_ids",
+        "shared_reachable_edge_ids",
+        "termination"
+      ],
+      "properties": {
+        "node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "kind": { "const": "ordinary_multi_predecessor" },
+        "incoming_output_ordinals": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 0 }
+        },
+        "shared_reachable_node_ids": { "$ref": "#/$defs/stringIdArray" },
+        "shared_reachable_edge_ids": { "$ref": "#/$defs/stringIdArray" },
+        "termination": { "$ref": "#/$defs/termination" }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "declared_output_count",
+        "connected_output_count",
+        "unconnected_output_count",
+        "criterion_included_output_count",
+        "outside_criterion_connected_output_count",
+        "indeterminate_output_count"
+      ],
+      "properties": {
+        "declared_output_count": { "type": "integer", "minimum": 2 },
+        "connected_output_count": { "type": "integer", "minimum": 0 },
+        "unconnected_output_count": { "type": "integer", "minimum": 0 },
+        "criterion_included_output_count": { "type": "integer", "minimum": 0 },
+        "outside_criterion_connected_output_count": { "type": "integer", "minimum": 0 },
+        "indeterminate_output_count": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

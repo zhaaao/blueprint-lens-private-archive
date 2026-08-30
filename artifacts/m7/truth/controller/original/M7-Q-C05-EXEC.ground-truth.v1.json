@@ -1,0 +1,41 @@
+{
+  "criterion": {
+    "description": "Derive the execution slice rooted at the sequence barrier and include its asynchronous completion ordering.",
+    "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph",
+    "node_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::1d27282b-45ad-6d3e-6b10-328738c3daaa"
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:UserConstructionScript: excluded because slicing is graph-local to EventGraph",
+    "No forward context is selected after the criterion (forward_context_hops=0)",
+    "9 of 11 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 0,
+      "edges": 1,
+      "execution_edges": 1,
+      "nodes": 2
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::edge::/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::cf20391b-47d9-5493-fba2-0cb745443345::pin::locator-output-then-0->/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::1d27282b-45ad-6d3e-6b10-328738c3daaa::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::1d27282b-45ad-6d3e-6b10-328738c3daaa",
+      "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::cf20391b-47d9-5493-fba2-0cb745443345"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, frozen eighteen. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "execution_context",
+  "source_fixture": "a6fea0235eb7390b0bd6f3d8ca4813dea7f0256e044a6d30eda4e112c10f8083.blueprint-lens-v1.json",
+  "source_sha256": "17B56DE55BD564965EEABF82345E4E2B501DB9688007EAC0E0151E633D8E645A"
+}

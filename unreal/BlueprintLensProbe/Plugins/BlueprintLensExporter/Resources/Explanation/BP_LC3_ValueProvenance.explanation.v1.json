@@ -1,0 +1,468 @@
+{
+  "counts": {
+    "lanes": 6,
+    "relations": 6,
+    "source_edges": 6,
+    "source_nodes": 7,
+    "units": 7
+  },
+  "criterion_unit_id": "unit.criterion.893fe8b6-4000-8e4f-8772-f8ae66264c08",
+  "format": "blueprint-lens-explanation",
+  "groups": [
+    {
+      "claim_evidence": [
+        {
+          "component": "id",
+          "fact_owner": "value_cone.group_id",
+          "source": "lc3_value_truth.value_cone.group_id"
+        },
+        {
+          "component": "kind",
+          "fact_owner": "value_cone.kind",
+          "source": "lc3_value_truth.value_cone.kind"
+        },
+        {
+          "component": "title",
+          "fact_owner": "criterion.member_name",
+          "source": "lc3_value_truth.criterion.member_name"
+        },
+        {
+          "component": "ordered_unit_ids",
+          "fact_owner": "value_cone.ordered_node_ids",
+          "source": "lc3_value_truth.value_cone.ordered_node_ids"
+        },
+        {
+          "component": "ordered_relation_ids",
+          "fact_owner": "value_cone.ordered_edge_ids",
+          "source": "lc3_value_truth.value_cone.ordered_edge_ids"
+        },
+        {
+          "component": "entry_unit_id",
+          "fact_owner": "value_cone.entry_node_id",
+          "source": "lc3_value_truth.value_cone.entry_node_id"
+        },
+        {
+          "component": "parent_group_id",
+          "fact_owner": "value_cone.parent_group_id",
+          "source": "lc3_value_truth.value_cone.parent_group_id"
+        },
+        {
+          "component": "entered_by",
+          "fact_owner": "value_cone.entered_by",
+          "source": "lc3_value_truth.value_cone.entered_by"
+        },
+        {
+          "component": "member_count",
+          "fact_owner": "value_cone.member_count",
+          "source": "lc3_value_truth.value_cone.member_count"
+        },
+        {
+          "component": "projection_status",
+          "fact_owner": "value_cone.projection_status",
+          "source": "lc3_value_truth.value_cone.projection_status"
+        },
+        {
+          "component": "diagnostic_code",
+          "fact_owner": "value_cone.diagnostic_code",
+          "source": "lc3_value_truth.value_cone.diagnostic_code"
+        }
+      ],
+      "diagnostic_code": "",
+      "entered_by": null,
+      "entry_unit_id": "unit.criterion.893fe8b6-4000-8e4f-8772-f8ae66264c08",
+      "id": "group.value_cone.lc3-score",
+      "kind": "value_cone",
+      "member_count": 6,
+      "ordered_relation_ids": [
+        "relation.provides_value.b6496cc59646ed65",
+        "relation.provides_value.972397eb7e8f78f1",
+        "relation.provides_value.a62ae09d1033d49d",
+        "relation.provides_value.9518fcecd395a521",
+        "relation.provides_value.30f1ddfeae38866c"
+      ],
+      "ordered_unit_ids": [
+        "unit.criterion.893fe8b6-4000-8e4f-8772-f8ae66264c08",
+        "unit.value.d2f0f839-4b2e-4f8a-f883-149baa7a24b6",
+        "unit.value.4d2e8f23-41cf-19cf-1196-399c762340b2",
+        "unit.value.0ed63f6c-478a-8511-f83b-faa83f12245a",
+        "unit.value.d579ea07-4b75-80a4-baf1-4682a24c8237",
+        "unit.value.47c141e6-4997-d0f0-e561-a0826aba9bf2"
+      ],
+      "parent_group_id": null,
+      "projection_status": "COMPLETE",
+      "title": "LC3Score value provenance"
+    }
+  ],
+  "lanes": [
+    {
+      "empty_message": "",
+      "role": "criterion",
+      "state": "populated",
+      "unit_ids": [
+        "unit.criterion.893fe8b6-4000-8e4f-8772-f8ae66264c08"
+      ]
+    },
+    {
+      "empty_message": "",
+      "role": "control",
+      "state": "populated",
+      "unit_ids": [
+        "unit.control.1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53"
+      ]
+    },
+    {
+      "empty_message": "No predicate facts in this explanation",
+      "role": "predicate",
+      "state": "empty",
+      "unit_ids": []
+    },
+    {
+      "empty_message": "",
+      "role": "value",
+      "state": "populated",
+      "unit_ids": [
+        "unit.value.0ed63f6c-478a-8511-f83b-faa83f12245a",
+        "unit.value.47c141e6-4997-d0f0-e561-a0826aba9bf2",
+        "unit.value.4d2e8f23-41cf-19cf-1196-399c762340b2",
+        "unit.value.d2f0f839-4b2e-4f8a-f883-149baa7a24b6",
+        "unit.value.d579ea07-4b75-80a4-baf1-4682a24c8237"
+      ]
+    },
+    {
+      "empty_message": "Not enabled in this backward-only query",
+      "role": "consequence",
+      "state": "not_enabled",
+      "unit_ids": []
+    },
+    {
+      "empty_message": "All selected constructs supported",
+      "role": "boundary",
+      "state": "empty",
+      "unit_ids": []
+    }
+  ],
+  "query": {
+    "criterion_source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08",
+    "direction": "backward_only",
+    "question": "Where does the value assigned to LC3Score come from?"
+  },
+  "relations": [
+    {
+      "id": "relation.provides_value.a62ae09d1033d49d",
+      "kind": "provides_value",
+      "label": "A",
+      "port_label": "BaseScore",
+      "semantic_label": "value_input",
+      "source_edge_endpoints": [
+        {
+          "source_edge_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::0ed63f6c-478a-8511-f83b-faa83f12245a::pin::locator-output-BaseScore-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-input-A-0",
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::0ed63f6c-478a-8511-f83b-faa83f12245a",
+          "source_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::0ed63f6c-478a-8511-f83b-faa83f12245a::pin::locator-output-BaseScore-0",
+          "source_port_label": "BaseScore",
+          "target_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2",
+          "target_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-input-A-0",
+          "target_port_label": "A"
+        }
+      ],
+      "source_edge_ids": [
+        "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::0ed63f6c-478a-8511-f83b-faa83f12245a::pin::locator-output-BaseScore-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-input-A-0"
+      ],
+      "source_unit_id": "unit.value.0ed63f6c-478a-8511-f83b-faa83f12245a",
+      "target_unit_id": "unit.value.4d2e8f23-41cf-19cf-1196-399c762340b2"
+    },
+    {
+      "id": "relation.execution_predecessor.05e562c27575c8d5",
+      "kind": "execution_predecessor",
+      "label": "then",
+      "port_label": "then",
+      "semantic_label": "next_execution",
+      "source_edge_endpoints": [
+        {
+          "source_edge_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53::pin::locator-output-then-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08::pin::locator-input-execute-0",
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53",
+          "source_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53::pin::locator-output-then-0",
+          "source_port_label": "then",
+          "target_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08",
+          "target_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08::pin::locator-input-execute-0",
+          "target_port_label": "execute"
+        }
+      ],
+      "source_edge_ids": [
+        "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53::pin::locator-output-then-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08::pin::locator-input-execute-0"
+      ],
+      "source_unit_id": "unit.control.1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53",
+      "target_unit_id": "unit.criterion.893fe8b6-4000-8e4f-8772-f8ae66264c08"
+    },
+    {
+      "id": "relation.provides_value.30f1ddfeae38866c",
+      "kind": "provides_value",
+      "label": "B",
+      "port_label": "Penalty",
+      "semantic_label": "value_input",
+      "source_edge_endpoints": [
+        {
+          "source_edge_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::47c141e6-4997-d0f0-e561-a0826aba9bf2::pin::locator-output-Penalty-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-input-B-0",
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::47c141e6-4997-d0f0-e561-a0826aba9bf2",
+          "source_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::47c141e6-4997-d0f0-e561-a0826aba9bf2::pin::locator-output-Penalty-0",
+          "source_port_label": "Penalty",
+          "target_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6",
+          "target_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-input-B-0",
+          "target_port_label": "B"
+        }
+      ],
+      "source_edge_ids": [
+        "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::47c141e6-4997-d0f0-e561-a0826aba9bf2::pin::locator-output-Penalty-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-input-B-0"
+      ],
+      "source_unit_id": "unit.value.47c141e6-4997-d0f0-e561-a0826aba9bf2",
+      "target_unit_id": "unit.value.d2f0f839-4b2e-4f8a-f883-149baa7a24b6"
+    },
+    {
+      "id": "relation.provides_value.972397eb7e8f78f1",
+      "kind": "provides_value",
+      "label": "A",
+      "port_label": "ReturnValue",
+      "semantic_label": "value_input",
+      "source_edge_endpoints": [
+        {
+          "source_edge_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-input-A-0",
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2",
+          "source_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-output-ReturnValue-0",
+          "source_port_label": "ReturnValue",
+          "target_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6",
+          "target_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-input-A-0",
+          "target_port_label": "A"
+        }
+      ],
+      "source_edge_ids": [
+        "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-input-A-0"
+      ],
+      "source_unit_id": "unit.value.4d2e8f23-41cf-19cf-1196-399c762340b2",
+      "target_unit_id": "unit.value.d2f0f839-4b2e-4f8a-f883-149baa7a24b6"
+    },
+    {
+      "id": "relation.provides_value.b6496cc59646ed65",
+      "kind": "provides_value",
+      "label": "LC3Score",
+      "port_label": "ReturnValue",
+      "semantic_label": "value_input",
+      "source_edge_endpoints": [
+        {
+          "source_edge_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08::pin::locator-input-LC3Score-0",
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6",
+          "source_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-output-ReturnValue-0",
+          "source_port_label": "ReturnValue",
+          "target_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08",
+          "target_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08::pin::locator-input-LC3Score-0",
+          "target_port_label": "LC3Score"
+        }
+      ],
+      "source_edge_ids": [
+        "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08::pin::locator-input-LC3Score-0"
+      ],
+      "source_unit_id": "unit.value.d2f0f839-4b2e-4f8a-f883-149baa7a24b6",
+      "target_unit_id": "unit.criterion.893fe8b6-4000-8e4f-8772-f8ae66264c08"
+    },
+    {
+      "id": "relation.provides_value.9518fcecd395a521",
+      "kind": "provides_value",
+      "label": "B",
+      "port_label": "BonusScore",
+      "semantic_label": "value_input",
+      "source_edge_endpoints": [
+        {
+          "source_edge_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d579ea07-4b75-80a4-baf1-4682a24c8237::pin::locator-output-BonusScore-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-input-B-0",
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d579ea07-4b75-80a4-baf1-4682a24c8237",
+          "source_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d579ea07-4b75-80a4-baf1-4682a24c8237::pin::locator-output-BonusScore-0",
+          "source_port_label": "BonusScore",
+          "target_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2",
+          "target_pin_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-input-B-0",
+          "target_port_label": "B"
+        }
+      ],
+      "source_edge_ids": [
+        "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d579ea07-4b75-80a4-baf1-4682a24c8237::pin::locator-output-BonusScore-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-input-B-0"
+      ],
+      "source_unit_id": "unit.value.d579ea07-4b75-80a4-baf1-4682a24c8237",
+      "target_unit_id": "unit.value.4d2e8f23-41cf-19cf-1196-399c762340b2"
+    }
+  ],
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "source": {
+    "blueprint_asset_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+    "blueprint_package_sha256": "8523303754C909A393A78CA7A4F9F52865DD024A5BDEB7A540824FBC7611EA5E",
+    "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+    "ir_path": "artifacts/r1/lc3-value-truth/BP_LC3_ValueProvenance.ir.v1.json",
+    "ir_sha256": "F7A0911C1567489012B277CF6A0A9BD1756D77E4D9871CD51F20B8177078333F",
+    "slice_path": "artifacts/r1/lc3-value-truth/BP_LC3_ValueProvenance.data.slice.v1.json",
+    "slice_sha256": "E6528E30E04F3BF8BF297D062BC8CD1E0DD81BC071B0BAB254FAD1C22A9E9261"
+  },
+  "units": [
+    {
+      "expression": "",
+      "id": "unit.criterion.893fe8b6-4000-8e4f-8772-f8ae66264c08",
+      "inclusion_reasons": [
+        "member_set"
+      ],
+      "kind": "node",
+      "role": "criterion",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+          "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+          "native_node_guid": "893fe8b6-4000-8e4f-8772-f8ae66264c08",
+          "primary": true,
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08",
+          "source_pin_ids": [
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08::pin::locator-input-LC3Score-0",
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08::pin::locator-input-execute-0"
+          ]
+        }
+      ],
+      "title": "Set LC3Score"
+    },
+    {
+      "expression": "",
+      "id": "unit.control.1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53",
+      "inclusion_reasons": [
+        "direct_write_controller"
+      ],
+      "kind": "node",
+      "role": "control",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+          "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+          "native_node_guid": "1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53",
+          "primary": true,
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53",
+          "source_pin_ids": [
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53::pin::locator-output-then-0"
+          ]
+        }
+      ],
+      "title": "BeginPlay"
+    },
+    {
+      "expression": "",
+      "id": "unit.value.0ed63f6c-478a-8511-f83b-faa83f12245a",
+      "inclusion_reasons": [
+        "required_data_producer"
+      ],
+      "kind": "node",
+      "role": "value",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+          "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+          "native_node_guid": "0ed63f6c-478a-8511-f83b-faa83f12245a",
+          "primary": true,
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::0ed63f6c-478a-8511-f83b-faa83f12245a",
+          "source_pin_ids": [
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::0ed63f6c-478a-8511-f83b-faa83f12245a::pin::locator-output-BaseScore-0"
+          ]
+        }
+      ],
+      "title": "Get BaseScore"
+    },
+    {
+      "expression": "",
+      "id": "unit.value.47c141e6-4997-d0f0-e561-a0826aba9bf2",
+      "inclusion_reasons": [
+        "required_data_producer"
+      ],
+      "kind": "node",
+      "role": "value",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+          "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+          "native_node_guid": "47c141e6-4997-d0f0-e561-a0826aba9bf2",
+          "primary": true,
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::47c141e6-4997-d0f0-e561-a0826aba9bf2",
+          "source_pin_ids": [
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::47c141e6-4997-d0f0-e561-a0826aba9bf2::pin::locator-output-Penalty-0"
+          ]
+        }
+      ],
+      "title": "Get Penalty"
+    },
+    {
+      "expression": "",
+      "id": "unit.value.4d2e8f23-41cf-19cf-1196-399c762340b2",
+      "inclusion_reasons": [
+        "required_data_producer"
+      ],
+      "kind": "node",
+      "role": "value",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+          "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+          "native_node_guid": "4d2e8f23-41cf-19cf-1196-399c762340b2",
+          "primary": true,
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2",
+          "source_pin_ids": [
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-input-A-0",
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-input-B-0",
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-output-ReturnValue-0"
+          ]
+        }
+      ],
+      "title": "Add_IntInt"
+    },
+    {
+      "expression": "",
+      "id": "unit.value.d2f0f839-4b2e-4f8a-f883-149baa7a24b6",
+      "inclusion_reasons": [
+        "required_data_producer"
+      ],
+      "kind": "node",
+      "role": "value",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+          "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+          "native_node_guid": "d2f0f839-4b2e-4f8a-f883-149baa7a24b6",
+          "primary": true,
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6",
+          "source_pin_ids": [
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-input-A-0",
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-input-B-0",
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-output-ReturnValue-0"
+          ]
+        }
+      ],
+      "title": "Subtract_IntInt"
+    },
+    {
+      "expression": "",
+      "id": "unit.value.d579ea07-4b75-80a4-baf1-4682a24c8237",
+      "inclusion_reasons": [
+        "required_data_producer"
+      ],
+      "kind": "node",
+      "role": "value",
+      "semantic_status": "supported",
+      "source_references": [
+        {
+          "blueprint_asset_path": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance",
+          "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+          "native_node_guid": "d579ea07-4b75-80a4-baf1-4682a24c8237",
+          "primary": true,
+          "source_node_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d579ea07-4b75-80a4-baf1-4682a24c8237",
+          "source_pin_ids": [
+            "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d579ea07-4b75-80a4-baf1-4682a24c8237::pin::locator-output-BonusScore-0"
+          ]
+        }
+      ],
+      "title": "Get BonusScore"
+    }
+  ]
+}

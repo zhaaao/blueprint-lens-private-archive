@@ -1,0 +1,364 @@
+{
+  "adjudicated_on": "2026-08-22",
+  "adjudicator": {
+    "identity": "controller",
+    "is_party_to_a_derivation": true,
+    "note": "The controller produced Round B and also adjudicates. Because all 38 node sets and all 38 edge sets agreed, no pair turned on this role; this record therefore records an absence of disagreements, not a confirmation that the shared derivation is correct. Had any disagreement existed, this party relationship would have been disqualifying for the adjudication."
+  },
+  "agreement_rate": {
+    "denominator": 38,
+    "numerator": 38
+  },
+  "counts": {
+    "agreed": 38,
+    "disagreed": 0,
+    "pairs": 38,
+    "unresolved": 0
+  },
+  "pairs": [
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C02-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C02-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-C02-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C02-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C02-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-C02-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C03-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C03-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-C03-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C03-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C03-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-C03-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C04-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C04-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-C04-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C04-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C04-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-C04-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C05-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C05-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-C05-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C05-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C05-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-C05-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C06-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C06-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-C06-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C06-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C06-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-C06-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C07-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C07-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-C07-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C07-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C07-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-C07-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C08-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C08-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-C08-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C08-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C08-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-C08-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C09-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C09-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-C09-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C09-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C09-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-C09-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C10-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C10-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-C10-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-C10-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-C10-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-C10-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C01-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C01-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C01-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C01-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C01-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C01-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C02-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C02-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C02-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C02-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C02-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C02-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C03-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C03-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C03-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C03-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C03-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C03-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C04-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C04-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C04-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C04-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C04-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C04-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C05-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C05-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C05-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C05-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C05-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C05-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C06-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C06-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C06-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C06-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C06-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C06-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C07-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C07-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C07-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C07-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C07-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C07-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C08-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C08-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C08-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C08-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C08-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C08-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C09-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C09-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C09-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C09-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C09-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C09-EXEC",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C10-DATA",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C10-DATA",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C10-DATA",
+      "resolution": null
+    },
+    {
+      "controller_entry_id": "M7-TRUTH-RB-S-C10-EXEC",
+      "disagreement": null,
+      "edge_agreement": true,
+      "independent_entry_id": "M7-TRUTH-RC-S-C10-EXEC",
+      "node_agreement": true,
+      "query_id": "M7-Q-S-C10-EXEC",
+      "resolution": null
+    }
+  ],
+  "schema_name": "blueprint-lens-m7-adjudication",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,44 @@
+{
+  "criterion": {
+    "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph",
+    "member_guid": "13d24cee-4f6f-1497-5f20-fb9c6ef8b9b7",
+    "member_name": "LC4AsyncComplete",
+    "question": "Derive the data dependency slice for the LC4AsyncComplete member used by the barrier."
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:UserConstructionScript: excluded because slicing is graph-local to EventGraph",
+    "No downstream consumers of a member Get are selected (data rule 8)",
+    "8 of 11 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 0,
+      "edges": 2,
+      "execution_edges": 2,
+      "nodes": 3
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::edge::/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::08c1e70c-4e59-fdb8-1622-13b709965d08::pin::locator-output-Released-0->/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::edge::/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::bce4e760-4a4a-3ec0-9b4f-149648c0341e::pin::locator-output-Released-0->/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::08c1e70c-4e59-fdb8-1622-13b709965d08",
+      "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::bce4e760-4a4a-3ec0-9b4f-149648c0341e",
+      "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::dac82ea5-43fc-3b79-a0b3-8691429f377e"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, frozen eighteen. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "member_variable_data_dependency",
+  "source_fixture": "a6fea0235eb7390b0bd6f3d8ca4813dea7f0256e044a6d30eda4e112c10f8083.blueprint-lens-v1.json",
+  "source_sha256": "17B56DE55BD564965EEABF82345E4E2B501DB9688007EAC0E0151E633D8E645A"
+}

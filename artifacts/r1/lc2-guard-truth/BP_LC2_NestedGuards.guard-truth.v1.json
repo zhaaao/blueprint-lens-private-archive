@@ -1,0 +1,382 @@
+{
+  "counts": {
+    "edges": 10,
+    "execution_edges": 8,
+    "guards": 2,
+    "nodes": 9,
+    "outcome_paths": 3,
+    "predicate_attachments": 2,
+    "predicate_data_edges": 2,
+    "reconvergence_edges": 3
+  },
+  "criterion": {
+    "literal_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-LC2Complete-0",
+    "literal_value": "true",
+    "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c"
+  },
+  "entry": {
+    "entry_edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-execute-0",
+    "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a"
+  },
+  "format": "blueprint-lens-lc2-guard-truth",
+  "guards": [
+    {
+      "branch_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+      "condition_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-Condition-0",
+      "depth": 0,
+      "entered_by_parent_outcome": null,
+      "id": "outer_guard",
+      "outcome_edges": {
+        "false": {
+          "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-else-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-execute-0",
+          "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+          "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-else-0",
+          "source_port_label": "else",
+          "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+          "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-execute-0",
+          "target_port_label": "execute"
+        },
+        "true": {
+          "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0",
+          "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+          "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0",
+          "source_port_label": "then",
+          "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+          "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0",
+          "target_port_label": "execute"
+        }
+      },
+      "parent_guard_id": null,
+      "predicate_edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb::pin::locator-output-OuterEnabled-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-Condition-0",
+      "predicate_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb"
+    },
+    {
+      "branch_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+      "condition_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-Condition-0",
+      "depth": 1,
+      "entered_by_parent_outcome": "true",
+      "id": "inner_guard",
+      "outcome_edges": {
+        "false": {
+          "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-else-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-execute-0",
+          "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+          "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-else-0",
+          "source_port_label": "else",
+          "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+          "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-execute-0",
+          "target_port_label": "execute"
+        },
+        "true": {
+          "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-execute-0",
+          "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+          "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-then-0",
+          "source_port_label": "then",
+          "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+          "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-execute-0",
+          "target_port_label": "execute"
+        }
+      },
+      "parent_guard_id": "outer_guard",
+      "predicate_edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4::pin::locator-output-InnerEnabled-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-Condition-0",
+      "predicate_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4"
+    }
+  ],
+  "outcome_paths": [
+    {
+      "branch_outcomes": [
+        {
+          "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0",
+          "guard_id": "outer_guard",
+          "outcome": "true"
+        },
+        {
+          "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-execute-0",
+          "guard_id": "inner_guard",
+          "outcome": "true"
+        }
+      ],
+      "id": "accepted",
+      "literal_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-Accepted-0",
+      "literal_value": "true",
+      "ordered_execution_edge_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-execute-0"
+      ],
+      "reconvergence_edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+      "set_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01"
+    },
+    {
+      "branch_outcomes": [
+        {
+          "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0",
+          "guard_id": "outer_guard",
+          "outcome": "true"
+        },
+        {
+          "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-else-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-execute-0",
+          "guard_id": "inner_guard",
+          "outcome": "false"
+        }
+      ],
+      "id": "inner_rejected",
+      "literal_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-InnerRejected-0",
+      "literal_value": "true",
+      "ordered_execution_edge_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-else-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-execute-0"
+      ],
+      "reconvergence_edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+      "set_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303"
+    },
+    {
+      "branch_outcomes": [
+        {
+          "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-else-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-execute-0",
+          "guard_id": "outer_guard",
+          "outcome": "false"
+        }
+      ],
+      "id": "outer_rejected",
+      "literal_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-OuterRejected-0",
+      "literal_value": "true",
+      "ordered_execution_edge_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-else-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-execute-0"
+      ],
+      "reconvergence_edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+      "set_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8"
+    }
+  ],
+  "partial_order": {
+    "incomparable_terminal_pairs": [
+      [
+        "accepted",
+        "inner_rejected"
+      ],
+      [
+        "accepted",
+        "outer_rejected"
+      ],
+      [
+        "inner_rejected",
+        "outer_rejected"
+      ]
+    ],
+    "reconvergence_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+    "reconvergence_ownership": [
+      {
+        "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+        "outcome_id": "accepted",
+        "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+        "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-output-then-0",
+        "source_port_label": "then",
+        "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+        "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+        "target_port_label": "execute"
+      },
+      {
+        "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+        "outcome_id": "inner_rejected",
+        "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+        "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-output-then-0",
+        "source_port_label": "then",
+        "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+        "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+        "target_port_label": "execute"
+      },
+      {
+        "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+        "outcome_id": "outer_rejected",
+        "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+        "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-output-then-0",
+        "source_port_label": "then",
+        "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+        "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+        "target_port_label": "execute"
+      }
+    ],
+    "semantics": "unordered_outcome_paths_with_ordered_edges_inside_each_path"
+  },
+  "predicate_attachments": [
+    {
+      "branch_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+      "condition_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-Condition-0",
+      "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb::pin::locator-output-OuterEnabled-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-Condition-0",
+      "guard_id": "outer_guard",
+      "predicate_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb",
+      "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb::pin::locator-output-OuterEnabled-0",
+      "source_pin_type": {
+        "category": "bool",
+        "container": "none",
+        "is_const": false,
+        "is_reference": false,
+        "is_uobject_wrapper": false,
+        "is_weak_pointer": false,
+        "object_path": "",
+        "serialize_as_single_precision_float": false,
+        "subcategory": "None"
+      },
+      "source_port_label": "OuterEnabled",
+      "target_pin_role": "branch_condition",
+      "target_pin_type": {
+        "category": "bool",
+        "container": "none",
+        "is_const": false,
+        "is_reference": false,
+        "is_uobject_wrapper": false,
+        "is_weak_pointer": false,
+        "object_path": "",
+        "serialize_as_single_precision_float": false,
+        "subcategory": "None"
+      },
+      "target_port_label": "Condition"
+    },
+    {
+      "branch_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+      "condition_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-Condition-0",
+      "edge_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4::pin::locator-output-InnerEnabled-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-Condition-0",
+      "guard_id": "inner_guard",
+      "predicate_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4",
+      "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4::pin::locator-output-InnerEnabled-0",
+      "source_pin_type": {
+        "category": "bool",
+        "container": "none",
+        "is_const": false,
+        "is_reference": false,
+        "is_uobject_wrapper": false,
+        "is_weak_pointer": false,
+        "object_path": "",
+        "serialize_as_single_precision_float": false,
+        "subcategory": "None"
+      },
+      "source_port_label": "InnerEnabled",
+      "target_pin_role": "branch_condition",
+      "target_pin_type": {
+        "category": "bool",
+        "container": "none",
+        "is_const": false,
+        "is_reference": false,
+        "is_uobject_wrapper": false,
+        "is_weak_pointer": false,
+        "object_path": "",
+        "serialize_as_single_precision_float": false,
+        "subcategory": "None"
+      },
+      "target_port_label": "Condition"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source": {
+    "asset_file": "BP_LC2_NestedGuards.uasset",
+    "asset_sha256": "3237123E67644493014A60AF1173200D8A40110FAD3E4608638E280282648122",
+    "graph_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph",
+    "ground_truth_file": "BP_LC2_NestedGuards.execution.ground-truth.v1.json",
+    "ground_truth_sha256": "F8A45BBA980AA6966F492BD3A155A62C5FF9067CFAA56BD45FE0D488622C696A",
+    "inventory_file": "BP_LC2_NestedGuards.inventory.tsv",
+    "inventory_sha256": "341EBE379EE4FBF44F47C8DCD35D9C02E4790DDBFE603094339D52221C4EB82F",
+    "ir_file": "BP_LC2_NestedGuards.ir.v1.json",
+    "ir_sha256": "6E80667FF69ED31DFC8AF51FA1F43A74F852177FEEB96539F50FDF419A40908E",
+    "raw_file": "BP_LC2_NestedGuards.raw-0.2.json",
+    "raw_sha256": "6A23F4F8C4D854EABFB744265EB70B2D668842DEC625DA72E45947D7BA54FC10",
+    "slice_file": "BP_LC2_NestedGuards.execution.slice.v1.json",
+    "slice_sha256": "4EA7C9EE1D45E8AE70F1E0471E9FE137F3633B2BE9B30976FDBC517002CBA1C2"
+  },
+  "source_references": [
+    {
+      "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+      "native_node_guid": "2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+      "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+      "source_pin_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-LC2Complete-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0"
+      ],
+      "symbol_name": "LC2Complete"
+    },
+    {
+      "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+      "native_node_guid": "4bffa951-4b9e-0a0a-8550-d18207765ad8",
+      "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+      "source_pin_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-OuterRejected-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-output-then-0"
+      ],
+      "symbol_name": "OuterRejected"
+    },
+    {
+      "class": "/Script/BlueprintGraph.K2Node_IfThenElse",
+      "native_node_guid": "4dd89d06-4808-31de-0aac-3482198a04f8",
+      "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+      "source_pin_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-Condition-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-else-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-then-0"
+      ],
+      "symbol_name": ""
+    },
+    {
+      "class": "/Script/BlueprintGraph.K2Node_IfThenElse",
+      "native_node_guid": "71d3417e-4477-b800-5599-aeb5cf167aab",
+      "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+      "source_pin_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-Condition-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-else-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0"
+      ],
+      "symbol_name": ""
+    },
+    {
+      "class": "/Script/BlueprintGraph.K2Node_VariableGet",
+      "native_node_guid": "887cb668-4875-a4f3-881d-bdbdc8f9ada4",
+      "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4",
+      "source_pin_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4::pin::locator-output-InnerEnabled-0"
+      ],
+      "symbol_name": "InnerEnabled"
+    },
+    {
+      "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+      "native_node_guid": "a014dbf6-4818-4e9e-179b-01adbe56b303",
+      "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+      "source_pin_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-InnerRejected-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-output-then-0"
+      ],
+      "symbol_name": "InnerRejected"
+    },
+    {
+      "class": "/Script/BlueprintGraph.K2Node_Event",
+      "native_node_guid": "adade2e8-47b1-be67-fd96-a7925b4d658a",
+      "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a",
+      "source_pin_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a::pin::locator-output-then-0"
+      ],
+      "symbol_name": ""
+    },
+    {
+      "class": "/Script/BlueprintGraph.K2Node_VariableGet",
+      "native_node_guid": "c0444d2c-4728-7756-b082-8b924827bfcb",
+      "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb",
+      "source_pin_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb::pin::locator-output-OuterEnabled-0"
+      ],
+      "symbol_name": "OuterEnabled"
+    },
+    {
+      "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+      "native_node_guid": "ff207300-49b7-1626-d7e0-c38523741e01",
+      "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+      "source_pin_ids": [
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-Accepted-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-execute-0",
+        "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-output-then-0"
+      ],
+      "symbol_name": "Accepted"
+    }
+  ]
+}

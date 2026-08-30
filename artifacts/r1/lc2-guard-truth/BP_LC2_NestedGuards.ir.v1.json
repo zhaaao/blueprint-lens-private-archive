@@ -1,0 +1,1331 @@
+{
+  "blueprint": {
+    "graphs": [
+      {
+        "class": "/Script/Engine.EdGraph",
+        "edges": [
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+            "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+            "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-else-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+            "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-else-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+            "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+            "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+            "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-else-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+            "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-else-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+            "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+            "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+            "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4::pin::locator-output-InnerEnabled-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-Condition-0",
+            "kind": "data",
+            "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4",
+            "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4::pin::locator-output-InnerEnabled-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+            "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-Condition-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+            "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+            "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a",
+            "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+            "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-execute-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb::pin::locator-output-OuterEnabled-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-Condition-0",
+            "kind": "data",
+            "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb",
+            "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb::pin::locator-output-OuterEnabled-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+            "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-Condition-0"
+          },
+          {
+            "direction_is_valid": true,
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::edge::/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-output-then-0->/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+            "kind": "execution",
+            "source_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+            "source_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-output-then-0",
+            "target_node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+            "target_pin_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0"
+          }
+        ],
+        "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph",
+        "kind": "event",
+        "name": "EventGraph",
+        "nodes": [
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+            "identity_source": "node_guid",
+            "native_guid": "2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-LC2Complete-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "LC2Complete",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::2ebd6d64-455d-c7a1-4607-5eb36d79910c",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 1660,
+            "position_y": 0,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "a8fcfcf4-40c7-1415-315f-c8beb03791d9",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "LC2Complete",
+              "parent_class": ""
+            },
+            "title": "设置LC2Complete"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+            "identity_source": "node_guid",
+            "native_guid": "4bffa951-4b9e-0a0a-8550-d18207765ad8",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-OuterRejected-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "OuterRejected",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4bffa951-4b9e-0a0a-8550-d18207765ad8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 820,
+            "position_y": 300,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "8a33181b-4ae2-5cc8-3d9f-4db9472d2879",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "OuterRejected",
+              "parent_class": ""
+            },
+            "title": "设置OuterRejected"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+            "identity_source": "node_guid",
+            "native_guid": "4dd89d06-4808-31de-0aac-3482198a04f8",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-Condition-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Condition",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "branch_condition",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-else-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "else",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::4dd89d06-4808-31de-0aac-3482198a04f8",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 1020,
+            "position_y": -80,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "分支"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_IfThenElse",
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+            "identity_source": "node_guid",
+            "native_guid": "71d3417e-4477-b800-5599-aeb5cf167aab",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-Condition-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Condition",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "branch_condition",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-else-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "else",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::71d3417e-4477-b800-5599-aeb5cf167aab",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 500,
+            "position_y": 0,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "分支"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4",
+            "identity_source": "node_guid",
+            "native_guid": "887cb668-4875-a4f3-881d-bdbdc8f9ada4",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4::pin::locator-output-InnerEnabled-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "InnerEnabled",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::887cb668-4875-a4f3-881d-bdbdc8f9ada4",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 760,
+            "position_y": 180,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "get",
+              "guid": "ca49ed60-494a-725f-3163-39a000fa1a78",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "InnerEnabled",
+              "parent_class": ""
+            },
+            "title": "获得InnerEnabled"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+            "identity_source": "node_guid",
+            "native_guid": "a014dbf6-4818-4e9e-179b-01adbe56b303",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-InnerRejected-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "InnerRejected",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::a014dbf6-4818-4e9e-179b-01adbe56b303",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 1320,
+            "position_y": 40,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "a5ea213a-4939-067f-3851-7ead04e21690",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "InnerRejected",
+              "parent_class": ""
+            },
+            "title": "设置InnerRejected"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_Event",
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a",
+            "identity_source": "node_guid",
+            "native_guid": "adade2e8-47b1-be67-fd96-a7925b4d658a",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a::pin::locator-output-OutputDelegate-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "OutputDelegate",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "delegate",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::adade2e8-47b1-be67-fd96-a7925b4d658a",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 0,
+            "position_y": 0,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "事件BeginPlay"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableGet",
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb",
+            "identity_source": "node_guid",
+            "native_guid": "c0444d2c-4728-7756-b082-8b924827bfcb",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb::pin::locator-output-OuterEnabled-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "OuterEnabled",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::c0444d2c-4728-7756-b082-8b924827bfcb",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 240,
+            "position_y": 190,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "get",
+              "guid": "428ef25a-4a8e-cc1b-7e09-1a81207c3112",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "OuterEnabled",
+              "parent_class": ""
+            },
+            "title": "获得OuterEnabled"
+          },
+          {
+            "class": "/Script/BlueprintGraph.K2Node_VariableSet",
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+            "identity_source": "node_guid",
+            "native_guid": "ff207300-49b7-1626-d7e0-c38523741e01",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "true"
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-Accepted-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Accepted",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "variable_set_value",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-execute-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "execute",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "input",
+                "hidden": true,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-input-self-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "self",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "object",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards_C",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": "false"
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-output-Output_Get-0",
+                "identity_source": "pin_locator",
+                "kind": "data",
+                "name": "Output_Get",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "bool",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              },
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:EventGraph::node::ff207300-49b7-1626-d7e0-c38523741e01",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 1320,
+            "position_y": -220,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "symbol": {
+              "access": "set",
+              "guid": "fc49c6f1-4522-8722-15bd-9db30ad00978",
+              "is_local_scope": false,
+              "is_self_context": true,
+              "kind": "variable",
+              "name": "Accepted",
+              "parent_class": ""
+            },
+            "title": "设置Accepted"
+          }
+        ]
+      },
+      {
+        "class": "/Script/Engine.EdGraph",
+        "edges": [],
+        "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:UserConstructionScript",
+        "kind": "construction_script",
+        "name": "UserConstructionScript",
+        "nodes": [
+          {
+            "class": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+            "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:UserConstructionScript::node::4b3d2d57-4459-1609-8b7b-e79b95be12f2",
+            "identity_source": "node_guid",
+            "native_guid": "4b3d2d57-4459-1609-8b7b-e79b95be12f2",
+            "pins": [
+              {
+                "default": {
+                  "object_path": "",
+                  "text": "",
+                  "value": ""
+                },
+                "direction": "output",
+                "hidden": false,
+                "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:UserConstructionScript::node::4b3d2d57-4459-1609-8b7b-e79b95be12f2::pin::locator-output-then-0",
+                "identity_source": "pin_locator",
+                "kind": "execution",
+                "name": "then",
+                "node_id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards:UserConstructionScript::node::4b3d2d57-4459-1609-8b7b-e79b95be12f2",
+                "not_connectable": false,
+                "orphaned": false,
+                "persistent_guid": "",
+                "pin_role": "none",
+                "type": {
+                  "category": "exec",
+                  "container": "none",
+                  "is_const": false,
+                  "is_reference": false,
+                  "is_uobject_wrapper": false,
+                  "is_weak_pointer": false,
+                  "object_path": "",
+                  "serialize_as_single_precision_float": false,
+                  "subcategory": "None"
+                }
+              }
+            ],
+            "position_x": 0,
+            "position_y": 0,
+            "semantic_reason": "",
+            "semantic_status": "supported",
+            "title": "Construction Script"
+          }
+        ]
+      }
+    ],
+    "id": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards",
+    "name": "BP_LC2_NestedGuards",
+    "parent_class": "/Script/Engine.Actor",
+    "path": "/Game/LensCorpus/BP_LC2_NestedGuards.BP_LC2_NestedGuards"
+  },
+  "counts": {
+    "edges": 10,
+    "graphs": 2,
+    "nodes": 10,
+    "opaque_nodes": 0,
+    "pins": 35,
+    "supported_nodes": 10,
+    "uncertain_nodes": 0,
+    "unsupported_nodes": 0
+  },
+  "engine_version": "5.8.1-56057345+++UE5+Release-5.8",
+  "format": "blueprint-lens",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,29 @@
+{
+  "query_id": "M7-Q-S-C06-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::341690c4-4cd5-f8b4-e3f6-f980b9cd76dd",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::84290cad-4610-ded7-8c13-9fa6518c66ef",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::89ce2eea-46be-a9ca-99b6-d8bee03c43f4",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::a2ee63e3-4ad8-08a6-08cb-66a9c3fb2c8b",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::b30a219f-4890-23b2-970e-d9a77d1f571b",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::b925ae7b-41dc-197e-482f-0a8ce95d42f2",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::de10be2c-4ae1-5105-7610-8db41c64cdf6"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::341690c4-4cd5-f8b4-e3f6-f980b9cd76dd::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::89ce2eea-46be-a9ca-99b6-d8bee03c43f4::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::89ce2eea-46be-a9ca-99b6-d8bee03c43f4::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::b30a219f-4890-23b2-970e-d9a77d1f571b::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::a2ee63e3-4ad8-08a6-08cb-66a9c3fb2c8b::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::de10be2c-4ae1-5105-7610-8db41c64cdf6::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::b30a219f-4890-23b2-970e-d9a77d1f571b::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::a2ee63e3-4ad8-08a6-08cb-66a9c3fb2c8b::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::b925ae7b-41dc-197e-482f-0a8ce95d42f2::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::341690c4-4cd5-f8b4-e3f6-f980b9cd76dd::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::de10be2c-4ae1-5105-7610-8db41c64cdf6::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::84290cad-4610-ded7-8c13-9fa6518c66ef::pin::locator-input-execute-0"
+  ],
+  "boundary": [],
+  "reasoning": [
+    "Execution rule 2.2: criterion /Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::84290cad-4610-ded7-8c13-9fa6518c66ef (Set LC6Truncated06) is included as the root.",
+    "Execution rule 2.4: 6 supported execution predecessors were included and reverse traversal continued through each; cycles were guarded by visited IDs.",
+    "Execution rule 2.6: root pin /Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::84290cad-4610-ded7-8c13-9fa6518c66ef::pin::locator-input-LC6Truncated06-0 has no incoming data edge; no producer can be added.",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed."
+  ],
+  "undetermined": []
+}

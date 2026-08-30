@@ -1,0 +1,451 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/extensions/blueprint-lens-async-profile-v1.schema.json",
+  "title": "Blueprint Lens Bounded Async Barrier Profile v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schema_version",
+    "profile_id",
+    "rules_version",
+    "validation_state",
+    "source",
+    "launches",
+    "continuations",
+    "barrier",
+    "schedule_variants",
+    "boundaries",
+    "trace_bounds",
+    "product_bindings",
+    "invocations",
+    "counts"
+  ],
+  "properties": {
+    "format": { "const": "blueprint-lens-async-profile" },
+    "schema_version": { "const": "1.0.0" },
+    "profile_id": { "const": "LC4_ASYNC_TWO_DELAY_BARRIER_V1" },
+    "rules_version": { "const": "async_two_delay_barrier_v1" },
+    "validation_state": { "const": "VALIDATED_PROFILE" },
+    "source": { "$ref": "#/$defs/source" },
+    "launches": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/launch" }
+    },
+    "continuations": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/continuation" }
+    },
+    "barrier": { "$ref": "#/$defs/barrier" },
+    "schedule_variants": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/scheduleVariant" }
+    },
+    "boundaries": {
+      "type": "array",
+      "minItems": 4,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/boundary" }
+    },
+    "trace_bounds": { "$ref": "#/$defs/traceBounds" },
+    "product_bindings": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/productBinding" }
+    },
+    "invocations": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/invocation" }
+    },
+    "counts": { "$ref": "#/$defs/counts" }
+  },
+  "$defs": {
+    "nonEmptyString": { "type": "string", "minLength": 1 },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "stringArray": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nonEmptyString" }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "engine_version",
+        "asset_path",
+        "asset_sha256",
+        "graph_id",
+        "sequence_node_id",
+        "criterion_node_id",
+        "criterion_execute_pin_id",
+        "criterion_source_action",
+        "criterion_assigned_value",
+        "reviewed_ground_truth_file",
+        "reviewed_ground_truth_sha256"
+      ],
+      "properties": {
+        "engine_version": { "$ref": "#/$defs/nonEmptyString" },
+        "asset_path": { "$ref": "#/$defs/nonEmptyString" },
+        "asset_sha256": { "$ref": "#/$defs/sha256" },
+        "graph_id": { "$ref": "#/$defs/nonEmptyString" },
+        "sequence_node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "criterion_node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "criterion_execute_pin_id": { "$ref": "#/$defs/nonEmptyString" },
+        "criterion_source_action": { "$ref": "#/$defs/nonEmptyString" },
+        "criterion_assigned_value": { "type": "boolean" },
+        "reviewed_ground_truth_file": { "$ref": "#/$defs/nonEmptyString" },
+        "reviewed_ground_truth_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "launch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "launch_site_id",
+        "launch_node_id",
+        "source_identity",
+        "source_node_guid",
+        "ordinal",
+        "source_pin_id",
+        "participant_id",
+        "connected_target_node_id"
+      ],
+      "properties": {
+        "launch_site_id": { "$ref": "#/$defs/nonEmptyString" },
+        "launch_node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "source_identity": { "$ref": "#/$defs/nonEmptyString" },
+        "source_node_guid": { "$ref": "#/$defs/nonEmptyString" },
+        "ordinal": { "type": "integer", "minimum": 0 },
+        "source_pin_id": { "$ref": "#/$defs/nonEmptyString" },
+        "participant_id": { "enum": ["A", "B"] },
+        "connected_target_node_id": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "continuation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "continuation_id",
+        "node_id",
+        "node_family",
+        "latent_function_name",
+        "source_node_guid",
+        "latent_uuid",
+        "resume_pin_id",
+        "resume_code_offsets"
+      ],
+      "properties": {
+        "continuation_id": { "enum": ["A", "B"] },
+        "node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "node_family": { "const": "UKismetSystemLibrary::Delay" },
+        "latent_function_name": { "const": "Delay" },
+        "source_node_guid": { "$ref": "#/$defs/nonEmptyString" },
+        "latent_uuid": { "type": "integer" },
+        "resume_pin_id": { "$ref": "#/$defs/nonEmptyString" },
+        "resume_code_offsets": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "arrivalSite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "participant_id",
+        "arrival_node_id",
+        "arrival_execute_pin_id",
+        "release_pin_id"
+      ],
+      "properties": {
+        "participant_id": { "enum": ["A", "B"] },
+        "arrival_node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "arrival_execute_pin_id": { "$ref": "#/$defs/nonEmptyString" },
+        "release_pin_id": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "barrier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "barrier_site_id",
+        "barrier_object_identity",
+        "begin_invocation_node_id",
+        "arrival_call_sites",
+        "release_output_pin_ids",
+        "release_site_id",
+        "reset_policy",
+        "cancel_policy",
+        "single_fire_guarantee",
+        "participant_ids"
+      ],
+      "properties": {
+        "barrier_site_id": { "$ref": "#/$defs/nonEmptyString" },
+        "barrier_object_identity": { "const": "FBlueprintLensAsyncBarrierState" },
+        "begin_invocation_node_id": { "$ref": "#/$defs/nonEmptyString" },
+        "arrival_call_sites": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/arrivalSite" }
+        },
+        "release_output_pin_ids": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/nonEmptyString" }
+        },
+        "release_site_id": { "$ref": "#/$defs/nonEmptyString" },
+        "reset_policy": { "const": "explicit_only" },
+        "cancel_policy": { "const": "closes_invocation" },
+        "single_fire_guarantee": { "const": true },
+        "participant_ids": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": { "enum": ["A", "B"] }
+        }
+      }
+    },
+    "scheduleVariant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schedule_variant", "duration_a_seconds", "duration_b_seconds"],
+      "properties": {
+        "schedule_variant": { "enum": ["A_FIRST", "B_FIRST"] },
+        "duration_a_seconds": { "type": "number", "minimum": 0 },
+        "duration_b_seconds": { "type": "number", "minimum": 0 }
+      }
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["boundary_kind", "support", "detail"],
+      "properties": {
+        "boundary_kind": { "enum": ["scheduler", "world_tick", "external_service", "cancellation"] },
+        "support": { "enum": ["observed_only", "bounded_harness", "not_present", "supported_negative_boundary"] },
+        "detail": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "traceBounds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fixed_world_delta_seconds", "deadline_ticks", "trace_capacity"],
+      "properties": {
+        "fixed_world_delta_seconds": { "type": "number", "minimum": 0 },
+        "deadline_ticks": { "type": "integer", "minimum": 1 },
+        "trace_capacity": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "productBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "product_id",
+        "source_file",
+        "source_sha256",
+        "compiler_audit_file",
+        "compiler_audit_sha256",
+        "trace_file",
+        "trace_sha256",
+        "compile_sha256",
+        "overlay_sha256",
+        "active_state_sha256"
+      ],
+      "properties": {
+        "product_id": { "$ref": "#/$defs/nonEmptyString" },
+        "source_file": { "$ref": "#/$defs/nonEmptyString" },
+        "source_sha256": { "$ref": "#/$defs/sha256" },
+        "compiler_audit_file": { "$ref": "#/$defs/nonEmptyString" },
+        "compiler_audit_sha256": { "$ref": "#/$defs/sha256" },
+        "trace_file": { "$ref": "#/$defs/nonEmptyString" },
+        "trace_sha256": { "$ref": "#/$defs/sha256" },
+        "compile_sha256": { "$ref": "#/$defs/sha256" },
+        "overlay_sha256": { "$ref": "#/$defs/sha256" },
+        "active_state_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "evidenceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_kind", "artifact_id", "fact_id"],
+      "properties": {
+        "evidence_kind": { "enum": ["source_fact", "compiler_audit", "trace_event"] },
+        "artifact_id": { "$ref": "#/$defs/nonEmptyString" },
+        "fact_id": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relation_id",
+        "relation_type",
+        "from_id",
+        "to_id",
+        "claim_scope",
+        "evidence_refs",
+        "derived_from_relation_ids"
+      ],
+      "properties": {
+        "relation_id": { "$ref": "#/$defs/nonEmptyString" },
+        "relation_type": { "enum": ["launch_order", "continuation_of", "local_resume_order", "participant_of", "barrier_waits_for", "barrier_release", "criterion_after_release"] },
+        "from_id": { "$ref": "#/$defs/nonEmptyString" },
+        "to_id": { "$ref": "#/$defs/nonEmptyString" },
+        "claim_scope": { "enum": ["source_guaranteed", "observed_invocation", "derived_closure"] },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/evidenceRef" }
+        },
+        "derived_from_relation_ids": { "$ref": "#/$defs/stringArray" }
+      }
+    },
+    "incomparability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "left_continuation_id",
+        "right_continuation_id",
+        "left_completion_event_id",
+        "right_completion_event_id",
+        "left_reaches_right",
+        "right_reaches_left",
+        "relation_set_complete",
+        "result",
+        "proof_basis",
+        "evidence_relation_ids"
+      ],
+      "properties": {
+        "left_continuation_id": { "const": "A" },
+        "right_continuation_id": { "const": "B" },
+        "left_completion_event_id": { "$ref": "#/$defs/nonEmptyString" },
+        "right_completion_event_id": { "$ref": "#/$defs/nonEmptyString" },
+        "left_reaches_right": { "const": false },
+        "right_reaches_left": { "const": false },
+        "relation_set_complete": { "const": true },
+        "result": { "const": "incomparable" },
+        "proof_basis": { "const": "pairwise_reachability_plus_completeness" },
+        "evidence_relation_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/nonEmptyString" }
+        }
+      }
+    },
+    "invocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "product_id",
+        "run_id",
+        "trace_id",
+        "instance_id",
+        "invocation_id",
+        "schedule_variant",
+        "recording_limit",
+        "dropped_event_count",
+        "close_reason",
+        "complete",
+        "launch_event_ids",
+        "completion_event_ids",
+        "completion_order",
+        "arrival_event_ids",
+        "barrier_release_event_id",
+        "criterion_event_id",
+        "relations",
+        "incomparability_checks"
+      ],
+      "properties": {
+        "product_id": { "$ref": "#/$defs/nonEmptyString" },
+        "run_id": { "$ref": "#/$defs/nonEmptyString" },
+        "trace_id": { "$ref": "#/$defs/nonEmptyString" },
+        "instance_id": { "$ref": "#/$defs/nonEmptyString" },
+        "invocation_id": { "$ref": "#/$defs/nonEmptyString" },
+        "schedule_variant": { "enum": ["A_FIRST", "B_FIRST"] },
+        "recording_limit": { "const": 64 },
+        "dropped_event_count": { "const": 0 },
+        "close_reason": { "const": "complete" },
+        "complete": { "const": true },
+        "launch_event_ids": { "$ref": "#/$defs/twoIds" },
+        "completion_event_ids": { "$ref": "#/$defs/twoIds" },
+        "completion_order": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": { "enum": ["A", "B"] }
+        },
+        "arrival_event_ids": { "$ref": "#/$defs/twoIds" },
+        "barrier_release_event_id": { "$ref": "#/$defs/nonEmptyString" },
+        "criterion_event_id": { "$ref": "#/$defs/nonEmptyString" },
+        "relations": {
+          "type": "array",
+          "minItems": 11,
+          "maxItems": 11,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/relation" }
+        },
+        "incomparability_checks": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
+          "items": { "$ref": "#/$defs/incomparability" }
+        }
+      }
+    },
+    "twoIds": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nonEmptyString" }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "launch_count",
+        "continuation_count",
+        "participant_count",
+        "schedule_variant_count",
+        "source_product_count",
+        "compiler_audit_count",
+        "invocation_count",
+        "relation_count",
+        "incomparability_check_count"
+      ],
+      "properties": {
+        "launch_count": { "const": 2 },
+        "continuation_count": { "const": 2 },
+        "participant_count": { "const": 2 },
+        "schedule_variant_count": { "const": 2 },
+        "source_product_count": { "const": 4 },
+        "compiler_audit_count": { "const": 4 },
+        "invocation_count": { "const": 4 },
+        "relation_count": { "const": 44 },
+        "incomparability_check_count": { "const": 4 }
+      }
+    }
+  }
+}

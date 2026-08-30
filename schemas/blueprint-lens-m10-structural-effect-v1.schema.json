@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m10-structural-effect-v1.schema.json",
+  "title": "Blueprint Lens M10 structural effect v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_name", "schema_version", "measured_on", "corpus", "graphs", "aggregate", "limitations"],
+  "properties": {
+    "schema_name": {"const": "blueprint-lens-m10-structural-effect"},
+    "schema_version": {"const": "1.0.1"},
+    "measured_on": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "corpus": {"$ref": "#/$defs/corpus"},
+    "graphs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/graph"}},
+    "aggregate": {"$ref": "#/$defs/aggregate"},
+    "limitations": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"$ref": "#/$defs/limitation"}}
+  },
+  "$defs": {
+    "non_empty": {"type": "string", "minLength": 1},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "non_negative": {"type": "integer", "minimum": 0},
+    "corpus": {
+      "type": "object", "additionalProperties": false,
+      "required": ["manifest_path", "manifest_sha256", "typed_ir_path", "graph_count"],
+      "properties": {
+        "manifest_path": {"$ref": "#/$defs/non_empty"}, "manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "typed_ir_path": {"$ref": "#/$defs/non_empty"}, "graph_count": {"$ref": "#/$defs/non_negative"}
+      }
+    },
+    "graph": {
+      "type": "object", "additionalProperties": false,
+      "required": ["graph_id", "node_count", "edge_count", "execution", "cycles"],
+      "properties": {
+        "graph_id": {"$ref": "#/$defs/non_empty"}, "node_count": {"$ref": "#/$defs/non_negative"}, "edge_count": {"$ref": "#/$defs/non_negative"},
+        "execution": {"$ref": "#/$defs/execution"}, "cycles": {"$ref": "#/$defs/cycles"}
+      }
+    },
+    "execution": {
+      "type": "object", "additionalProperties": false,
+      "required": ["criteria_total", "criteria_sliceable", "criteria_refused", "refusals", "slice_nodes", "retained_fraction", "by_node_family"],
+      "properties": {
+        "criteria_total": {"$ref": "#/$defs/non_negative"}, "criteria_sliceable": {"$ref": "#/$defs/non_negative"}, "criteria_refused": {"$ref": "#/$defs/non_negative"},
+        "refusals": {"type": "array", "items": {"$ref": "#/$defs/refusal"}}, "slice_nodes": {"$ref": "#/$defs/slice_nodes"},
+        "retained_fraction": {"$ref": "#/$defs/fraction"}, "by_node_family": {"type": "array", "items": {"$ref": "#/$defs/family"}}
+      }
+    },
+    "refusal": {
+      "type": "object", "additionalProperties": false, "required": ["code", "count", "by_node_family"],
+      "properties": {"code": {"$ref": "#/$defs/non_empty"}, "count": {"type": "integer", "minimum": 1}, "by_node_family": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/family_count"}}}
+    },
+    "family_count": {
+      "type": "object", "additionalProperties": false, "required": ["class_path", "count"],
+      "properties": {"class_path": {"$ref": "#/$defs/non_empty"}, "count": {"type": "integer", "minimum": 1}}
+    },
+    "family": {
+      "type": "object", "additionalProperties": false, "required": ["class_path", "criteria", "sliceable", "slice_node_median"],
+      "properties": {"class_path": {"$ref": "#/$defs/non_empty"}, "criteria": {"$ref": "#/$defs/non_negative"}, "sliceable": {"$ref": "#/$defs/non_negative"}, "slice_node_median": {"oneOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]}}
+    },
+    "slice_nodes": {
+      "type": "object", "additionalProperties": false, "required": ["min", "median", "max", "mean"],
+      "properties": {"min": {"type": "integer", "minimum": 1}, "median": {"type": "number", "minimum": 1}, "max": {"type": "integer", "minimum": 1}, "mean": {"type": "number", "minimum": 0}}
+    },
+    "fraction": {
+      "type": "object", "additionalProperties": false, "required": ["min", "median", "max", "denominator_basis"],
+      "properties": {"min": {"type": "number", "minimum": 0}, "median": {"type": "number", "minimum": 0}, "max": {"type": "number", "minimum": 0}, "denominator_basis": {"const": "graph_node_count"}}
+    },
+    "cycles": {
+      "type": "object", "additionalProperties": false, "required": ["scc_count", "scc_sizes", "criteria_in_scc", "criteria_in_scc_terminated"],
+      "properties": {"scc_count": {"$ref": "#/$defs/non_negative"}, "scc_sizes": {"type": "array", "items": {"type": "integer", "minimum": 2}}, "criteria_in_scc": {"$ref": "#/$defs/non_negative"}, "criteria_in_scc_terminated": {"$ref": "#/$defs/non_negative"}}
+    },
+    "aggregate": {
+      "type": "object", "additionalProperties": false,
+      "required": ["graph_count", "node_count", "edge_count", "criteria_total", "criteria_sliceable", "criteria_refused", "scc_count", "criteria_in_scc", "criteria_in_scc_terminated"],
+      "properties": {"graph_count": {"$ref": "#/$defs/non_negative"}, "node_count": {"$ref": "#/$defs/non_negative"}, "edge_count": {"$ref": "#/$defs/non_negative"}, "criteria_total": {"$ref": "#/$defs/non_negative"}, "criteria_sliceable": {"$ref": "#/$defs/non_negative"}, "criteria_refused": {"$ref": "#/$defs/non_negative"}, "scc_count": {"$ref": "#/$defs/non_negative"}, "criteria_in_scc": {"$ref": "#/$defs/non_negative"}, "criteria_in_scc_terminated": {"$ref": "#/$defs/non_negative"}}
+    },
+    "limitation": {"type": "object", "additionalProperties": false, "required": ["id", "statement"], "properties": {"id": {"type": "string", "pattern": "^[A-Z0-9_]+$"}, "statement": {"$ref": "#/$defs/non_empty"}}}
+  }
+}

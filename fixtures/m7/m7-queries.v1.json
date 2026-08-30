@@ -1,0 +1,255 @@
+{
+  "corpus_manifest": {
+    "path": "fixtures/m7/m7-corpus-manifest.v1.json",
+    "sha256": "45f8e9b894b8f36a95ff20a0633e39c665d9b273a3025c8b3ff836e7a71d2fef"
+  },
+  "frozen_on": "2026-08-21",
+  "queries": [
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C02",
+      "criterion_node_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter::node::50273b7f-433a-c06d-1889-328fcf6c5f2a",
+      "description": "Derive the execution slice rooted at the encounter branch and record the incomparable outcomes it can reach.",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter",
+      "query_id": "M7-Q-C02-EXEC",
+      "risk_dimensions": [
+        "branching_and_incomparable_outcomes"
+      ],
+      "slice_kind": "execution"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C02",
+      "description": "Derive the data dependency slice for the IsAlive member used by the branching encounter graph.",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:EvaluateEncounter",
+      "member_guid": "432200d7-4099-af3c-cee4-9c8fbd750f75",
+      "member_name": "IsAlive",
+      "query_id": "M7-Q-C02-DATA",
+      "risk_dimensions": [
+        "branching_and_incomparable_outcomes"
+      ],
+      "slice_kind": "data"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C03",
+      "criterion_node_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness::node::3aebdd67-4edd-6db9-416c-d9b59fe50668",
+      "description": "Derive the readiness function execution slice and retain the fan-in that produces its result.",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness",
+      "query_id": "M7-Q-C03-EXEC",
+      "risk_dimensions": [
+        "data_provenance_fan_in_fan_out"
+      ],
+      "slice_kind": "execution"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C03",
+      "description": "Derive the data dependency slice for the MaxCapacity member and its contributing values.",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:ComputeReadiness",
+      "member_guid": "663548ed-41d5-a0bc-5de1-769686b34b74",
+      "member_name": "MaxCapacity",
+      "query_id": "M7-Q-C03-DATA",
+      "risk_dimensions": [
+        "data_provenance_fan_in_fan_out"
+      ],
+      "slice_kind": "data"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C04",
+      "criterion_node_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService::node::c4e267c7-4871-a9fa-06e2-d6b54321057b",
+      "description": "Derive the execution slice through the service call so its call and context boundary remains visible.",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService",
+      "query_id": "M7-Q-C04-EXEC",
+      "risk_dimensions": [
+        "call_and_context"
+      ],
+      "slice_kind": "execution"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C04",
+      "description": "Derive the data dependency slice for the IsServiceAccepted member around the service call.",
+      "graph_id": "/Game/LensCorpus/BP_LensCorpus_Main.BP_LensCorpus_Main:CallService",
+      "member_guid": "39422539-451a-9f61-92fd-ac913050f763",
+      "member_name": "IsServiceAccepted",
+      "query_id": "M7-Q-C04-DATA",
+      "risk_dimensions": [
+        "call_and_context"
+      ],
+      "slice_kind": "data"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C05",
+      "criterion_node_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph::node::1d27282b-45ad-6d3e-6b10-328738c3daaa",
+      "description": "Derive the execution slice rooted at the sequence barrier and include its asynchronous completion ordering.",
+      "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph",
+      "query_id": "M7-Q-C05-EXEC",
+      "risk_dimensions": [
+        "sequence_async_completion_and_synchronization"
+      ],
+      "slice_kind": "execution"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C05",
+      "description": "Derive the data dependency slice for the LC4AsyncComplete member used by the barrier.",
+      "graph_id": "/Game/LensCorpus/BP_LC4_AsyncBarrier.BP_LC4_AsyncBarrier:EventGraph",
+      "member_guid": "13d24cee-4f6f-1497-5f20-fb9c6ef8b9b7",
+      "member_name": "LC4AsyncComplete",
+      "query_id": "M7-Q-C05-DATA",
+      "risk_dimensions": [
+        "sequence_async_completion_and_synchronization"
+      ],
+      "slice_kind": "data"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C06",
+      "criterion_node_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346",
+      "description": "Derive the execution slice through the delay boundary and preserve the opaque or unsupported endpoint.",
+      "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph",
+      "query_id": "M7-Q-C06-EXEC",
+      "risk_dimensions": [
+        "opaque_unsupported_and_query_budget_boundaries"
+      ],
+      "slice_kind": "execution"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C06",
+      "description": "Derive the data dependency slice for the LC6UnsupportedDone member at the explicit boundary.",
+      "graph_id": "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph",
+      "member_guid": "0068d568-47ad-601c-5cb2-4e9b90fc1266",
+      "member_name": "LC6UnsupportedDone",
+      "query_id": "M7-Q-C06-DATA",
+      "risk_dimensions": [
+        "opaque_unsupported_and_query_budget_boundaries"
+      ],
+      "slice_kind": "data"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C07",
+      "criterion_node_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::cbd7b169-4f74-9746-29b8-539f9f4310f9",
+      "description": "Derive the execution slice through the static loop branch and expose the cycle boundary.",
+      "graph_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph",
+      "query_id": "M7-Q-C07-EXEC",
+      "risk_dimensions": [
+        "cycles_and_multiple_sccs"
+      ],
+      "slice_kind": "execution"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C07",
+      "description": "Derive the data dependency slice for the LC7Counter member across the static cycle.",
+      "graph_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph",
+      "member_guid": "f057a73c-4c2c-d664-651c-129321be6a47",
+      "member_name": "LC7Counter",
+      "query_id": "M7-Q-C07-DATA",
+      "risk_dimensions": [
+        "cycles_and_multiple_sccs"
+      ],
+      "slice_kind": "data"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C08",
+      "criterion_node_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3",
+      "description": "Derive the execution slice through the multi-SCC branch and retain the completion path.",
+      "graph_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph",
+      "query_id": "M7-Q-C08-EXEC",
+      "risk_dimensions": [
+        "cycles_and_multiple_sccs"
+      ],
+      "slice_kind": "execution"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C08",
+      "description": "Derive the data dependency slice for the M3ParcelComplete member across the multi-SCC graph.",
+      "graph_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph",
+      "member_guid": "c1ece1ef-4295-6131-552a-589bec897444",
+      "member_name": "M3ParcelComplete",
+      "query_id": "M7-Q-C08-DATA",
+      "risk_dimensions": [
+        "cycles_and_multiple_sccs"
+      ],
+      "slice_kind": "data"
+    },
+    {
+      "annotation_scope": "bounded_region",
+      "candidate_id": "M7-C09",
+      "criterion_node_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph::node::0c70a6bc-4e64-47fe-22ac-27bb32f47a21",
+      "description": "Derive the difficult top-band execution slice rooted at the motif branch without replacing it with an easier graph.",
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "query_id": "M7-Q-C09-EXEC",
+      "region_note": "Bound the annotation to the selected branch, its sequence fan-out, loop back-edge, opaque call, and completion join within the 338-node graph.",
+      "risk_dimensions": [
+        "branching_and_incomparable_outcomes",
+        "data_provenance_fan_in_fan_out",
+        "sequence_async_completion_and_synchronization",
+        "call_and_context",
+        "opaque_unsupported_and_query_budget_boundaries",
+        "cycles_and_multiple_sccs",
+        "small_medium_large_scale"
+      ],
+      "slice_kind": "execution"
+    },
+    {
+      "annotation_scope": "bounded_region",
+      "candidate_id": "M7-C09",
+      "description": "Derive the difficult top-band data slice for M7Counter000 across the motif fan-in, fan-out, and loop consumers.",
+      "graph_id": "/Game/M7Corpus/BP_M7_MotifScale.BP_M7_MotifScale:EventGraph",
+      "member_guid": "0d49f811-4e46-eed6-5fae-4a871ee940f4",
+      "member_name": "M7Counter000",
+      "query_id": "M7-Q-C09-DATA",
+      "region_note": "Bound the annotation to the M7Counter000 producer chain and its connected branch, sequence, opaque boundary, loop, and completion consumers within the 338-node graph.",
+      "risk_dimensions": [
+        "branching_and_incomparable_outcomes",
+        "data_provenance_fan_in_fan_out",
+        "sequence_async_completion_and_synchronization",
+        "call_and_context",
+        "opaque_unsupported_and_query_budget_boundaries",
+        "cycles_and_multiple_sccs",
+        "small_medium_large_scale"
+      ],
+      "slice_kind": "data"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C10",
+      "criterion_node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+      "description": "Derive the engine-sample execution slice through the branch and its call, context, and boundary behavior.",
+      "graph_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph",
+      "query_id": "M7-Q-C10-EXEC",
+      "risk_dimensions": [
+        "call_and_context",
+        "cycles_and_multiple_sccs",
+        "opaque_unsupported_and_query_budget_boundaries"
+      ],
+      "slice_kind": "execution"
+    },
+    {
+      "annotation_scope": "whole_graph",
+      "candidate_id": "M7-C10",
+      "description": "Derive the engine-sample data dependency slice for StoredGameMode and its object-context path.",
+      "graph_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph",
+      "member_guid": "70aac5cd-4183-e1fa-16ee-dfa0a3d09b67",
+      "member_name": "StoredGameMode",
+      "query_id": "M7-Q-C10-DATA",
+      "risk_dimensions": [
+        "call_and_context",
+        "cycles_and_multiple_sccs",
+        "opaque_unsupported_and_query_budget_boundaries"
+      ],
+      "slice_kind": "data"
+    }
+  ],
+  "query_set_sha256": "8279ad3638c564f98eda8072d6f4bb769b576fb3589177b5a74dc7b7d1d75cf4",
+  "schema_name": "blueprint-lens-m7-queries",
+  "schema_version": "1.0.0"
+}

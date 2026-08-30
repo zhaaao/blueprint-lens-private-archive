@@ -1,0 +1,42 @@
+{
+  "query_id": "M7-Q-S-C07-DATA",
+  "slice_kind": "data",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::08b1b7d1-4cfa-e2de-8089-b5832da5a751",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4f0babd6-4b21-68c6-e817-00bb773b9b47",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4fc6b5fa-4e32-97d3-ff84-0f8da2f67d63",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::d1cf3d85-4bef-3d12-afee-379a21e7ad2c"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::08b1b7d1-4cfa-e2de-8089-b5832da5a751::pin::locator-output-then-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412::pin::locator-input-execute-0",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4fc6b5fa-4e32-97d3-ff84-0f8da2f67d63::pin::locator-output-LC7Counter-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9::pin::locator-input-A-0",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412::pin::locator-input-LC7Counter-0",
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::d1cf3d85-4bef-3d12-afee-379a21e7ad2c::pin::locator-output-then-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec::pin::locator-input-execute-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9",
+      "why": "data rule 2.6: opaque function call retained; function graph is not expanded"
+    }
+  ],
+  "reasoning": [
+    "Ambiguity reading: /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4fc6b5fa-4e32-97d3-ff84-0f8da2f67d63 (Get LC7Counter) lacks symbol.is_pure; it is treated as a supported graph-visible source/transparent reroute for data rule 2.7, with only its explicit incoming data edges followed; this rejects stopping solely because the optional purity flag is absent.",
+    "Ambiguity reading: /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9 (int + int) reports is_pure=true but semantic_status=opaque; the named opaque-function case in data rule 2.6 takes precedence over supported-pure continuation.",
+    "Data rule 2.1/2.2: GUID f057a73c-4c2c-d664-651c-129321be6a47 matched 2 Get node(s) and 2 Set node(s); the display name was not used for lookup.",
+    "Data rule 2.3: Set /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412 (Set LC7Counter) uses its uniquely marked variable_set_value pin /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412::pin::locator-input-LC7Counter-0 as an independent producer-closure root.",
+    "Data rule 2.3: Set /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec (Set LC7Counter) uses its uniquely marked variable_set_value pin /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec::pin::locator-input-LC7Counter-0 as an independent producer-closure root.",
+    "Data rule 2.3: root pin /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412::pin::locator-input-LC7Counter-0 receives producer /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9 (int + int).",
+    "Data rule 2.3: root pin /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec::pin::locator-input-LC7Counter-0 has no incoming data edge; no producer can be added.",
+    "Data rule 2.4: /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::08b1b7d1-4cfa-e2de-8089-b5832da5a751 (Set LC7Visited) is not a Branch, so no broader control-dependence or earlier execution context is inferred.",
+    "Data rule 2.4: /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::d1cf3d85-4bef-3d12-afee-379a21e7ad2c (LC7_STATIC_SCC) is not a Branch, so no broader control-dependence or earlier execution context is inferred.",
+    "Data rule 2.4: Set /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412 (Set LC7Counter) is directly controlled by /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::08b1b7d1-4cfa-e2de-8089-b5832da5a751 (Set LC7Visited); only this immediate execution predecessor is added.",
+    "Data rule 2.4: Set /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec (Set LC7Counter) is directly controlled by /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::d1cf3d85-4bef-3d12-afee-379a21e7ad2c (LC7_STATIC_SCC); only this immediate execution predecessor is added.",
+    "Data rule 2.8: no downstream consumers were added merely because a member Get exists; only independently selected nodes contribute induced edges.",
+    "Rule 2.6/2.7: /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9 (int + int) entered data traversal via data_root; status=opaque, so its applicable boundary rule was applied.",
+    "Rule 2.6: opaque call /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9 (int + int) retains explicit input producer /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4fc6b5fa-4e32-97d3-ff84-0f8da2f67d63 (Get LC7Counter) from pin /Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9::pin::locator-input-A-0; reason=opaque_input_producer."
+  ],
+  "undetermined": []
+}

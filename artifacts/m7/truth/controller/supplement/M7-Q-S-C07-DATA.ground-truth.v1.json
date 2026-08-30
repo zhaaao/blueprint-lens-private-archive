@@ -1,0 +1,50 @@
+{
+  "criterion": {
+    "graph_id": "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph",
+    "member_guid": "f057a73c-4c2c-d664-651c-129321be6a47",
+    "member_name": "LC7Counter",
+    "question": "Rule-selected data member: the member GUID with the most Set nodes."
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:UserConstructionScript: excluded because slicing is graph-local to EventGraph",
+    "No downstream consumers of a member Get are selected (data rule 8)",
+    "3 of 10 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 2,
+      "edges": 4,
+      "execution_edges": 2,
+      "nodes": 7
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::08b1b7d1-4cfa-e2de-8089-b5832da5a751::pin::locator-output-then-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4fc6b5fa-4e32-97d3-ff84-0f8da2f67d63::pin::locator-output-LC7Counter-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9::pin::locator-input-A-0",
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412::pin::locator-input-LC7Counter-0",
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::edge::/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::d1cf3d85-4bef-3d12-afee-379a21e7ad2c::pin::locator-output-then-0->/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::0805eaa8-47d4-f0af-bd2f-ada703333412",
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::08b1b7d1-4cfa-e2de-8089-b5832da5a751",
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::3cb511cf-454a-72bb-42b4-0f9ca778afec",
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4f0babd6-4b21-68c6-e817-00bb773b9b47",
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::4fc6b5fa-4e32-97d3-ff84-0f8da2f67d63",
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::b2d3c213-4c5a-a9c6-6f61-cca90d1b48c9",
+      "/Game/LensCorpus/BP_LC7_StaticSCC.BP_LC7_StaticSCC:EventGraph::node::d1cf3d85-4bef-3d12-afee-379a21e7ad2c"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, rule-selected supplement. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "member_variable_data_dependency",
+  "source_fixture": "f030e7a1fbbf23ff1acfb2ee1cdd4d970a4cdd6a8bbac34951abc97c8357217c.blueprint-lens-v1.json",
+  "source_sha256": "498EFFE9831ADE7CED981B6B78BDC1B35A430396EF1CF747B1780FDEB9EE205D"
+}

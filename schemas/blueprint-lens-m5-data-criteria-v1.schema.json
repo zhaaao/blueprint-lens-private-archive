@@ -1,0 +1,154 @@
+{
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m5-data-criteria-v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "portable_path": {
+      "minLength": 1,
+      "pattern": "^[^\\\\/](?:[^\\\\]*[^\\\\/])?$",
+      "type": "string"
+    },
+    "sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "binding": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/portable_path"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "controlled_case": {
+      "additionalProperties": false,
+      "properties": {
+        "case_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "document_path": {
+          "$ref": "#/$defs/portable_path"
+        },
+        "document_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "ground_truth_path": {
+          "$ref": "#/$defs/portable_path"
+        },
+        "ground_truth_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "review_status": {
+          "enum": [
+            "independent_reviewed",
+            "frozen"
+          ]
+        }
+      },
+      "required": [
+        "case_id",
+        "document_path",
+        "document_sha256",
+        "ground_truth_path",
+        "ground_truth_sha256",
+        "review_status"
+      ],
+      "type": "object"
+    },
+    "corpus_smoke_case": {
+      "additionalProperties": false,
+      "properties": {
+        "blueprint_object_path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "candidate_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "case_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "graph_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "member_guid": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "member_name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "question": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "case_id",
+        "candidate_id",
+        "blueprint_object_path",
+        "graph_id",
+        "member_guid",
+        "member_name",
+        "question"
+      ],
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "controlled_cases": {
+      "items": {
+        "$ref": "#/$defs/controlled_case"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "corpus_manifest": {
+      "$ref": "#/$defs/binding"
+    },
+    "corpus_smoke_cases": {
+      "items": {
+        "$ref": "#/$defs/corpus_smoke_case"
+      },
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array"
+    },
+    "m3_pipeline_report": {
+      "$ref": "#/$defs/binding"
+    },
+    "rules_version": {
+      "const": "1.0.0"
+    },
+    "schema_name": {
+      "const": "blueprint-lens-m5-data-criteria"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    }
+  },
+  "required": [
+    "schema_name",
+    "schema_version",
+    "rules_version",
+    "corpus_manifest",
+    "m3_pipeline_report",
+    "controlled_cases",
+    "corpus_smoke_cases"
+  ],
+  "type": "object"
+}

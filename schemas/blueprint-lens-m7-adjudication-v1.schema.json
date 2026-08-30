@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m7-adjudication-v1.schema.json",
+  "title": "Blueprint Lens M7 Adjudication Record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "adjudicated_on",
+    "adjudicator",
+    "counts",
+    "agreement_rate",
+    "pairs"
+  ],
+  "properties": {
+    "schema_name": {
+      "const": "blueprint-lens-m7-adjudication"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "adjudicated_on": {
+      "const": "2026-08-22"
+    },
+    "adjudicator": {
+      "$ref": "#/$defs/adjudicator"
+    },
+    "counts": {
+      "$ref": "#/$defs/counts"
+    },
+    "agreement_rate": {
+      "$ref": "#/$defs/agreement_rate"
+    },
+    "pairs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 76,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/pair"
+      }
+    }
+  },
+  "$defs": {
+    "non_empty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entry_id": {
+      "type": "string",
+      "pattern": "^M7-TRUTH-[A-Z0-9-]+$"
+    },
+    "query_id": {
+      "type": "string",
+      "pattern": "^M7-Q-[A-Z0-9-]+$"
+    },
+    "non_negative_integer": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "adjudicator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "identity",
+        "is_party_to_a_derivation",
+        "note"
+      ],
+      "properties": {
+        "identity": {
+          "$ref": "#/$defs/non_empty"
+        },
+        "is_party_to_a_derivation": {
+          "type": "boolean"
+        },
+        "note": {
+          "$ref": "#/$defs/non_empty"
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pairs",
+        "agreed",
+        "disagreed",
+        "unresolved"
+      ],
+      "properties": {
+        "pairs": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "agreed": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "disagreed": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "unresolved": {
+          "$ref": "#/$defs/non_negative_integer"
+        }
+      }
+    },
+    "agreement_rate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "properties": {
+        "numerator": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "denominator": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "identity_array": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/non_empty"
+      }
+    },
+    "disagreement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "controller_only_nodes",
+        "independent_only_nodes",
+        "controller_only_edges",
+        "independent_only_edges"
+      ],
+      "properties": {
+        "controller_only_nodes": {
+          "$ref": "#/$defs/identity_array"
+        },
+        "independent_only_nodes": {
+          "$ref": "#/$defs/identity_array"
+        },
+        "controller_only_edges": {
+          "$ref": "#/$defs/identity_array"
+        },
+        "independent_only_edges": {
+          "$ref": "#/$defs/identity_array"
+        }
+      }
+    },
+    "resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decided_for",
+        "reasoning",
+        "adjudicated_by"
+      ],
+      "properties": {
+        "decided_for": {
+          "enum": [
+            "controller",
+            "independent",
+            "both_wrong",
+            "slicer_output"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        },
+        "adjudicated_by": {
+          "$ref": "#/$defs/non_empty"
+        }
+      }
+    },
+    "pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "query_id",
+        "controller_entry_id",
+        "independent_entry_id",
+        "node_agreement",
+        "edge_agreement",
+        "disagreement",
+        "resolution"
+      ],
+      "properties": {
+        "query_id": {
+          "$ref": "#/$defs/query_id"
+        },
+        "controller_entry_id": {
+          "$ref": "#/$defs/entry_id"
+        },
+        "independent_entry_id": {
+          "$ref": "#/$defs/entry_id"
+        },
+        "node_agreement": {
+          "type": "boolean"
+        },
+        "edge_agreement": {
+          "type": "boolean"
+        },
+        "disagreement": {
+          "oneOf": [
+            {
+              "const": null
+            },
+            {
+              "$ref": "#/$defs/disagreement"
+            }
+          ]
+        },
+        "resolution": {
+          "oneOf": [
+            {
+              "const": null
+            },
+            {
+              "$ref": "#/$defs/resolution"
+            }
+          ]
+        }
+      },
+      "oneOf": [
+        {
+          "properties": {
+            "disagreement": {
+              "const": null
+            },
+            "resolution": {
+              "const": null
+            }
+          }
+        },
+        {
+          "properties": {
+            "disagreement": {
+              "$ref": "#/$defs/disagreement"
+            },
+            "resolution": {
+              "const": null
+            }
+          }
+        },
+        {
+          "properties": {
+            "disagreement": {
+              "$ref": "#/$defs/disagreement"
+            },
+            "resolution": {
+              "$ref": "#/$defs/resolution"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

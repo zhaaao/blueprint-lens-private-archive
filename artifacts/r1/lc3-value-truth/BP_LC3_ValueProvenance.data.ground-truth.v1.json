@@ -1,0 +1,51 @@
+{
+  "criterion": {
+    "graph_id": "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph",
+    "member_guid": "175c3370-4752-21d1-da22-4e94033ccbe5",
+    "member_name": "LC3Score",
+    "question": "Where does the value assigned to LC3Score come from?"
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:UserConstructionScript: excluded because member-variable data slicing is graph-local to EventGraph"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 5,
+      "edges": 6,
+      "execution_edges": 1,
+      "nodes": 7
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::0ed63f6c-478a-8511-f83b-faa83f12245a::pin::locator-output-BaseScore-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-input-A-0",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53::pin::locator-output-then-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::47c141e6-4997-d0f0-e561-a0826aba9bf2::pin::locator-output-Penalty-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-input-B-0",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-input-A-0",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08::pin::locator-input-LC3Score-0",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::edge::/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d579ea07-4b75-80a4-baf1-4682a24c8237::pin::locator-output-BonusScore-0->/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2::pin::locator-input-B-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::0ed63f6c-478a-8511-f83b-faa83f12245a",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::1c0c5ab4-430b-c560-c3b3-8f8e0cf18c53",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::47c141e6-4997-d0f0-e561-a0826aba9bf2",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::4d2e8f23-41cf-19cf-1196-399c762340b2",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::893fe8b6-4000-8e4f-8772-f8ae66264c08",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d2f0f839-4b2e-4f8a-f883-149baa7a24b6",
+      "/Game/LensCorpus/BP_LC3_ValueProvenance.BP_LC3_ValueProvenance:EventGraph::node::d579ea07-4b75-80a4-baf1-4682a24c8237"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "author_source_review",
+      "independent_inventory_review"
+    ],
+    "notes": "Reviewed from the real UE source export and independent TSV inventory before comparison with the generated member-variable slice.",
+    "reviewed_at": "2026-08-10",
+    "status": "frozen"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "member_variable_data_dependency",
+  "source_fixture": "BP_LC3_ValueProvenance.ir.v1.json",
+  "source_sha256": "F7A0911C1567489012B277CF6A0A9BD1756D77E4D9871CD51F20B8177078333F"
+}

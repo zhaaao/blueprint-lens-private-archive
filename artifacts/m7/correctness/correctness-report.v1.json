@@ -1,0 +1,1357 @@
+{
+  "aggregate": {
+    "edges": {
+      "precision": {
+        "denominator": 230,
+        "numerator": 230
+      },
+      "recall": {
+        "denominator": 230,
+        "numerator": 230
+      }
+    },
+    "exact_match": {
+      "denominator": 38,
+      "numerator": 38
+    },
+    "nodes": {
+      "precision": {
+        "denominator": 266,
+        "numerator": 266
+      },
+      "recall": {
+        "denominator": 266,
+        "numerator": 266
+      }
+    }
+  },
+  "limitations": [
+    {
+      "id": "AMBIGUITY_UNTESTED",
+      "statement": "The two derivations agreed, but re-running all 38 under the alternative reading of the opaque-call ambiguity changes membership on 0 of 38. The corpus does not exercise the specification's underdetermined regions, so agreement is evidence about the mechanical core of the rules and none about the unclear parts."
+    },
+    {
+      "id": "TRIVIAL_ROWS_IN_THE_DENOMINATOR",
+      "statement": "Eight of the 38 rows contribute two nodes or fewer and one edge or fewer, and three of them are the queries Round B recorded as not doing what they claim: M7-Q-C03-EXEC is a criterion with no execution input so its slice is itself, M7-Q-C09-DATA has 24 Gets and no Set so three of four data rules never fire, and M7-Q-C09-EXEC stops at depth one behind an opaque call. Those three contribute 27 of the 266 nodes, 10.2 per cent of the node total. An exact-match rate of 38/38 therefore counts rows that exercise very little, and the aggregate is not a difficulty-weighted measure."
+    },
+    {
+      "id": "ADJUDICATOR_WAS_A_PARTY",
+      "statement": "The controller produced Round B and also adjudicated. At zero disagreements nothing turned on it; at one it would have been disqualifying."
+    },
+    {
+      "id": "INHERITED_TRUTH_NOT_REDERIVED",
+      "statement": "Five ground-truth artefacts inherited from M4 and M5 are independent_review, not re-derivation \u2014 a second party checked an answer it could see. They are not measured in this report, and their weaker model must not be read across."
+    },
+    {
+      "id": "TOP_BAND_DATA_THIN",
+      "statement": "The top-band data slice is two nodes because every member in that generated graph is set exactly once. Top-band data coverage is not established, whatever the aggregate says."
+    },
+    {
+      "id": "SHARED_MISREADING_UNRULED_OUT",
+      "statement": "Both derivations are language models reading the same frozen text. A phrasing that misleads one may mislead both identically, and nothing in this milestone rules that out. Two derivations with one adjudicator cannot catch a misreading they share."
+    }
+  ],
+  "measured_on": "2026-08-22",
+  "rows": [
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "recall": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "true_positive": 3
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "recall": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "true_positive": 4
+      },
+      "query_id": "M7-Q-C02-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "recall": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "true_positive": 7
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "recall": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "true_positive": 5
+      },
+      "query_id": "M7-Q-C02-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "true_positive": 6
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "recall": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "true_positive": 5
+      },
+      "query_id": "M7-Q-C03-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 0,
+          "numerator": 0
+        },
+        "recall": {
+          "denominator": 0,
+          "numerator": 0
+        },
+        "true_positive": 0
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "recall": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "true_positive": 1
+      },
+      "query_id": "M7-Q-C03-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "recall": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "true_positive": 5
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "recall": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "true_positive": 4
+      },
+      "query_id": "M7-Q-C04-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "query_id": "M7-Q-C04-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "recall": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "true_positive": 3
+      },
+      "query_id": "M7-Q-C05-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "recall": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "true_positive": 1
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "query_id": "M7-Q-C05-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "recall": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "true_positive": 1
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "query_id": "M7-Q-C06-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "recall": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "true_positive": 1
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "query_id": "M7-Q-C06-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "recall": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "true_positive": 4
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "recall": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "true_positive": 7
+      },
+      "query_id": "M7-Q-C07-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "recall": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "true_positive": 7
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "recall": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "true_positive": 7
+      },
+      "query_id": "M7-Q-C07-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "recall": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "true_positive": 1
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "query_id": "M7-Q-C08-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 13,
+          "numerator": 13
+        },
+        "recall": {
+          "denominator": 13,
+          "numerator": 13
+        },
+        "true_positive": 13
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 12,
+          "numerator": 12
+        },
+        "recall": {
+          "denominator": 12,
+          "numerator": 12
+        },
+        "true_positive": 12
+      },
+      "query_id": "M7-Q-C08-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 0,
+          "numerator": 0
+        },
+        "recall": {
+          "denominator": 0,
+          "numerator": 0
+        },
+        "true_positive": 0
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 24,
+          "numerator": 24
+        },
+        "recall": {
+          "denominator": 24,
+          "numerator": 24
+        },
+        "true_positive": 24
+      },
+      "query_id": "M7-Q-C09-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "recall": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "true_positive": 1
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "query_id": "M7-Q-C09-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "true_positive": 6
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "true_positive": 6
+      },
+      "query_id": "M7-Q-C10-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "recall": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "true_positive": 3
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "recall": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "true_positive": 4
+      },
+      "query_id": "M7-Q-C10-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 8,
+          "numerator": 8
+        },
+        "recall": {
+          "denominator": 8,
+          "numerator": 8
+        },
+        "true_positive": 8
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 10,
+          "numerator": 10
+        },
+        "recall": {
+          "denominator": 10,
+          "numerator": 10
+        },
+        "true_positive": 10
+      },
+      "query_id": "M7-Q-S-C01-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "true_positive": 6
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "recall": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "true_positive": 7
+      },
+      "query_id": "M7-Q-S-C01-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 10,
+          "numerator": 10
+        },
+        "recall": {
+          "denominator": 10,
+          "numerator": 10
+        },
+        "true_positive": 10
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 9,
+          "numerator": 9
+        },
+        "recall": {
+          "denominator": 9,
+          "numerator": 9
+        },
+        "true_positive": 9
+      },
+      "query_id": "M7-Q-S-C02-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 14,
+          "numerator": 14
+        },
+        "recall": {
+          "denominator": 14,
+          "numerator": 14
+        },
+        "true_positive": 14
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 10,
+          "numerator": 10
+        },
+        "recall": {
+          "denominator": 10,
+          "numerator": 10
+        },
+        "true_positive": 10
+      },
+      "query_id": "M7-Q-S-C02-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "true_positive": 6
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "recall": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "true_positive": 5
+      },
+      "query_id": "M7-Q-S-C03-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "recall": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "true_positive": 3
+      },
+      "query_id": "M7-Q-S-C03-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "recall": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "true_positive": 5
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "recall": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "true_positive": 4
+      },
+      "query_id": "M7-Q-S-C04-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "recall": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "true_positive": 4
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "recall": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "true_positive": 3
+      },
+      "query_id": "M7-Q-S-C04-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "recall": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "true_positive": 3
+      },
+      "query_id": "M7-Q-S-C05-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "recall": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "true_positive": 3
+      },
+      "query_id": "M7-Q-S-C05-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "recall": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "true_positive": 1
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "query_id": "M7-Q-S-C06-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "true_positive": 6
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "recall": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "true_positive": 7
+      },
+      "query_id": "M7-Q-S-C06-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "recall": {
+          "denominator": 4,
+          "numerator": 4
+        },
+        "true_positive": 4
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "recall": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "true_positive": 7
+      },
+      "query_id": "M7-Q-S-C07-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 8,
+          "numerator": 8
+        },
+        "recall": {
+          "denominator": 8,
+          "numerator": 8
+        },
+        "true_positive": 8
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 8,
+          "numerator": 8
+        },
+        "recall": {
+          "denominator": 8,
+          "numerator": 8
+        },
+        "true_positive": 8
+      },
+      "query_id": "M7-Q-S-C07-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "recall": {
+          "denominator": 3,
+          "numerator": 3
+        },
+        "true_positive": 3
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "recall": {
+          "denominator": 5,
+          "numerator": 5
+        },
+        "true_positive": 5
+      },
+      "query_id": "M7-Q-S-C08-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 30,
+          "numerator": 30
+        },
+        "recall": {
+          "denominator": 30,
+          "numerator": 30
+        },
+        "true_positive": 30
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 27,
+          "numerator": 27
+        },
+        "recall": {
+          "denominator": 27,
+          "numerator": 27
+        },
+        "true_positive": 27
+      },
+      "query_id": "M7-Q-S-C08-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "recall": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "true_positive": 1
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "recall": {
+          "denominator": 2,
+          "numerator": 2
+        },
+        "true_positive": 2
+      },
+      "query_id": "M7-Q-S-C09-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 43,
+          "numerator": 43
+        },
+        "recall": {
+          "denominator": 43,
+          "numerator": 43
+        },
+        "true_positive": 43
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 44,
+          "numerator": 44
+        },
+        "recall": {
+          "denominator": 44,
+          "numerator": 44
+        },
+        "true_positive": 44
+      },
+      "query_id": "M7-Q-S-C09-EXEC",
+      "slice_kind": "execution"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "true_positive": 6
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "true_positive": 6
+      },
+      "query_id": "M7-Q-S-C10-DATA",
+      "slice_kind": "data"
+    },
+    {
+      "edges": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "true_positive": 6
+      },
+      "nodes": {
+        "false_negative": 0,
+        "false_negative_ids": [],
+        "false_positive": 0,
+        "false_positive_ids": [],
+        "precision": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "recall": {
+          "denominator": 7,
+          "numerator": 7
+        },
+        "true_positive": 7
+      },
+      "query_id": "M7-Q-S-C10-EXEC",
+      "slice_kind": "execution"
+    }
+  ],
+  "schema_name": "blueprint-lens-m7-correctness",
+  "schema_version": "1.0.0",
+  "truth_basis": {
+    "adjudication_path": "artifacts/m7/truth/adjudication.v1.json",
+    "adjudication_sha256": "cefb8e4979338341821746b720b8442113686b5ed5fc1f596cd92800aff78357",
+    "pairs_agreed": 38,
+    "pairs_total": 38
+  }
+}

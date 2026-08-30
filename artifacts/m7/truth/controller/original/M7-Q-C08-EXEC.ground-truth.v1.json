@@ -1,0 +1,63 @@
+{
+  "criterion": {
+    "description": "Derive the execution slice through the multi-SCC branch and retain the completion path.",
+    "graph_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph",
+    "node_id": "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3"
+  },
+  "excluded_regions": [
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:UserConstructionScript: excluded because slicing is graph-local to EventGraph",
+    "No forward context is selected after the criterion (forward_context_hops=0)",
+    "21 of 33 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 3,
+      "edges": 13,
+      "execution_edges": 10,
+      "nodes": 12
+    },
+    "edge_ids": [
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::2867b71e-4162-284e-48a3-399294f2d029::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::30b9c731-416a-adae-1c12-2986755a3737::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::30b9c731-416a-adae-1c12-2986755a3737::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4390b104-4d84-e0d5-6bf9-02859d7ac933::pin::locator-output-M3PriorityParcel-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a::pin::locator-input-Condition-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535::pin::locator-output-ReturnValue-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3::pin::locator-input-Condition-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::705fdaa3-4602-45fe-ca39-d3be1b0e3795::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::70d42898-4a51-f165-714a-d5ab2a1c5f77::pin::locator-output-M3IntakeAttempts-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535::pin::locator-input-A-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::d0bffadd-43f5-abf7-8f1c-fd8b9af7ee4f::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::86d5e311-40ec-ebef-1ca9-b6950f6ca4ed::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::9f13a2c6-402e-02c1-3a71-5fb6704b143a::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::86d5e311-40ec-ebef-1ca9-b6950f6ca4ed::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::d0bffadd-43f5-abf7-8f1c-fd8b9af7ee4f::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::705fdaa3-4602-45fe-ca39-d3be1b0e3795::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::db47e471-42f2-dff4-0728-0b951148716f::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::86d5e311-40ec-ebef-1ca9-b6950f6ca4ed::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a::pin::locator-output-else-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::9f13a2c6-402e-02c1-3a71-5fb6704b143a::pin::locator-input-execute-0",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::db47e471-42f2-dff4-0728-0b951148716f::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::2867b71e-4162-284e-48a3-399294f2d029",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::30b9c731-416a-adae-1c12-2986755a3737",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4390b104-4d84-e0d5-6bf9-02859d7ac933",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::66940b16-41b7-a25d-ebf3-2a8a7f04d535",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::705fdaa3-4602-45fe-ca39-d3be1b0e3795",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::70d42898-4a51-f165-714a-d5ab2a1c5f77",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::76da5621-4bc7-2211-a746-fdb14f04baa3",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::86d5e311-40ec-ebef-1ca9-b6950f6ca4ed",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::9f13a2c6-402e-02c1-3a71-5fb6704b143a",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::d0bffadd-43f5-abf7-8f1c-fd8b9af7ee4f",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::db47e471-42f2-dff4-0728-0b951148716f",
+      "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::f5884845-42d3-e6a9-66e3-31adbfa1302a"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, frozen eighteen. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "execution_context",
+  "source_fixture": "af88808755640042329d2c05f0cd80b49ad186548244e8b33baad2c1ce1e5267.blueprint-lens-v1.json",
+  "source_sha256": "8ABEACFBB7061F44BBF2E60293AE1E62195A3FD62E140A6ABCD14463878775EB"
+}

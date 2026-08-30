@@ -1,0 +1,688 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-explanation-v1.schema.json",
+  "title": "Blueprint Lens Explanation Model v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schema_version",
+    "rules_version",
+    "source",
+    "query",
+    "criterion_unit_id",
+    "lanes",
+    "units",
+    "relations",
+    "counts"
+  ],
+  "properties": {
+    "format": {
+      "const": "blueprint-lens-explanation"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "rules_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "$ref": "#/$defs/source"
+    },
+    "query": {
+      "$ref": "#/$defs/query"
+    },
+    "criterion_unit_id": {
+      "description": "Deterministic rendering anchor. For a member-level Data query, every matching Set remains a criterion unit in the criterion lane.",
+      "type": "string",
+      "minLength": 1
+    },
+    "lanes": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "$ref": "#/$defs/lane"
+      }
+    },
+    "units": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/unit"
+      }
+    },
+    "relations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/relation"
+      }
+    },
+    "counts": {
+      "$ref": "#/$defs/counts"
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/group"
+      }
+    },
+    "group_partial_order": {
+      "$ref": "#/$defs/group_partial_order"
+    }
+  },
+  "$defs": {
+    "role": {
+      "enum": [
+        "criterion",
+        "control",
+        "predicate",
+        "value",
+        "consequence",
+        "boundary"
+      ]
+    },
+    "lane_state": {
+      "enum": [
+        "populated",
+        "not_enabled",
+        "empty"
+      ]
+    },
+    "unit_kind": {
+      "enum": [
+        "node",
+        "expression",
+        "summary"
+      ]
+    },
+    "semantic_status": {
+      "enum": [
+        "supported",
+        "opaque",
+        "uncertain",
+        "unsupported"
+      ]
+    },
+    "query_direction": {
+      "enum": [
+        "backward_only"
+      ]
+    },
+    "relation_kind": {
+      "enum": [
+        "execution_predecessor",
+        "controls_execution",
+        "predicate_for",
+        "provides_value"
+      ]
+    },
+    "disambiguator_rule": {
+      "enum": [
+        "unit.branch.from_predicate_for"
+      ]
+    },
+    "semantic_label": {
+      "enum": [
+        "condition_true",
+        "condition_false",
+        "next_execution",
+        "branch_condition",
+        "value_input"
+      ]
+    },
+    "group_kind": {
+      "enum": [
+        "outcome_path",
+        "guard_nest",
+        "value_cone",
+        "fanout_branch",
+        "portal_scope",
+        "frontier_group",
+        "scc"
+      ]
+    },
+    "projection_status": {
+      "enum": [
+        "COMPLETE",
+        "STRUCTURAL_ONLY",
+        "ABSTAINED"
+      ]
+    },
+    "claim_evidence_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "component",
+        "fact_owner",
+        "source"
+      ],
+      "properties": {
+        "component": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "fact_owner": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "source": {
+          "$ref": "#/$defs/nonempty_string"
+        }
+      }
+    },
+    "group": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "title",
+            "ordered_unit_ids",
+            "ordered_relation_ids",
+            "entry_unit_id",
+            "parent_group_id",
+            "entered_by",
+            "member_count",
+            "projection_status",
+            "diagnostic_code",
+            "claim_evidence"
+          ],
+          "properties": {
+            "id": { "$ref": "#/$defs/nonempty_string" },
+            "kind": { "const": "guard_nest" },
+            "title": { "type": "string" },
+            "ordered_unit_ids": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/nonempty_string" }
+            },
+            "ordered_relation_ids": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/nonempty_string" }
+            },
+            "entry_unit_id": { "$ref": "#/$defs/nonempty_string" },
+            "parent_group_id": {
+              "oneOf": [
+                { "$ref": "#/$defs/nonempty_string" },
+                { "type": "null" }
+              ]
+            },
+            "entered_by": {
+              "oneOf": [
+                { "$ref": "#/$defs/semantic_label" },
+                { "type": "null" }
+              ]
+            },
+            "member_count": { "type": "integer", "minimum": 1 },
+            "projection_status": { "$ref": "#/$defs/projection_status" },
+            "diagnostic_code": { "type": "string" },
+            "claim_evidence": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/claim_evidence_entry" }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "title",
+            "ordered_unit_ids",
+            "ordered_relation_ids",
+            "entry_unit_id",
+            "exit_unit_id",
+            "parent_group_id",
+            "entered_by",
+            "member_count",
+            "projection_status",
+            "diagnostic_code",
+            "claim_evidence"
+          ],
+          "properties": {
+            "id": { "$ref": "#/$defs/nonempty_string" },
+            "kind": { "enum": ["outcome_path", "scc"] },
+            "title": { "type": "string" },
+            "ordered_unit_ids": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/nonempty_string" }
+            },
+            "ordered_relation_ids": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/nonempty_string" }
+            },
+            "entry_unit_id": { "$ref": "#/$defs/nonempty_string" },
+            "exit_unit_id": { "$ref": "#/$defs/nonempty_string" },
+            "parent_group_id": {
+              "oneOf": [
+                { "$ref": "#/$defs/nonempty_string" },
+                { "type": "null" }
+              ]
+            },
+            "entered_by": {
+              "oneOf": [
+                { "$ref": "#/$defs/semantic_label" },
+                { "type": "null" }
+              ]
+            },
+            "member_count": { "type": "integer", "minimum": 1 },
+            "projection_status": { "$ref": "#/$defs/projection_status" },
+            "diagnostic_code": { "type": "string" },
+            "claim_evidence": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/claim_evidence_entry" }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "title",
+            "ordered_unit_ids",
+            "ordered_relation_ids",
+            "entry_unit_id",
+            "parent_group_id",
+            "entered_by",
+            "member_count",
+            "projection_status",
+            "diagnostic_code",
+            "claim_evidence"
+          ],
+          "properties": {
+            "id": { "$ref": "#/$defs/nonempty_string" },
+            "kind": {
+              "enum": [
+                "value_cone",
+                "fanout_branch",
+                "portal_scope",
+                "frontier_group"
+              ]
+            },
+            "title": { "type": "string" },
+            "ordered_unit_ids": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/nonempty_string" }
+            },
+            "ordered_relation_ids": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/nonempty_string" }
+            },
+            "entry_unit_id": { "$ref": "#/$defs/nonempty_string" },
+            "exit_unit_id": { "$ref": "#/$defs/nonempty_string" },
+            "parent_group_id": {
+              "oneOf": [
+                { "$ref": "#/$defs/nonempty_string" },
+                { "type": "null" }
+              ]
+            },
+            "entered_by": {
+              "oneOf": [
+                { "$ref": "#/$defs/semantic_label" },
+                { "type": "null" }
+              ]
+            },
+            "member_count": { "type": "integer", "minimum": 1 },
+            "projection_status": { "$ref": "#/$defs/projection_status" },
+            "diagnostic_code": { "type": "string" },
+            "claim_evidence": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/claim_evidence_entry" }
+            }
+          }
+        }
+      ]
+    },
+    "group_partial_order": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "incomparable_group_ids",
+        "semantics"
+      ],
+      "properties": {
+        "incomparable_group_ids": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "$ref": "#/$defs/nonempty_string"
+            }
+          }
+        },
+        "semantics": {
+          "$ref": "#/$defs/nonempty_string"
+        }
+      }
+    },
+    "nonempty_string": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "[0-9A-F]{64}"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ir_path",
+        "ir_sha256",
+        "slice_path",
+        "slice_sha256",
+        "blueprint_asset_path",
+        "blueprint_package_sha256",
+        "graph_id"
+      ],
+      "properties": {
+        "ir_path": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "ir_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "slice_path": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "slice_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "blueprint_asset_path": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "blueprint_package_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "graph_id": {
+          "$ref": "#/$defs/nonempty_string"
+        }
+      }
+    },
+    "query": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "question",
+        "direction",
+        "criterion_source_node_id"
+      ],
+      "properties": {
+        "question": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "direction": {
+          "$ref": "#/$defs/query_direction"
+        },
+        "criterion_source_node_id": {
+          "description": "Source node for the deterministic rendering anchor; not a hidden single-Set query selection.",
+          "$ref": "#/$defs/nonempty_string"
+        }
+      }
+    },
+    "lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "state",
+        "unit_ids",
+        "empty_message"
+      ],
+      "properties": {
+        "role": {
+          "$ref": "#/$defs/role"
+        },
+        "state": {
+          "$ref": "#/$defs/lane_state"
+        },
+        "unit_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonempty_string"
+          }
+        },
+        "empty_message": {
+          "type": "string"
+        }
+      }
+    },
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "role",
+        "kind",
+        "title",
+        "expression",
+        "semantic_status",
+        "inclusion_reasons",
+        "source_references"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "role": {
+          "$ref": "#/$defs/role"
+        },
+        "kind": {
+          "$ref": "#/$defs/unit_kind"
+        },
+        "title": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "expression": {
+          "type": "string"
+        },
+        "semantic_status": {
+          "$ref": "#/$defs/semantic_status"
+        },
+        "inclusion_reasons": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nonempty_string"
+          }
+        },
+        "source_references": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source_reference"
+          }
+        },
+        "disambiguator": {
+          "$ref": "#/$defs/disambiguator"
+        }
+      }
+    },
+    "disambiguator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "rule_id",
+        "evidence_relation_ids"
+      ],
+      "properties": {
+        "text": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "rule_id": {
+          "$ref": "#/$defs/disambiguator_rule"
+        },
+        "evidence_relation_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nonempty_string"
+          }
+        }
+      }
+    },
+    "source_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "blueprint_asset_path",
+        "graph_id",
+        "source_node_id",
+        "native_node_guid",
+        "source_pin_ids",
+        "primary"
+      ],
+      "properties": {
+        "blueprint_asset_path": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "graph_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "source_node_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "native_node_guid": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "source_pin_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonempty_string"
+          }
+        },
+        "primary": {
+          "type": "boolean"
+        }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "source_unit_id",
+        "target_unit_id",
+        "kind",
+        "label",
+        "source_edge_ids"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "source_unit_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "target_unit_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "kind": {
+          "$ref": "#/$defs/relation_kind"
+        },
+        "label": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "source_edge_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nonempty_string"
+          }
+        },
+        "source_edge_endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_edge_endpoint"
+          }
+        },
+        "port_label": {
+          "type": "string"
+        },
+        "semantic_label": {
+          "$ref": "#/$defs/semantic_label"
+        }
+      }
+    },
+    "source_edge_endpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_edge_id",
+        "source_node_id",
+        "source_pin_id",
+        "source_port_label",
+        "target_node_id",
+        "target_pin_id",
+        "target_port_label"
+      ],
+      "properties": {
+        "source_edge_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "source_node_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "source_pin_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "source_port_label": {
+          "type": "string"
+        },
+        "target_node_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "target_pin_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "target_port_label": {
+          "type": "string"
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lanes",
+        "units",
+        "relations",
+        "source_nodes",
+        "source_edges"
+      ],
+      "properties": {
+        "lanes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "units": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "relations": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_nodes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_edges": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

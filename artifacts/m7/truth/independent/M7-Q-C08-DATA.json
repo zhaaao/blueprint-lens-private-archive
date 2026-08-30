@@ -1,0 +1,21 @@
+{
+  "query_id": "M7-Q-C08-DATA",
+  "slice_kind": "data",
+  "node_ids": [
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::238c69c9-47ee-b942-5e43-b89cfffe919a",
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4aad83e7-481d-1697-83bd-37b6bd1b8b5c"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::edge::/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4aad83e7-481d-1697-83bd-37b6bd1b8b5c::pin::locator-output-then-0->/Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::238c69c9-47ee-b942-5e43-b89cfffe919a::pin::locator-input-execute-0"
+  ],
+  "boundary": [],
+  "reasoning": [
+    "Data rule 2.1/2.2: GUID c1ece1ef-4295-6131-552a-589bec897444 matched 0 Get node(s) and 1 Set node(s); the display name was not used for lookup.",
+    "Data rule 2.3: Set /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::238c69c9-47ee-b942-5e43-b89cfffe919a (Set M3ParcelComplete) uses its uniquely marked variable_set_value pin /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::238c69c9-47ee-b942-5e43-b89cfffe919a::pin::locator-input-M3ParcelComplete-0 as an independent producer-closure root.",
+    "Data rule 2.3: root pin /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::238c69c9-47ee-b942-5e43-b89cfffe919a::pin::locator-input-M3ParcelComplete-0 has no incoming data edge; no producer can be added.",
+    "Data rule 2.4: /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4aad83e7-481d-1697-83bd-37b6bd1b8b5c (Set M3DispatchAccepted) is not a Branch, so no broader control-dependence or earlier execution context is inferred.",
+    "Data rule 2.4: Set /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::238c69c9-47ee-b942-5e43-b89cfffe919a (Set M3ParcelComplete) is directly controlled by /Game/LensCorpus/BP_M3_MultiSCCRisk.BP_M3_MultiSCCRisk:EventGraph::node::4aad83e7-481d-1697-83bd-37b6bd1b8b5c (Set M3DispatchAccepted); only this immediate execution predecessor is added.",
+    "Data rule 2.8: no downstream consumers were added merely because a member Get exists; only independently selected nodes contribute induced edges."
+  ],
+  "undetermined": []
+}

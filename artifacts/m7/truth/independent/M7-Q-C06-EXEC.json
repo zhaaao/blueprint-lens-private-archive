@@ -1,0 +1,18 @@
+{
+  "query_id": "M7-Q-C06-EXEC",
+  "slice_kind": "execution",
+  "node_ids": [
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346",
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::8817650b-4574-ed42-c067-30a1ef8bfd24"
+  ],
+  "edge_ids": [
+    "/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::edge::/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::8817650b-4574-ed42-c067-30a1ef8bfd24::pin::locator-output-then-0->/Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346::pin::locator-input-execute-0"
+  ],
+  "boundary": [],
+  "reasoning": [
+    "Execution rule 2.2: criterion /Game/LensCorpus/BP_LC6_BoundaryMatrix.BP_LC6_BoundaryMatrix:EventGraph::node::0cfac241-446f-516a-841c-e3b64f7e7346 (Delay) is included as the root.",
+    "Execution rule 2.4: 1 supported execution predecessors were included and reverse traversal continued through each; cycles were guarded by visited IDs.",
+    "Execution rule 2.9: no forward context was added; only backward execution and explicit data roots were traversed."
+  ],
+  "undetermined": []
+}

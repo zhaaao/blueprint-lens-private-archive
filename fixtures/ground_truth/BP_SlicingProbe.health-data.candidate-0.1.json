@@ -1,0 +1,63 @@
+{
+  "format": "blueprint-lens-ground-truth-probe",
+  "format_version": "0.1",
+  "review_status": "provisionally_approved",
+  "reviewed_by": "project_owner",
+  "reviewed_at": "2026-07-19",
+  "review_limit": "Requires independent second-reviewer confirmation",
+  "source_fixture": "../raw/BP_SlicingProbe.raw-0.1.json",
+  "source_sha256": "10480F74E9373FEB5AF1D5C97FD98E032E32ED34421A5D70995375E651D1C4E6",
+  "slice_kind": "member_variable_data_dependency",
+  "criterion": {
+    "graph_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph",
+    "member_guid": "0fdf8c87-4cc0-0093-a246-d2a760d4d912",
+    "member_name": "Health",
+    "question": "Where is Health read and written, where do its written values come from, and which direct conditions control those writes?"
+  },
+  "rules": {
+    "include_all_member_accesses_in_graph": true,
+    "include_recursive_value_producers_for_writes": true,
+    "include_direct_write_controllers": true,
+    "include_controller_predicate_producers": true,
+    "include_downstream_consumers": false,
+    "stop_at_unsupported": true,
+    "call_handling": "include_call_and_arguments_without_interprocedural_expansion"
+  },
+  "expected": {
+    "node_ids": [
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::13d7ef2c-4b09-98a1-fc29-ae9e5e596d3d",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::5376fc7c-4cd7-9caf-f9bf-28bca204f9f6",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::bf005569-4334-c0d8-3ed9-91afa33e9ce2",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a"
+    ],
+    "edge_ids": [
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::5376fc7c-4cd7-9caf-f9bf-28bca204f9f6::pin::locator-output-then-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::13d7ef2c-4b09-98a1-fc29-ae9e5e596d3d::pin::locator-input-execute-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-input-A-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::bf005569-4334-c0d8-3ed9-91afa33e9ce2::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d::pin::locator-input-CurrentHealth-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-output-then-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-execute-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-output-ReturnValue-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-Condition-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d::pin::locator-output-NewHealth-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::13d7ef2c-4b09-98a1-fc29-ae9e5e596d3d::pin::locator-input-Health-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80::pin::locator-output-ReturnValue-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-Health-0",
+      "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80::pin::locator-input-A-0"
+    ],
+    "counts": {
+      "nodes": 10,
+      "edges": 8,
+      "execution_edges": 2,
+      "data_edges": 6
+    }
+  },
+  "excluded_regions": [
+    "BeginPlay, Sequence, and RunSecondaryPath because only immediate write controllers are requested",
+    "Print String and For Loop nodes because downstream consumers are outside the criterion",
+    "CalculateRecovery function graph because interprocedural expansion is outside M1",
+    "Execution predecessors before the unsupported latent Delay boundary",
+    "Unused default Event ActorBeginOverlap and Event Tick nodes"
+  ]
+}

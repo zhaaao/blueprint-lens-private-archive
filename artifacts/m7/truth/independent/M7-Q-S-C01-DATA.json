@@ -1,0 +1,58 @@
+{
+  "query_id": "M7-Q-S-C01-DATA",
+  "slice_kind": "data",
+  "node_ids": [
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::13d7ef2c-4b09-98a1-fc29-ae9e5e596d3d",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::5376fc7c-4cd7-9caf-f9bf-28bca204f9f6",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::bf005569-4334-c0d8-3ed9-91afa33e9ce2",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a"
+  ],
+  "edge_ids": [
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::5376fc7c-4cd7-9caf-f9bf-28bca204f9f6::pin::locator-output-then-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::13d7ef2c-4b09-98a1-fc29-ae9e5e596d3d::pin::locator-input-execute-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-input-A-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::bf005569-4334-c0d8-3ed9-91afa33e9ce2::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d::pin::locator-input-CurrentHealth-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-output-then-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-execute-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7::pin::locator-output-ReturnValue-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-Condition-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d::pin::locator-output-NewHealth-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::13d7ef2c-4b09-98a1-fc29-ae9e5e596d3d::pin::locator-input-Health-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80::pin::locator-output-ReturnValue-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-Health-0",
+    "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::edge::/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a::pin::locator-output-Health-0->/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80::pin::locator-input-A-0"
+  ],
+  "boundary": [
+    {
+      "node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::5376fc7c-4cd7-9caf-f9bf-28bca204f9f6",
+      "why": "data rule 2.7: unsupported/latent producer retained as a hard boundary; traversal stops"
+    },
+    {
+      "node_id": "/Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d",
+      "why": "data rule 2.6: opaque function call retained; function graph is not expanded"
+    }
+  ],
+  "reasoning": [
+    "Ambiguity reading: /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::b65b6930-4042-ba18-ea89-79b906d351ec (Get Health) lacks symbol.is_pure; it is treated as a supported graph-visible source/transparent reroute for data rule 2.7, with only its explicit incoming data edges followed; this rejects stopping solely because the optional purity flag is absent.",
+    "Ambiguity reading: /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::bf005569-4334-c0d8-3ed9-91afa33e9ce2 (Get Health) lacks symbol.is_pure; it is treated as a supported graph-visible source/transparent reroute for data rule 2.7, with only its explicit incoming data edges followed; this rejects stopping solely because the optional purity flag is absent.",
+    "Ambiguity reading: /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d (CalculateRecovery) reports is_pure=true but semantic_status=opaque; the named opaque-function case in data rule 2.6 takes precedence over supported-pure continuation.",
+    "Ambiguity reading: /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::fd6fa7a3-4434-6992-629e-15bf05340f5a (Get Health) lacks symbol.is_pure; it is treated as a supported graph-visible source/transparent reroute for data rule 2.7, with only its explicit incoming data edges followed; this rejects stopping solely because the optional purity flag is absent.",
+    "Data rule 2.1/2.2: GUID 0fdf8c87-4cc0-0093-a246-d2a760d4d912 matched 3 Get node(s) and 2 Set node(s); the display name was not used for lookup.",
+    "Data rule 2.3: Set /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::13d7ef2c-4b09-98a1-fc29-ae9e5e596d3d (Set Health) uses its uniquely marked variable_set_value pin /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::13d7ef2c-4b09-98a1-fc29-ae9e5e596d3d::pin::locator-input-Health-0 as an independent producer-closure root.",
+    "Data rule 2.3: Set /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c (Set Health) uses its uniquely marked variable_set_value pin /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-Health-0 as an independent producer-closure root.",
+    "Data rule 2.3: root pin /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::13d7ef2c-4b09-98a1-fc29-ae9e5e596d3d::pin::locator-input-Health-0 receives producer /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d (CalculateRecovery).",
+    "Data rule 2.3: root pin /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c::pin::locator-input-Health-0 receives producer /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80 (int - int).",
+    "Data rule 2.4: Set /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::13d7ef2c-4b09-98a1-fc29-ae9e5e596d3d (Set Health) is directly controlled by /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::5376fc7c-4cd7-9caf-f9bf-28bca204f9f6 (Delay); only this immediate execution predecessor is added.",
+    "Data rule 2.4: Set /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::63180c9c-4c18-1a57-ca71-60b47521033c (Set Health) is directly controlled by /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2 (Branch); only this immediate execution predecessor is added.",
+    "Data rule 2.5: Branch /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2 (Branch) contributes only its marked branch_condition pin /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-Condition-0; non-condition data pins and unrelated output paths are not roots.",
+    "Data rule 2.5: root pin /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::cbbd5a81-42fa-5ea1-6363-c09cebb1efb2::pin::locator-input-Condition-0 receives producer /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7 (integer > integer).",
+    "Data rule 2.8: no downstream consumers were added merely because a member Get exists; only independently selected nodes contribute induced edges.",
+    "Rule 2.6/2.7: /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::5376fc7c-4cd7-9caf-f9bf-28bca204f9f6 (Delay) entered data traversal via direct_write_controller; status=unsupported, so its applicable boundary rule was applied.",
+    "Rule 2.6/2.7: /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d (CalculateRecovery) entered data traversal via data_root; status=opaque, so its applicable boundary rule was applied.",
+    "Rule 2.6: opaque call /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d (CalculateRecovery) retains explicit input producer /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::bf005569-4334-c0d8-3ed9-91afa33e9ce2 (Get Health) from pin /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::efbd1d7a-47d3-fd55-7775-26bd488ee92d::pin::locator-input-CurrentHealth-0; reason=opaque_input_producer.",
+    "Rule 2.7: supported pure producer /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::d609619c-44bc-d2f0-ef2a-aba7f13d1ea7 (integer > integer) is included and its incoming data edges are followed.",
+    "Rule 2.7: supported pure producer /Game/Probe/BP_SlicingProbe.BP_SlicingProbe:EventGraph::node::f84a6e45-473e-5019-1800-7f884b5e7b80 (int - int) is included and its incoming data edges are followed."
+  ],
+  "undetermined": []
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m3-fidelity-coverage-report-v1.schema.json",
+  "title": "Blueprint Lens M3 Fidelity Coverage Report v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_graph_count",
+    "claim_boundary",
+    "covered_risk_dimensions",
+    "dangling_reference_count",
+    "duplicate_entity_count",
+    "node_count",
+    "regression_asset_count",
+    "scale_band_counts",
+    "schema_name",
+    "schema_version",
+    "semantic_status_counts",
+    "unclassified_node_count"
+  ],
+  "properties": {
+    "candidate_graph_count": { "type": "integer", "minimum": 0 },
+    "claim_boundary": { "type": "string", "minLength": 1 },
+    "covered_risk_dimensions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "dangling_reference_count": { "type": "integer", "minimum": 0 },
+    "duplicate_entity_count": { "type": "integer", "minimum": 0 },
+    "node_count": { "type": "integer", "minimum": 0 },
+    "regression_asset_count": { "type": "integer", "minimum": 0 },
+    "scale_band_counts": { "$ref": "#/$defs/scale_band_counts" },
+    "schema_name": { "const": "blueprint-lens-m3-fidelity-coverage-report" },
+    "schema_version": { "const": "1.0.0" },
+    "semantic_status_counts": { "$ref": "#/$defs/semantic_status_counts" },
+    "unclassified_node_count": { "type": "integer", "minimum": 0 }
+  },
+  "$defs": {
+    "count": { "type": "integer", "minimum": 0 },
+    "scale_band_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["large", "medium", "small"],
+      "properties": {
+        "large": { "$ref": "#/$defs/count" },
+        "medium": { "$ref": "#/$defs/count" },
+        "small": { "$ref": "#/$defs/count" }
+      }
+    },
+    "semantic_status_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["opaque", "supported", "uncertain", "unsupported"],
+      "properties": {
+        "opaque": { "$ref": "#/$defs/count" },
+        "supported": { "$ref": "#/$defs/count" },
+        "uncertain": { "$ref": "#/$defs/count" },
+        "unsupported": { "$ref": "#/$defs/count" }
+      }
+    }
+  }
+}

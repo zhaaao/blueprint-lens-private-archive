@@ -1,0 +1,51 @@
+{
+  "criterion": {
+    "description": "Rule-selected execution criterion: the node with the longest backward supported-execution chain.",
+    "graph_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph",
+    "node_id": "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266"
+  },
+  "excluded_regions": [
+    "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:UserConstructionScript: excluded because slicing is graph-local to EventGraph",
+    "No forward context is selected after the criterion (forward_context_hops=0)",
+    "5 of 12 nodes in this graph are not reachable under the frozen rules from this criterion and are excluded"
+  ],
+  "expected": {
+    "counts": {
+      "data_edges": 2,
+      "edges": 6,
+      "execution_edges": 4,
+      "nodes": 7
+    },
+    "edge_ids": [
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48::pin::locator-output-OutputPin-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266::pin::locator-input-InputPin-0",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-input-execute-0",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621::pin::locator-output-then-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48::pin::locator-input-InputPin-0",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-output-ReturnValue-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-Condition-0",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4::pin::locator-output-ReturnValue-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5::pin::locator-input-A-0",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::edge::/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3::pin::locator-output-Authority-0->/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a::pin::locator-input-execute-0"
+    ],
+    "node_ids": [
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::0f071de3-4c38-554d-c00e-519c34424e48",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::317c629f-4f35-54b1-096c-a59c0d372e6a",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::5402da54-418c-a5d1-5f58-abbafa520621",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::58e25584-4903-9f8c-0ac8-24baab38dec5",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::6b0ec781-4bf7-b5e7-7cdd-ab91a5f890c4",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::b668795e-4f1b-97fc-c5dd-6ba9f69d4266",
+      "/Game/M7Corpus/BP_M7_EngineSample.BP_M7_EngineSample:EventGraph::node::c4e97880-4b6b-e6a3-b0f7-6a8c0f15bbe3"
+    ]
+  },
+  "format": "blueprint-lens-ground-truth",
+  "review": {
+    "annotators": [
+      "controller_round_b"
+    ],
+    "notes": "Round B, rule-selected supplement. Derived by reading the frozen specifications and traversing the typed IR; no M4 or M5 slice kernel was consulted. Not yet independently re-derived, so this is a candidate rather than reviewed truth.",
+    "reviewed_at": "2026-08-22",
+    "status": "candidate"
+  },
+  "rules_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "slice_kind": "execution_context",
+  "source_fixture": "638fdded9113279cefc9e97f78a6c6fab40909a4f05bc6e5ab813392e70ae5fd.blueprint-lens-v1.json",
+  "source_sha256": "57597332D2C08E1A968FFE8CDB231D372BCDA74514D2C1A05C00E6BEDDE047E0"
+}

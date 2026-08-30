@@ -1,0 +1,403 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprint-lens.local/schema/blueprint-lens-m7-coverage-v1.schema.json",
+  "title": "Blueprint Lens M7 Coverage Matrix v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "candidate_graph_count",
+    "cells",
+    "lc_bindings",
+    "dimension_totals",
+    "lc_totals",
+    "gaps",
+    "errors"
+  ],
+  "properties": {
+    "schema_name": {
+      "const": "blueprint-lens-m7-coverage"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "candidate_graph_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cells": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/coverage_cell"
+      }
+    },
+    "lc_bindings": {
+      "type": "array",
+      "minItems": 7,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/lc_binding"
+      }
+    },
+    "dimension_totals": {
+      "$ref": "#/$defs/dimension_totals"
+    },
+    "lc_totals": {
+      "$ref": "#/$defs/lc_totals"
+    },
+    "gaps": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/non_empty"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/non_empty"
+      }
+    }
+  },
+  "$defs": {
+    "non_empty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "non_negative_integer": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "dimension": {
+      "enum": [
+        "source_traceability_and_progressive_disclosure",
+        "branching_and_incomparable_outcomes",
+        "data_provenance_fan_in_fan_out",
+        "sequence_async_completion_and_synchronization",
+        "call_and_context",
+        "opaque_unsupported_and_query_budget_boundaries",
+        "cycles_and_multiple_sccs",
+        "small_medium_large_scale"
+      ]
+    },
+    "lc": {
+      "enum": [
+        "LC1",
+        "LC2",
+        "LC3",
+        "LC4",
+        "LC5",
+        "LC6",
+        "LC7"
+      ]
+    },
+    "candidate_reference": {
+      "oneOf": [
+        {
+          "const": null
+        },
+        {
+          "$ref": "#/$defs/non_empty"
+        }
+      ]
+    },
+    "coverage_cell": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "band",
+            "dimension",
+            "exhibited",
+            "graph_id",
+            "node_count",
+            "reason",
+            "row_id",
+            "verification"
+          ],
+          "properties": {
+            "band": {
+              "enum": [
+                "small",
+                "medium",
+                "large"
+              ]
+            },
+            "dimension": {
+              "$ref": "#/$defs/dimension"
+            },
+            "exhibited": {
+              "type": "boolean"
+            },
+            "graph_id": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "node_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reason": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "row_id": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "verification": {
+              "const": "structural"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "band",
+            "dimension",
+            "exhibited",
+            "graph_id",
+            "node_count",
+            "reason",
+            "row_id",
+            "verification"
+          ],
+          "properties": {
+            "band": {
+              "enum": [
+                "small",
+                "medium",
+                "large"
+              ]
+            },
+            "dimension": {
+              "$ref": "#/$defs/dimension"
+            },
+            "exhibited": {
+              "const": null
+            },
+            "graph_id": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "node_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reason": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "row_id": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "verification": {
+              "const": "declared_unverified"
+            }
+          }
+        }
+      ]
+    },
+    "dimension_totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "branching_and_incomparable_outcomes",
+        "call_and_context",
+        "cycles_and_multiple_sccs",
+        "data_provenance_fan_in_fan_out",
+        "opaque_unsupported_and_query_budget_boundaries",
+        "sequence_async_completion_and_synchronization",
+        "small_medium_large_scale",
+        "source_traceability_and_progressive_disclosure"
+      ],
+      "properties": {
+        "branching_and_incomparable_outcomes": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "call_and_context": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "cycles_and_multiple_sccs": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "data_provenance_fan_in_fan_out": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "opaque_unsupported_and_query_budget_boundaries": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "sequence_async_completion_and_synchronization": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "small_medium_large_scale": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "source_traceability_and_progressive_disclosure": {
+          "$ref": "#/$defs/non_negative_integer"
+        }
+      }
+    },
+    "lc_totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "LC1",
+        "LC2",
+        "LC3",
+        "LC4",
+        "LC5",
+        "LC6",
+        "LC7"
+      ],
+      "properties": {
+        "LC1": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "LC2": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "LC3": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "LC4": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "LC5": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "LC6": {
+          "$ref": "#/$defs/non_negative_integer"
+        },
+        "LC7": {
+          "$ref": "#/$defs/non_negative_integer"
+        }
+      }
+    },
+    "lc_binding": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "artefact_verified",
+            "candidate_id",
+            "expected_dimension",
+            "graph_id",
+            "is_candidate",
+            "lc",
+            "reason",
+            "truth_artefact"
+          ],
+          "properties": {
+            "artefact_verified": {
+              "const": false
+            },
+            "candidate_id": {
+              "const": null
+            },
+            "expected_dimension": {
+              "const": "source_traceability_and_progressive_disclosure"
+            },
+            "graph_id": {
+              "const": null
+            },
+            "is_candidate": {
+              "const": false
+            },
+            "lc": {
+              "const": "LC1"
+            },
+            "reason": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "truth_artefact": {
+              "const": null
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "artefact_verified",
+            "candidate_id",
+            "expected_dimension",
+            "graph_id",
+            "is_candidate",
+            "lc",
+            "reason",
+            "truth_artefact"
+          ],
+          "properties": {
+            "artefact_verified": {
+              "type": "boolean"
+            },
+            "candidate_id": {
+              "$ref": "#/$defs/candidate_reference"
+            },
+            "expected_dimension": {
+              "$ref": "#/$defs/dimension"
+            },
+            "graph_id": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "is_candidate": {
+              "const": true
+            },
+            "lc": {
+              "$ref": "#/$defs/lc"
+            },
+            "reason": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "truth_artefact": {
+              "$ref": "#/$defs/non_empty"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "artefact_verified",
+            "candidate_id",
+            "expected_dimension",
+            "graph_id",
+            "is_candidate",
+            "lc",
+            "reason",
+            "truth_artefact"
+          ],
+          "properties": {
+            "artefact_verified": {
+              "type": "boolean"
+            },
+            "candidate_id": {
+              "$ref": "#/$defs/candidate_reference"
+            },
+            "expected_dimension": {
+              "$ref": "#/$defs/dimension"
+            },
+            "graph_id": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "is_candidate": {
+              "const": false
+            },
+            "lc": {
+              "$ref": "#/$defs/lc"
+            },
+            "reason": {
+              "$ref": "#/$defs/non_empty"
+            },
+            "truth_artefact": {
+              "$ref": "#/$defs/non_empty"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
