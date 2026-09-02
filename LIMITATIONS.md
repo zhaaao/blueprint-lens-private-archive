@@ -24,9 +24,9 @@ it does not establish language-wide soundness for arbitrary Blueprint projects.
 - Latent calls such as `Delay` remain unsupported because scheduler and resume
   semantics are outside the static model.
 - Unlisted promoted operators and `Select` nodes remain uncertain until their
-  pin and selection semantics have dedicated fixtures and oracles.
+  pin and selection semantics are specifically modelled and tested.
 - Dispatcher calls and component-bound events are retained in source material,
-  but the admitted ten-graph corpus does not establish listener or binding
+  but the evaluated ten-graph corpus does not establish listener or binding
   resolution.
 - Cross-Blueprint dispatch, interfaces, overrides, timers and runtime causal
   traces are outside the current evidence boundary.
@@ -37,4 +37,4 @@ The 38-query result establishes exact agreement with the retained truth for the
 registered execution and member-level Data questions. The demonstration images
 establish the painted panel state at capture time. Neither result measures
 runtime causality, performance, capacity, usability, human comprehension,
-comparative superiority or a product-default design.
+comparative superiority or that this interface should be a product default.
